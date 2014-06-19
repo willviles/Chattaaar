@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chattaaar Demo (Star Wars Theme)</title>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../prod/chattaaar-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../prod/style/style.css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700|Open+Sans:300,300italic,400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.chattaaar-container').newChattaaar(
+          options = {
+            theme: 'star-wars',
+            formName: 'modalTest',
+            modal: true,
+            modalFullScreen: false,
+            testMode: true
+          },
+          stages = {
+            stage1: {
+              title: 'About You',
+              type: 'input',
+              inputName: 'name',
+              question: "What's your name?",
+              placeholder: "e.g. Joe Bloggs"
+            },
+            stage2: {
+              title: 'Choose',
+              type: 'radio',
+              inputName: 'choose_something',
+              question: "Please choose something to start.",
+              options: {
+                option1: "First thing",
+                option2: "Second thing",
+                option3: "Third thing"
+              }
+            },
+            stage3: {
+              title: 'Your Idea',
+              type: 'textarea',
+              inputName: 'idea',
+              question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
+              placeholder: "e.g. My idea is a sophisticated blend of...",
+              skippable: true
+            },
+            stage4: {
+              title: 'Frequency',
+              type: 'select',
+              inputName: 'number_of_ideas',
+              question: "How many ideas do you usually have?",
+              placeholder: "Please select a number",
+              options: {
+                option1: "One idea",
+                option2: "Two ideas",
+                option3: "Three ideas"
+              }
+            },
+            stage5: {
+              title: 'Select multiple things',
+              type: 'checkbox',
+              inputName: 'selection_of_things',
+              question: "Please select all the things.",
+              options: {
+                option1: "First thing",
+                option2: "Second thing",
+                option3: "Third thing"
+              }
+            },
+            stage6: {
+              title: 'Rating',
+              type: 'rating',
+              inputName: 'rating',
+              question: "Right, what do you think of this?"
+            },
+            stage7: {
+              title: 'Your Email',
+              type: 'email',
+              inputName: 'email',
+              question: "Finally <span class='ch-name'></span>, what's your email?",
+              placeholder: "e.g. will@willviles.com"
+            }
+          }
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <button class="chattaaar-open">Open the modal, bitches</button>
+    <form class="chattaaar-container"></form>
+  </body>
+
+</html>

@@ -1,0 +1,48 @@
+$topbar-height: 50px;
+
+.chattaaar-topbar {
+  position: absolute; top: 0; left: 0; width: 100%; height: $topbar-height; border-bottom: 1px solid $light; text-align: center; z-index: 5000;
+  background-color: white;
+
+  // Title
+  .ch-title {
+    position: absolute; top: 0; height: 100%; left: 15%; right: 15%; cursor: default;
+    span {
+      font-size: 2em;
+      display: block;
+      line-height: $topbar-height;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: 300;
+    }
+  }
+
+  // Counter
+  .ch-counter {
+    position: absolute; top: 0; left: 0; height: 100%; width: 10%; cursor: default;
+    span {
+      position: absolute;
+      top: 0; left: 20px;
+      line-height: $topbar-height;
+    }
+  }
+
+  // Close Btn
+  .ch-close {
+    position: absolute; top: 0; right: 0; height: 100%; width: 10%; cursor: pointer;
+    i {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      margin-top: -14px;
+      font-size: 28px;
+      color: darken($light, 15%);
+      @include transition(color 0.2s ease-in-out);
+    }
+    &:hover i {
+      color: $grey;
+      @include transition(color 0.2s ease-in-out);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+section {
+  .section-padding {
+    padding: 0px 5%;
+  }
+  .question-container, .action-container {
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  .action-container {
+    padding-top: 40px;
+  }
+
+  .ch-btns-container {
+    padding-top: 25px;
+  }
+}
+
+$mobile-topbar-height: 35px;
+
+.chattaaar-topbar {
+  height: $mobile-topbar-height;
+  // Title
+  .ch-title span {
+    line-height: $mobile-topbar-height;
+  }
+  // Counter
+  .ch-counter span {
+    left: 10px;
+    line-height: $mobile-topbar-height;
+  }
+  // Close Btn
+  .ch-close i {
+    right: 10px;
+    margin-top: -9px;
+    font-size: 18px;
+  }
+
+}

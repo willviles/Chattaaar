@@ -1,0 +1,124 @@
+input, textarea, select, .faux-input {
+  padding: 7px 12px;
+  background-color: $blue;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.9em;
+  font-size: 1.2em;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: white;
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $blue inset;
+    -webkit-text-fill-color: white;
+  }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    lighten($blue, 30%);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    lighten($blue, 30%);
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    lighten($blue, 30%);
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    lighten($blue, 30%);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+.faux-input:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+.checkbox-radio {
+  display: block;
+  input {
+    display: none;
+  }
+  span {
+    padding: 0.7em 1em 0.7em 50px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background-color: $blue;
+    border-bottom: 1px solid lighten($blue, 15%);
+    color: lighten($blue, 30%);
+    font-size: 1.2em;
+    i.el-icon-check-empty, i.el-icon-check, i.el-icon-edit {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      margin-top: -8px;
+      font-size: 16px;
+    }
+    i.el-icon-check, i.el-icon-edit {
+      @include opacity(0);
+    }
+    &:hover {
+      i.el-icon-edit {
+        @include opacity(1);
+      }
+      i.el-icon-check, i.el-icon-empty {
+        @include opacity(0);
+      }
+    }
+  }
+  input:checked + span {
+    color: white;
+    i.el-icon-check-empty, i.el-icon-edit {
+      @include opacity(0);
+    }
+    i.el-icon-check {
+      @include opacity(1);
+    }
+    i {
+      @include transition(opacity 0.5s ease-in-out);
+    }
+  }
+  &:last-child span {
+    border-bottom: none;
+  }
+}
+
+.rating {
+  display: block;
+  $star-height: 10px;
+  height: 30px;
+  vertical-align: middle;
+  .star-count {
+    display: inline-block;
+    line-height: 1.6em;
+    font-size: 1.1em;
+    padding: 3px 3px 0px 10px;
+    color: lighten($blue, 25%);
+  }
+  li {
+    display: inline-block;
+    padding: 5px 3px;
+    cursor: pointer;
+  }
+  .star {
+    font-size: 1.6em;
+    color: lighten($blue, 25%);
+  }
+  li.hover .star {
+    color: lighten($blue, 40%);
+  }
+  li.selected .star {
+    color: white;
+  }
+}

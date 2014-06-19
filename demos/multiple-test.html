@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chattaaar Demo (Multiple Test)</title>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../prod/chattaaar-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../prod/style/style.css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700|Open+Sans:300,300italic,400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.chattaaar-plain').newChattaaar(
+          options = {
+            formName: 'insertedTest',
+            welcomeText: "I'm Tim Cook. This is the idea pitch.",
+            testMode: true
+          },
+          stages = {
+            stage1: {
+              title: 'About You',
+              type: 'input',
+              inputName: 'name',
+              question: "What's your name?",
+              placeholder: "e.g. Joe Bloggs"
+            },
+            stage2: {
+              title: 'Your Idea',
+              type: 'textarea',
+              inputName: 'idea',
+              question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
+              placeholder: "e.g. My idea is a sophisticated blend of..."
+            },
+            stage3: {
+              title: 'Frequency',
+              type: 'select',
+              inputName: 'number_of_ideas',
+              question: "How many ideas do you usually have?",
+              placeholder: "Please select a number",
+              options: {
+                option1: "One idea",
+                option2: "Two ideas",
+                option3: "Three ideas"
+              }
+            }
+          }
+        );
+
+        $('.chattaaar-starwars').newChattaaar(
+          options = {
+            formName: 'starWars',
+            welcomeText: "Star Wars.",
+            modal: true,
+            modalOpenBtn: '.starwars-open',
+            modalContainer: '.starwars-modal',
+            theme: 'star-wars',
+            testMode: true
+          },
+          stages = {
+            stage1: {
+              title: 'What is your name?',
+              type: 'input',
+              inputName: 'name',
+              question: "What's your name?",
+              placeholder: "e.g. Joe Bloggs"
+            },
+            stage2: {
+              title: 'The Plot',
+              type: 'textarea',
+              inputName: 'starwars',
+              question: "So, <span class='ch-name'></span>, time to write the plot of Star Wars.",
+              placeholder: "e.g. The star"
+            },
+            stage3: {
+              title: 'Your Email',
+              type: 'email',
+              inputName: 'email',
+              question: "<span class='ch-name'></span>, what's your email?",
+              placeholder: "e.g. will@willviles.com"
+            }
+          }
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <div style="float: left; width: 100%; height: 500px;">
+      <form class="chattaaar-container chattaaar-plain"></form>
+    </div>
+    <div style="float: left; width: 100%;">
+      <div class="starwars-open" style="background-color: blue; padding: 2em;"><span>OPEN STARWARS</span></div>
+    </div>
+    <form class="chattaaar-container chattaaar-starwars"></form>
+  </body>
+
+</html>

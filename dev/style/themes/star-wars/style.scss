@@ -1,0 +1,238 @@
+@import 'compass';
+@import "compass/css3";
+
+$dark: #27292b;
+$light: #ecf0f1;
+$grey: darken($light, 30%);
+
+// YOUR THEME NAME
+$theme: 'star-wars';
+
+.chattaaar-container.#{$theme} {
+
+  // --Default styles
+  $default-font-family: "Open Sans", "Arial", sans-serif;
+  $default-font-weight: 400;
+  $default-text-color: $light;
+
+  // Header fonts
+  $header-font-family: $default-font-family;
+  $header-font-weight: 300;
+
+  // Wrapping container syles
+  $container-bg-color: $dark;
+  $container-border-color: $grey;
+
+  // Each section color
+  $section-bg-color: $container-bg-color;
+
+  // -- Question container styles
+  $question-container-bg-color: lighten($dark, 10%);
+  $question-container-text-color: $default-text-color;
+  // Icon
+  $person-icon-size: 60px;
+  $person-icon-bg-color: $dark;
+  $person-icon-border: 1px solid lighten($dark, 10%);
+
+  // -- Action container styles
+  $action-container-bg-color: white;
+  $action-container-text-color: $dark;
+  // Placeholder text
+  $placeholder-color: lighten($dark, 25%);
+  // Checkbox & Radio Buttons
+  $checkbox-divider-color: darken(white, 10%);
+  // Ratings
+  $star-before: lighten($dark, 50%);
+  $star-hover: lighten($dark, 25%);
+  $star-selected: $dark;
+
+  // -- Button styles
+  // Standard Buttons
+  $button-bg-color: $section-bg-color;
+  $button-text-color: $default-text-color;
+  $button-border: 1px solid $grey;
+  $button-hover-border: 1px solid white;
+  // Validated Button
+  $validated-button-bg-color: lighten($grey, 20%);
+  $validated-button-text-color: $dark;
+  $validated-button-border: 1px solid $validated-button-bg-color;
+  $validated-button-hover-bg-color: white;
+  $validated-button-hover-border: 1px solid white;
+
+  // -- Topbar styles
+  $topbar-bg-color: $dark;
+  $topbar-border-color: $grey;
+  $topbar-close-btn-color: darken($light, 15%);
+  $topbar-close-btn-hover-color: $grey;
+  $topbar-title-color: $grey;
+  $topbar-counter-color: $grey;
+
+  // --------------------------
+  // --------------------------
+  // MODAL STYLES ARE AT THE BOTTOM.
+  // --------------------------
+  // --------------------------
+
+  font-family: $default-font-family;
+  font-weight: $default-font-weight;
+  color: $default-text-color;
+  background-color: $container-bg-color;
+  @include box-shadow($container-border-color 0px 0px 0px 1px inset);
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+  }
+
+  .chattaaar-topbar {
+    border-bottom-color: $topbar-border-color;
+    background-color: $topbar-bg-color;
+    // Title
+    .ch-title span { color: $topbar-title-color; }
+    // Counter
+    .ch-counter span { color: $topbar-counter-color;}
+    // Close Btn
+    .ch-close {
+      i { color: $topbar-close-btn-color; }
+      &:hover i { color: $topbar-close-btn-hover-color; }
+    }
+  }
+
+  section {
+    background-color: $section-bg-color;
+    .person-icon {
+      width: $person-icon-size; height: $person-icon-size;
+      background-color: $person-icon-bg-color;
+      border: $person-icon-border;
+    }
+    .question-container p {
+      margin-left: $person-icon-size + 20px;
+      background-color: $question-container-bg-color;
+      color: $question-container-text-color;
+      &:before {
+        border-color: transparent $question-container-bg-color transparent transparent;
+        _border-color: #000000 $question-container-bg-color #000000 #000000;
+      }
+    }
+    .action-container {
+      .action-wrapper {
+        margin-right: $person-icon-size + 20px;
+        background-color: $action-container-bg-color;
+        color: $action-container-text-color;
+        &:before {
+          border-color: $action-container-bg-color transparent transparent transparent;
+          _border-color: $action-container-bg-color #000000 #000000 #000000;
+        }
+      }
+      .ch-btns-container {
+        margin-right: $person-icon-size + 20px;
+        .ch-next, .ch-prev, .ch-skip {
+          border: button-border;
+          background-color: $button-bg-color;
+          color: $button-text-color;
+        }
+        .ch-next.validated {
+          color: $validated-button-text-color;
+          background-color: $validated-button-bg-color;
+          border: $validated-button-border;
+          &:focus, &:hover {
+            background-color: $validated-button-hover-bg-color;
+            border: $validated-button-hover-border;
+          }
+        }
+        .ch-prev {
+          &:hover {
+            border: $button-hover-border;
+          }
+        }
+      }
+    }
+  }
+
+  // Welcome section
+  section.welcome {
+    // Welcome section next btn
+    .ch-next {
+      background-color: $validated-button-bg-color;
+      color: $validated-button-text-color;
+    }
+  }
+
+  // Sending section
+  .ch-sending {
+    background-color: rgba($section-bg-color, 0.9);
+  }
+
+  // Form Areas
+
+  input, textarea, select {
+    background-color: $action-container-bg-color;
+    color: $action-container-text-color;
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px $action-container-bg-color inset;
+      -webkit-text-fill-color: $action-container-text-color;
+    }
+  }
+
+  // Form Placeholders
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color:    $placeholder-color;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    $placeholder-color;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    $placeholder-color;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    $placeholder-color;
+  }
+
+  // Checkbox & Radio btn colors
+
+  .checkbox-radio {
+    span {
+      background-color: $action-container-bg-color;
+      color: $placeholder-color;
+      border-bottom: 1px solid $checkbox-divider-color;
+    }
+    input:checked + span {
+      color: $action-container-text-color;
+    }
+    &:last-child span {
+      border-bottom: none;
+    }
+  }
+
+  // Rating colors
+
+  .rating {
+    .star {
+      font-size: 1.6em;
+      color: $star-before;
+    }
+    li.hover .star {
+      color: $star-hover;
+    }
+    li.selected .star {
+      color: $star-selected;
+    }
+    .star-count {
+      color: $placeholder-color;
+    }
+  }
+
+
+}
+
+// Modal
+.chattaaar-modal.#{$theme} {
+  $modal-color: darken($dark, 10%);
+  $modal-opacity: 0.8;
+  background-color: rgba($modal-color, $modal-opacity);
+  .chattaaar-container {
+    @include box-shadow(rgba($modal-color, 0) 0px 0px 0px 0px inset);
+  }
+}
+
