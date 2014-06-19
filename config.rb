@@ -4,10 +4,10 @@ require 'compass/import-once/activate'
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "prod/style"
-sass_dir = "dev/style"
+sass_dir = "plugin/style"
 images_dir = "prod/images"
-javascripts_dir = "dev/scripts"
-fonts_dir = "dev/fonts"
+javascripts_dir = "plugin/scripts"
+fonts_dir = "plugin/fonts"
 
 output_style = :nested
 
