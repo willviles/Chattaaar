@@ -98,25 +98,27 @@ $(document).ready(function() {
 
 ## Available Options
 
-| Parameter Name   | Type    | Default                            | Description                                                                                                            |
-|------------------|---------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| formName         | string  | ‘form-[RAND]’               | Sets the <form> tag’s name attribute.                                                                                  |
-| formAction       | string  | -                                  | Sets the <form> tag’s action attribute.                                                                                |
-| theme            | string  | -                                  | Adds a CSS class to the <form> tag setting theme styles.                                                               |
-| modal            | boolean | FALSE                              | Setting modal to true will activate modal mode.                                                                        |
-| modalOpenBtn     | string  | ‘.chattaaar-open’                  | Set the modal opening class.                                                                                           |
-| modalContainer   | string  | ‘.chattaaar-modal’                 | Sets the modal container class.                                                                                        |
-| modalFullScreen  | boolean | FALSE                              | Setting modalFullScreen to true will expand the modal into fullscreen mode, so that none of the page beneath is shown. |
-| yourName         | string  | ‘Us’                               | Changes the name beneath your avatar.                                                                                  |
-| yourAvatar       | string  | -                                  | Add a URL to an image to set the background-image property of your avatar.                                             |
-| theirName        | string  | ‘You’                              | Changes the name beneath their avatar.                                                                                 |
-| theirAvatar      | string  | -                                  | Add an image URL to set the background-image property of their avatar.                                                 |
-| welcomeTitle     | string  | ‘Welcome’                          | Changes the welcome title.                                                                                             |
-| welcomeStrapline | string  | ‘Please add a strapline’           | Changes the text beneath the welcomeTitle.                                                                             |
-| welcomeTitle     | string  | ‘<i class="el-icon-envelope"></i>’ | Sets title in the top bar for the welcome page. By default, it displays an envelope icon.                              |
-| welcomeLogo      | string  | -                                  | Add an image URL to set the background-image property of the welcome logo.                                             |
-| startBtnText     | string  | ‘Start’                            | Sets the text of the start button on the welcome page.                                                                 |
-| nextBtnText      | string  | ‘Next’                             | Sets the text of every next button.                                                                                    |
-| sendBtnText      | string  | ‘Send’                             | Sets the text of the send button.                                                                                      |
-| skipBtnText      | string  | ‘Skip’                             | Sets the text of the skip button.                                                                                      |
-| testMode         | boolean | FALSE                              | Sets test mode. Will simulate sending the message when a proper form action is not specified or set up correctly.      |
+| Option | Type | Default | Description |
+|-------------------|---------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| __formName__ | _string_ | ‘form-[RAND]’ | Sets the <form> tag’s name attribute. |
+| __formAction__ | _string_ | - | Sets the <form> tag’s action attribute. |
+| __theme__ | _string_ | - | Adds a CSS class to the <form> tag setting theme styles. |
+| __modal__ | _boolean_ | FALSE | Setting modal to true will activate modal mode. |
+| __modalOpenBtn__ | _string_ | ‘.chattaaar-open’ | Set the modal opening class. |
+| __modalContainer__ | _string_ | ‘.chattaaar-modal’ | Sets the modal container class. |
+| __modalFullScreen__ | _booleanv | FALSE | Setting modalFullScreen to true will expand the modal into fullscreen mode, so that none of the page beneath is shown. |
+| __yourName__ | _string_ | ‘Us’ | Changes the name beneath your avatar. |
+| __yourAvatarv | _string_ | - | Add a URL to an image to set the background-image property of your avatar. |
+| __theirName__ | _string_ | ‘You’ | Changes the name beneath their avatar. |
+| __theirAvatar__ | _string_ | - | Add an image URL to set the background-image property of their avatar. |
+| __welcomeTitle__ | _string_ | ‘Welcome’ | Changes the welcome title. |
+| __welcomeStrapline__ | _string_ | ‘Please add a strapline’ | Changes the text beneath the welcomeTitle. |
+| __welcomeTitle__ | _string_ | ‘<i class="el-icon-envelope"></i>’ | Sets title in the top bar for the welcome page. By default, it displays an envelope icon. |
+| __welcomeLogo__ | _string_ | - | Add an image URL to set the background-image property of the welcome logo. |
+| __welcomeLogoWidth__ | _string_ | - | Add a width appended with ‘px’ to define the welcome logo width. |
+| __welcomeLogoHeight__ | _string_ | - | Add a height appended with ‘px’ to define the welcome logo height. |
+| __startBtnText__ | _string_ | ‘Start’ | Sets the text of the start button on the welcome page. |
+| __nextBtnText__ | _string_ | ‘Next’ | Sets the text of every next button. |
+| __sendBtnText__ | _string_ | ‘Send’ | Sets the text of the send button. |
+| __skipBtnText__ | _string_ | ‘Skip’ | Sets the text of the skip button. |
+| __testMode__ | _boolean_ | FALSE | Sets test mode. Will simulate sending the message when a proper form action is not specified or set up correctly. |
