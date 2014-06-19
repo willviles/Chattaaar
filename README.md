@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 | Parameter Name   | Type    | Default                            | Description                                                                                                            |
 |------------------|---------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| formName         | string  | ‘form-RANDOM_NUMBER’               | Sets the <form> tag’s name attribute.                                                                                  |
+| formName         | string  | ‘form-[RAND]’               | Sets the <form> tag’s name attribute.                                                                                  |
 | formAction       | string  | -                                  | Sets the <form> tag’s action attribute.                                                                                |
 | theme            | string  | -                                  | Adds a CSS class to the <form> tag setting theme styles.                                                               |
 | modal            | boolean | FALSE                              | Setting modal to true will activate modal mode.                                                                        |
