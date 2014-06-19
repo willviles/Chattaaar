@@ -1,0 +1,101 @@
+<h1>Chattaaar</h1>
+
+<p>Chattaaar is a multi-page form generator designed to create kick-ass, humanised forms. Inspired by iOS Messages, each question solicits information from the user by treating the process as a conversation, keeping them engaged and moving through your form.</p>
+
+<h2>Getting Started</h2>
+
+<h3>1 - Include Chattaaar after jQuery</h3>
+
+<p>```html</p>
+
+<script src="vendor/jquery.min.js"></script>
+
+
+<script src="vendor/chattaaar.min.js"></script>
+
+
+<p>```</p>
+
+<h3>2 - Add the form to your page</h3>
+
+<p><code>html
+&lt;form class="chattaaar-container"&gt;&lt;/form&gt;
+</code></p>
+
+<h3>3 - Define stages</h3>
+
+<p>An example dictionary of stages:</p>
+
+<p><code>js
+var myStages = {
+  stage1: {
+    title: 'About You',
+    type: 'input',
+    inputName: 'name',
+    question: "What's your name?",
+    placeholder: "e.g. Joe Bloggs"
+  },
+  stage2: {
+    title: 'First Impressions',
+    type: 'radio',
+    inputName: 'first_impressions',
+    question: "Right, let's get going &lt;span class='ch-name'&gt;&lt;/span&gt;. What are your first impressions of Chattaaar?",
+    options: ['Wowza!', "Pretty swish", 'Okay', 'Could be better', "I don't like it"]
+  },
+  stage3: {
+    title: 'Rate the Rating',
+    type: 'rating',
+    inputName: 'rating',
+    question: "Thanks for being honest. Next up, rate the aesthetic of this ratings widget.",
+    skippable: true
+  },...
+}
+</code></p>
+
+<h3>4 - Create a server side mail function</h3>
+
+<p>```php
+&lt;?php
+$name = $<em>POST[&lsquo;name&rsquo;];
+$email = $</em>POST[&lsquo;email&rsquo;];
+&hellip;</p>
+
+<p>$to = &ldquo;your@address.com&rdquo;;
+$subject = &ldquo;Message from $name&rdquo;;
+$body = &ldquo;Name: $name \n\n Message: \n $message&hellip;&rdquo;;
+$from = $email;
+$headers = &ldquo;From:&rdquo; . $from;
+mail($to,$subject,$body,$headers);
+echo &ldquo;sent&rdquo;;
+?>
+```</p>
+
+<h3>5 - Define form options</h3>
+
+<p>An example dictionary of options:</p>
+
+<p><code>js
+var myOptions = {
+  formName: 'formName',
+  formAction: 'path/to/my-server-side-mail-action.php',
+  theme: 'formTheme',
+  welcomeText: "What do you think of Chattaaar?",
+  welcomeStrapline: "Have a play and submit your thoughts.",
+  welcomeImage: '/img/chattaaar-logo.png',
+  welcomeImageHeight: '48px',
+  welcomeImageWidth: '150px',
+  yourName: 'Will',
+  yourAvatar: '/img/myavatar.png'
+}
+</code></p>
+
+<h3>6 - Init Chattaaar</h3>
+
+<p><code>js
+$(document).ready(function() {
+  $('.chattaaar-container').newChattaaar(
+    options = myOptions,
+    stages = myStages
+  );
+});
+</code></p>
