@@ -108,7 +108,7 @@ $(document).ready(function() {
 | __modalContainer__ | _string_ | ‘.chattaaar-modal’ | Sets the modal container class. |
 | __modalFullScreen__ | _boolean_ | FALSE | Setting modalFullScreen to true will expand the modal into fullscreen mode, so that none of the page beneath is shown. |
 | __yourName__ | _string_ | ‘Us’ | Changes the name beneath your avatar. |
-| __yourAvatarv | _string_ | - | Add a URL to an image to set the background-image property of your avatar. |
+| __yourAvatar__ | _string_ | - | Add a URL to an image to set the background-image property of your avatar. |
 | __theirName__ | _string_ | ‘You’ | Changes the name beneath their avatar. |
 | __theirAvatar__ | _string_ | - | Add an image URL to set the background-image property of their avatar. |
 | __welcomeTitle__ | _string_ | ‘Welcome’ | Changes the welcome title. |
