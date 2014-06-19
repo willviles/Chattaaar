@@ -91,3 +91,32 @@ $(document).ready(function() {
   );
 });
 ```
+
+* * *
+
+## Defining Stages
+
+## Available Options
+
+| Parameter Name   | Type    | Default                            | Description                                                                                                            |
+|------------------|---------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| formName         | string  | ‘form-RANDOM_NUMBER’               | Sets the <form> tag’s name attribute.                                                                                  |
+| formAction       | string  | -                                  | Sets the <form> tag’s action attribute.                                                                                |
+| theme            | string  | -                                  | Adds a CSS class to the <form> tag setting theme styles.                                                               |
+| modal            | boolean | FALSE                              | Setting modal to true will activate modal mode.                                                                        |
+| modalOpenBtn     | string  | ‘.chattaaar-open’                  | Set the modal opening class.                                                                                           |
+| modalContainer   | string  | ‘.chattaaar-modal’                 | Sets the modal container class.                                                                                        |
+| modalFullScreen  | boolean | FALSE                              | Setting modalFullScreen to true will expand the modal into fullscreen mode, so that none of the page beneath is shown. |
+| yourName         | string  | ‘Us’                               | Changes the name beneath your avatar.                                                                                  |
+| yourAvatar       | string  | -                                  | Add a URL to an image to set the background-image property of your avatar.                                             |
+| theirName        | string  | ‘You’                              | Changes the name beneath their avatar.                                                                                 |
+| theirAvatar      | string  | -                                  | Add an image URL to set the background-image property of their avatar.                                                 |
+| welcomeTitle     | string  | ‘Welcome’                          | Changes the welcome title.                                                                                             |
+| welcomeStrapline | string  | ‘Please add a strapline’           | Changes the text beneath the welcomeTitle.                                                                             |
+| welcomeTitle     | string  | ‘<i class="el-icon-envelope"></i>’ | Sets title in the top bar for the welcome page. By default, it displays an envelope icon.                              |
+| welcomeLogo      | string  | -                                  | Add an image URL to set the background-image property of the welcome logo.                                             |
+| startBtnText     | string  | ‘Start’                            | Sets the text of the start button on the welcome page.                                                                 |
+| nextBtnText      | string  | ‘Next’                             | Sets the text of every next button.                                                                                    |
+| sendBtnText      | string  | ‘Send’                             | Sets the text of the send button.                                                                                      |
+| skipBtnText      | string  | ‘Skip’                             | Sets the text of the skip button.                                                                                      |
+| testMode         | boolean | FALSE                              | Sets test mode. Will simulate sending the message when a proper form action is not specified or set up correctly.      |
