@@ -29,20 +29,18 @@
           },
           stages = {
             stage1: {
-              title: 'Select a date',
-              type: 'date',
-              inputName: 'date',
-              question: "Select a date.",
-              placeholder: "Date",
-              datepicker: {
-                minDate: -20, maxDate: "+1M +10D"
-              }
+              title: 'Frequency',
+              type: 'select',
+              inputName: 'number-of-ideas',
+              question: "How many ideas do you usually have?",
+              placeholder: "Please select a number",
+              options: ['First idea', 'Second idea', 'Third idea']
             },
             stage2: {
               title: 'Upload a video',
               type: 'media',
               inputName: 'video',
-              question: "Please paste in a YouTube or Soundcloud URL",
+              question: "Nice <span class='ch-number-of-ideas'></span>. Please paste in a YouTube or Soundcloud URL",
               placeholder: "Place your link here",
               accepts: ['youtube', 'soundcloud']
             },
@@ -69,12 +67,14 @@
               skippable: true
             },
             stage6: {
-              title: 'Frequency',
-              type: 'select',
-              inputName: 'number_of_ideas',
-              question: "How many ideas do you usually have?",
-              placeholder: "Please select a number",
-              options: ['First idea', 'Second idea', 'Third idea']
+              title: 'Select a date',
+              type: 'date',
+              inputName: 'date',
+              question: "Select a date.",
+              placeholder: "Date",
+              datepicker: {
+                minDate: -20, maxDate: "+1M +10D"
+              }
             },
             stage7: {
               title: 'Select multiple things',

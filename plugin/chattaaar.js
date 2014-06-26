@@ -42,6 +42,10 @@
       container.addClass(options.theme);
     }
 
+    var isMobile = function() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    };
+
     // SCAFFOLD
 
     function appendScaffold() {
@@ -205,7 +209,6 @@
       // If type is media, do media things with it
       if (type === 'media') {
         var acceptsArray = stageObj.accepts;
-        console.log(acceptsArray);
         $.each(acceptsArray, function(i, accepted) { dataAttrs = dataAttrs + ' data-' + accepted + '="true"';});
         type = 'text'; classes = 'ch-media';
       }
@@ -368,7 +371,7 @@
       }
 
       function validateDate(value) {
-        var dateRegEx = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+        var dateRegEx = /^(?:(?:(?:0?[13578]|1[02])(\/|-|\.)31)\1|(?:(?:0?[1,3-9]|1[0-2])(\/|-|\.)(?:29|30)\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:0?2(\/|-|\.)29\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:(?:0?[1-9])|(?:1[0-2]))(\/|-|\.)(?:0?[1-9]|1\d|2[0-8])\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
         if (dateRegEx.test(value)) {
           makeValid();
         } else {
@@ -425,6 +428,10 @@
       selects.each(function() {
         $(this).change(function() {
           makeValid();
+          var selectName = $(this).attr('name');
+          var selectVal = $(this).val();
+          ch.store[selectName] = selectVal;
+          $('span.ch-' + selectName).html(selectVal);
         });
       });
 
@@ -447,7 +454,6 @@
       if (dates.length > 0) {
         var datepickerOptions = ch.stages['stage' + (ch.stage - 1)].datepicker;
         dates.datepicker(datepickerOptions);
-        console.log(dates);
         dates.on('change paste', function() {
           validateDate($(this).val());
         });
@@ -628,9 +634,11 @@
           changeTitle();
           // Order Focus
           // Ps. Can't call focus straight away otherwise it messes up CSS animations!!!
-          setTimeout(function() {
-            orderFocus();
-          }, 500);
+          if (!isMobile()) {
+            setTimeout(function() {
+              orderFocus();
+            }, 500);
+          }
           // fire validations
           validateStage();
         }
@@ -647,9 +655,11 @@
       changeTitle();
       // Order Focus
       // Ps. Can't call focus straight away otherwise it messes up CSS animations!!!
-      setTimeout(function() {
-        orderFocus();
-      }, 500);
+      if (!isMobile()) {
+        setTimeout(function() {
+          orderFocus();
+        }, 500);
+      }
       // fire validations
       validateStage();
     }
@@ -702,7 +712,7 @@
         container.addClass('fullscreen');
       }
       // Open Modal
-      $(options.modalOpenBtn).on('click', function() {
+      $(document).on('click', options.modalOpenBtn, function() {
         $(options.modalContainer).addClass('open');
       });
       // Close Modal
