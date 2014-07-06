@@ -3,6 +3,7 @@
   <head>
     <title>Chattaaar Demo (Inserted)</title>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../plugin/vendor/jquery-ui/datepicker-custom.min.js"></script>
     <script src="../prod/chattaaar-min.js"></script>
     <link rel="stylesheet" type="text/css" href="../prod/style/style.css">
 
@@ -13,44 +14,80 @@
       $(document).ready(function() {
         $('.chattaaar-container').newChattaaar(
           options = {
-            formName: 'insertedTest',
+            formName: 'modalTest',
+            formAction: '../prod/mailers/modal.php',
             welcomeText: "I'm Tim Cook. This is the idea pitch.",
+            welcomeImage: 'http://ecx.images-amazon.com/images/I/21W5fQntr6L._SL500_SS160_.jpg',
+            welcomeImageHeight: '80px',
+            welcomeImageWidth: '80px',
+            yourName: 'Tim Cook',
+            yourAvatar: 'http://rack.3.mshcdn.com/media/ZgkyMDE0LzAzLzIwL2IxL3RpbWNvb2suYjNiNGEuanBnCnAJdGh1bWIJMTIwMHg2MjcjCmUJanBn/5642c929/509/tim-cook.jpg',
+            theirAvatar: 'http://upload.wikimedia.org/wikipedia/commons/6/64/Jonathan.Ive.jpg',
             testMode: true
           },
           stages = {
             stage1: {
+              title: 'Frequency',
+              type: 'select',
+              inputName: 'number-of-ideas',
+              question: "How many ideas do you usually have?",
+              placeholder: "Please select a number",
+              options: ['First idea', 'Second idea', 'Third idea']
+            },
+            stage2: {
+              title: 'Choose',
+              type: 'radio',
+              inputName: 'choose_something',
+              question: "Please choose something to start.",
+              options: ['First thing', 'Second thing', 'Third thing']
+            },
+            stage3: {
               title: 'About You',
               type: 'input',
               inputName: 'name',
               question: "What's your name?",
               placeholder: "e.g. Joe Bloggs"
             },
-            stage2: {
+            stage4: {
               title: 'Your Idea',
               type: 'textarea',
               inputName: 'idea',
               question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
-              placeholder: "e.g. My idea is a sophisticated blend of..."
+              placeholder: "e.g. My idea is a sophisticated blend of...",
+              skippable: true
             },
-            stage3: {
-              title: 'Frequency',
-              type: 'select',
-              inputName: 'number_of_ideas',
-              question: "How many ideas do you usually have?",
-              placeholder: "Please select a number",
-              options: {
-                option1: "One idea",
-                option2: "Two ideas",
-                option3: "Three ideas"
+            stage5: {
+              title: 'Select a date',
+              type: 'date',
+              inputName: 'date',
+              question: "Select a date.",
+              placeholder: "Date",
+              datepicker: {
+                minDate: -20, maxDate: "+1M +10D"
               }
             },
-            stage4: {
+            stage6: {
+              title: 'Select multiple things',
+              type: 'checkbox',
+              inputName: 'selection_of_things',
+              question: "Please select all the things.",
+              options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing']
+            },
+            stage7: {
               title: 'Rating',
               type: 'rating',
               inputName: 'rating',
               question: "Right, what do you think of this?"
             },
-            stage5: {
+            stage8: {
+              title: 'Upload a video',
+              type: 'media',
+              inputName: 'video',
+              question: "Nice <span class='ch-number-of-ideas'></span>. Please paste in a YouTube or Soundcloud URL",
+              placeholder: "Place your link here",
+              accepts: ['youtube', 'soundcloud']
+            },
+            stage9: {
               title: 'Your Email',
               type: 'email',
               inputName: 'email',
