@@ -11,10 +11,6 @@
 
   // the plugin prototype
   Chattaaar.prototype = {
-    defaults: {
-      message: 'Hello world!'
-    },
-
     // Initialize
     ///////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////
@@ -279,14 +275,31 @@
             theirAvatar = '',
             theirDefaultAvatar = defaultAvatarIcon;
 
-        if (typeof this.options.yourAvatar !== 'undefined') {
-          yourDefaultAvatar = '';
-          yourAvatar = this.options.yourAvatar;
+        if (typeof stageObj.useDifferentPerson !== 'undefined') {
+          if (typeof stageObj.useDifferentPerson.avatar !== 'undefined') {
+            yourDefaultAvatar = '';
+            yourAvatar = stageObj.useDifferentPerson.avatar;
+          }
+        } else {
+          if (typeof this.options.yourAvatar !== 'undefined') {
+            yourDefaultAvatar = '';
+            yourAvatar = this.options.yourAvatar;
+          }
         }
 
         if (typeof this.options.theirAvatar !== 'undefined') {
           theirDefaultAvatar = '';
           theirAvatar = this.options.theirAvatar;
+        }
+
+        // If Name Change
+
+        var yourName;
+
+        if (typeof stageObj.useDifferentPerson !== 'undefined') {
+          if (typeof stageObj.useDifferentPerson.name !== 'undefined') { yourName = stageObj.useDifferentPerson.name; }
+        } else {
+          yourName = this.options.yourName;
         }
 
 
@@ -295,9 +308,9 @@
           '<section> \
             <div class="section-padding"> \
               <div class="question-container"> \
-                <div class="person-icon" style="background-image: url(' + this.options.yourAvatar + ');"> \
+                <div class="person-icon" style="background-image: url(' + yourAvatar + ');"> \
                   ' + yourDefaultAvatar + ' \
-                  <span class="name"><small>' + this.options.yourName + '</small></span> \
+                  <span class="name"><small>' + yourName + '</small></span> \
                 </div> \
                 <p> \
                   <span>' + stageObj.question + '</span> \
