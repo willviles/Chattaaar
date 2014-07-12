@@ -96,7 +96,7 @@ $(document).ready(function() {
 
 * * *
 
-## Available Chattaaar Options
+## Options
 
 | Option | Type | Default | Description |
 |-------------------|---------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 * * *
 
-## Defining Stages
+## Stages
 
 ### Default Stage Options
 
