@@ -209,7 +209,7 @@ There is no need to add an options array for a country select. It will generate 
 
 ```js
 {
-	type: ‘country’ // That will suffice!
+	type: 'country' // That will suffice!
 }
 ```
 
