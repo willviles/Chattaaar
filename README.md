@@ -302,7 +302,11 @@ A short method to use a different 'person' from your default avatar & name for t
 }
 ```
 
+* * *
+
 ## Multiple Chattaaars
+
+It's really simple to add multiple instances of Chattaaar to a page.
 
 ### Add unique classes to form markup
 
