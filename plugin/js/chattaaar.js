@@ -390,7 +390,7 @@
         var limit = '',
             limitUpdate = '',
             limitUpdateScaffold = function(valueToUpdate) {
-              return '<div class="limit-update"><p><span class="limit-count">0</span>/' + valueToUpdate + '</p></div>'
+              return '<div class="limit-update invalid"><p><span class="limit-count">0</span>/' + valueToUpdate + '</p></div>'
             };
 
         // If there's a character limit
@@ -709,7 +709,7 @@
           if (charlimit !== undefined) { updateCount.html(charlength); }
           else if (wordlimit !== undefined) { updateCount.html(wordslength); }
 
-          if (charlength <= charlimit || wordslength <= wordlimit) {
+          if (charlength > 0 && charlength <= charlimit || wordslength > 0 && wordslength <= wordlimit) {
             updateContainer.removeClass('invalid');
             this.validations.makeValid(nextBtn);
           } else {
