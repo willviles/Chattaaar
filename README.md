@@ -123,8 +123,7 @@ $(document).ready(function() {
 | __skipBtnText__ | _string_ | ‘Skip’ | Sets the text of the skip button. |
 | __testMode__ | _boolean_ | FALSE | Sets test mode. Will simulate sending the message when a proper form action is not specified or set up correctly. |
 
-
-
+* * *
 
 ## Defining Stages
 
@@ -261,7 +260,9 @@ Media inputs validate pasted URLs to ensure the correct type of media is entered
 }
 ```
 
-_Future development: Media input will show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.__
+_Future development: Media input will show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box._
+
+* * *
 
 ## Passing Context
 
@@ -284,6 +285,8 @@ stage1: {
 
 Context can only be used in questions in stages AFTER the context is set. Context can be saved and used for inputs, textareas and select boxes.
 
+* * *
+
 ## Other Stage Options
 
 ### Change your avatar mid-form
@@ -297,4 +300,20 @@ A short method to use a different 'person' from your default avatar & name for t
 		avatar: URL - path to an avatar image for the person
 	}
 }
+```
+
+## Multiple Chattaaars
+
+### Add unique classes to form markup
+
+```html
+<form class="chattaaar-container form-one"></form>
+<form class="chattaaar-container form-two"></form>
+```
+
+### Init on the unique classes
+
+```js
+$('.form-one').newChattaaar(...);
+$('.form-two').newChattaaar(...);
 ```

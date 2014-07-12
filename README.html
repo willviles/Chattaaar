@@ -252,6 +252,8 @@ $(document).ready(function() {
 </table>
 
 
+<hr />
+
 <h2>Defining Stages</h2>
 
 <h3>Default Stage Options</h3>
@@ -397,7 +399,9 @@ options: longArray(),
 }
 </code></p>
 
-<p>_Future development: Media input will show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.__</p>
+<p><em>Future development: Media input will show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.</em></p>
+
+<hr />
 
 <h2>Passing Context</h2>
 
@@ -420,6 +424,8 @@ stage1: {
 
 <p>Context can only be used in questions in stages AFTER the context is set. Context can be saved and used for inputs, textareas and select boxes.</p>
 
+<hr />
+
 <h2>Other Stage Options</h2>
 
 <h3>Change your avatar mid-form</h3>
@@ -433,4 +439,20 @@ stage1: {
         avatar: URL - path to an avatar image for the person
     }
 }
+</code></p>
+
+<h2>Multiple Chattaaars</h2>
+
+<h3>Add unique classes to form markup</h3>
+
+<p><code>html
+&lt;form class="chattaaar-container form-one"&gt;&lt;/form&gt;
+&lt;form class="chattaaar-container form-two"&gt;&lt;/form&gt;
+</code></p>
+
+<h3>Init on the unique classes</h3>
+
+<p><code>js
+$('.form-one').newChattaaar(...);
+$('.form-two').newChattaaar(...);
 </code></p>
