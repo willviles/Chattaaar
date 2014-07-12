@@ -139,6 +139,8 @@ $(document).ready(function() {
 
 ## Defining Stages
 
+### Default Stage Options
+
 ```js
 stage1: {
   title: 'This is the title', // string - sets the title in the Chattaaar top bar
@@ -146,15 +148,21 @@ stage1: {
 	inputName: 'input_name', // string - sets the name of the form element. Must be unique to retrieve with your custom email sending function
 	question: 'Are you?', // string - sets the question
 	placeholder: 'e.g. I am', // string - sets the placeholder text of the form input.
-	// Use a different 'person' from your default avatar & name for the stage
+},
+stage2: { ...
+```
+
+### Other Stage Options
+
+{
+  // Use a different 'person' from your default avatar & name for the stage
 	useDifferentPerson: {
 		name: string - sets the new person name,
 		avatar: URL - path to an avatar image for the person
 	}
-},
-stage2: { ...
-```
-## Input Specific Options
+}
+
+## Input-specific Options
 
 ### Defining Textareas
 
@@ -165,10 +173,9 @@ Word and character limits can be set for textareas. Just pass an integer to one 
 	wordlimit: 500
 	// OR
 	charlimit: 140
+	// Should NOT be defined together.
 }
 ```
-
-Should NOT be defined together.
 
 ### Defining Checkboxes, Radio Buttons & Selects
 
@@ -181,29 +188,30 @@ options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth t
 }
 ```
 
-__Idea: For longer arrays, move the array out into a function.__
+_Idea: For longer arrays, move the array out into a function._
 
 ```js
 function longArray() {
 	return ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing'];
 }
-```
 
-Then you can do:
+// Then you can do...
 
-```js
 {
 options: longArray(),
 ...
 }
 ```
+
 ### Defining Country Selects
 
 There is no need to add an options array for a country select. It will generate an options array.
 
+```js
 {
 	type: ‘country’ // That will suffice!
 }
+```
 
 ### Defining Date Select
 
@@ -219,7 +227,7 @@ jQuery UI datepicker settings can be added in an object called 'datepicker'. For
 
 ```js
 {
-	type: ‘date’,
+	type: 'date',
 	datepicker: {
     minDate: -20, maxDate: "+1M +10D"
     // Sets the minimum date to 20 days before today and max date to 1 month and 10 days ahead of today.
@@ -234,12 +242,12 @@ Media inputs validate pasted URLs to ensure the correct type of media is entered
 
 ```js
 {
-	type: ‘media’,
-	accepts: [‘youtube’, ‘soundcloud’] // Pass multiple media types into the array.
+	type: 'media',
+	accepts: ['youtube', 'soundcloud'] // Pass multiple media types into the array.
 }
 ```
 
-__A future development of the media input type is to show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.__
+_Future development: Media input will show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.__
 
 ## Passing Context
 

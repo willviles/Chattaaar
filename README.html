@@ -270,6 +270,8 @@ $(document).ready(function() {
 
 <h2>Defining Stages</h2>
 
+<h3>Default Stage Options</h3>
+
 <p><code>js
 stage1: {
   title: 'This is the title', // string - sets the title in the Chattaaar top bar
@@ -277,16 +279,21 @@ stage1: {
     inputName: 'input_name', // string - sets the name of the form element. Must be unique to retrieve with your custom email sending function
     question: 'Are you?', // string - sets the question
     placeholder: 'e.g. I am', // string - sets the placeholder text of the form input.
-    // Use a different 'person' from your default avatar &amp; name for the stage
-    useDifferentPerson: {
-        name: string - sets the new person name,
-        avatar: URL - path to an avatar image for the person
-    }
 },
 stage2: { ...
 </code></p>
 
-<h2>Input Specific Options</h2>
+<h3>Other Stage Options</h3>
+
+<p>{
+  // Use a different &lsquo;person&rsquo; from your default avatar &amp; name for the stage
+    useDifferentPerson: {
+        name: string - sets the new person name,
+        avatar: URL - path to an avatar image for the person
+    }
+}</p>
+
+<h2>Input-specific Options</h2>
 
 <h3>Defining Textareas</h3>
 
@@ -297,10 +304,9 @@ stage2: { ...
     wordlimit: 500
     // OR
     charlimit: 140
+    // Should NOT be defined together.
 }
 </code></p>
-
-<p>Should NOT be defined together.</p>
 
 <h3>Defining Checkboxes, Radio Buttons &amp; Selects</h3>
 
@@ -313,30 +319,30 @@ options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth t
 }
 </code></p>
 
-<p><strong>Idea: For longer arrays, move the array out into a function.</strong></p>
+<p><em>Idea: For longer arrays, move the array out into a function.</em></p>
 
-<p><code>js
+<p>```js
 function longArray() {
-    return ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing'];
-}
-</code></p>
+    return [&lsquo;First thing&rsquo;, &lsquo;Second thing&rsquo;, &lsquo;Third thing&rsquo;, &lsquo;Fourth thing&rsquo;, &lsquo;Fifth thing&rsquo;, &lsquo;Sixth thing&rsquo;];
+}</p>
 
-<p>Then you can do:</p>
+<p>// Then you can do&hellip;</p>
 
-<p><code>js
-{
+<p>{
 options: longArray(),
-...
+&hellip;
 }
-</code></p>
+```</p>
 
 <h3>Defining Country Selects</h3>
 
 <p>There is no need to add an options array for a country select. It will generate an options array.</p>
 
-<p>{
+<p><code>js
+{
     type: ‘country’ // That will suffice!
-}</p>
+}
+</code></p>
 
 <h3>Defining Date Select</h3>
 
@@ -359,7 +365,7 @@ options: longArray(),
 
 <p><code>js
 {
-    type: ‘date’,
+    type: 'date',
     datepicker: {
     minDate: -20, maxDate: "+1M +10D"
     // Sets the minimum date to 20 days before today and max date to 1 month and 10 days ahead of today.
@@ -374,12 +380,12 @@ options: longArray(),
 
 <p><code>js
 {
-    type: ‘media’,
-    accepts: [‘youtube’, ‘soundcloud’] // Pass multiple media types into the array.
+    type: 'media',
+    accepts: ['youtube', 'soundcloud'] // Pass multiple media types into the array.
 }
 </code></p>
 
-<p><strong>A future development of the media input type is to show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.</strong></p>
+<p>_Future development: Media input will show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.__</p>
 
 <h2>Passing Context</h2>
 
