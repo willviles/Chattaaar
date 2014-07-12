@@ -65,7 +65,6 @@
       ///////////////////////////////////////////////////////
 
       main: function() {
-        console.log(this);
         // Add form name & action
         this.$elem.attr({
           name: options.formName,
@@ -870,7 +869,6 @@
       // If NOT in test mode
       } else {
         sending();
-        console.log($('form[name=' + that.options.formName + ']').serialize());
         $.post($('form[name=' + that.options.formName + ']').attr('action'), $('form[name=' + that.options.formName + ']').serialize(), function(res){
           if (res === 'sent') {
             success();
@@ -932,7 +930,6 @@
 
         var that = this;
         function condenseGUI() {
-          console.log(that.$elem);
           var condenseContainer;
 
           if (that.options.modal) {
@@ -975,7 +972,6 @@
 
       initModal: function() {
         var that = this;
-        console.log(that.options);
         // Make modal fullscreen
         if (that.options.modalFullScreen) {
           that.$elem.addClass('fullscreen');
