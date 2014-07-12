@@ -152,16 +152,6 @@ stage1: {
 stage2: { ...
 ```
 
-### Other Stage Options
-
-{
-  // Use a different 'person' from your default avatar & name for the stage
-	useDifferentPerson: {
-		name: string - sets the new person name,
-		avatar: URL - path to an avatar image for the person
-	}
-}
-
 ## Input-specific Options
 
 ### Defining Textareas
@@ -269,3 +259,15 @@ stage1: {
 ```
 
 Context can only be used in questions in stages AFTER the context is set. Context can be saved and used for inputs, textareas and select boxes.
+
+## Other Stage Options
+
+```js
+{
+  // Use a different 'person' from your default avatar & name for the stage
+	useDifferentPerson: {
+		name: string - sets the new person name,
+		avatar: URL - path to an avatar image for the person
+	}
+}
+```

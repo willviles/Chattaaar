@@ -283,16 +283,6 @@ stage1: {
 stage2: { ...
 </code></p>
 
-<h3>Other Stage Options</h3>
-
-<p>{
-  // Use a different &lsquo;person&rsquo; from your default avatar &amp; name for the stage
-    useDifferentPerson: {
-        name: string - sets the new person name,
-        avatar: URL - path to an avatar image for the person
-    }
-}</p>
-
 <h2>Input-specific Options</h2>
 
 <h3>Defining Textareas</h3>
@@ -407,3 +397,15 @@ stage1: {
 </code></p>
 
 <p>Context can only be used in questions in stages AFTER the context is set. Context can be saved and used for inputs, textareas and select boxes.</p>
+
+<h2>Other Stage Options</h2>
+
+<p><code>js
+{
+  // Use a different 'person' from your default avatar &amp; name for the stage
+    useDifferentPerson: {
+        name: string - sets the new person name,
+        avatar: URL - path to an avatar image for the person
+    }
+}
+</code></p>
