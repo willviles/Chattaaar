@@ -123,18 +123,7 @@ $(document).ready(function() {
 | __skipBtnText__ | _string_ | ‘Skip’ | Sets the text of the skip button. |
 | __testMode__ | _boolean_ | FALSE | Sets test mode. Will simulate sending the message when a proper form action is not specified or set up correctly. |
 
-## Input Types
 
-* Input
-* Email - _Creates an email field & validates a valid email address_
-* Textarea
-* Select
-* Checkbox
-* Radio
-* Country - _Adds a select box with a predefined array of countries as select options_
-* Date - _Must be used in conjunction with jQuery UI Datepicker_
-* Rating - _Adds a star-based ratings widget_
-* Media - _Validates URLs from popular media content sites_
 
 
 ## Defining Stages
@@ -153,9 +142,34 @@ stage1: {
 stage2: { ...
 ```
 
-## Input-specific Options
+### Overview of stage types
 
-### Defining Textareas
+* Input - _Generates a standard form input_
+* Email - _Generates an email input field & validates for a valid email address_
+* Textarea - _Generates a textarea_
+* Select - _Generates a select box with options_
+* Checkbox - _Generates checkboxes with options_
+* Radio - _Generates radio buttons with options_
+* Country - Generates a select box with a predefined array of countries as select options_
+* Date - _Generates a date input. Must be used in conjunction with jQuery UI Datepicker_
+* Rating - _Generates a star ratings widget_
+* Media - _Generates an input field & validates URLs from popular media content sites_
+
+### Inputs
+
+```js
+{
+	type: 'input'
+}
+```
+
+### Textareas
+
+```js
+{
+	type: 'textarea'
+}
+```
 
 Word and character limits can be set for textareas. Just pass an integer to one of the two parameters.
 
@@ -169,6 +183,17 @@ Word and character limits can be set for textareas. Just pass an integer to one 
 ```
 
 ### Defining Checkboxes, Radio Buttons & Selects
+
+```js
+{
+  // Checkboxes
+	type: 'checkbox'
+	// OR Radio Buttons
+	type: 'radio'
+	// OR Select
+	type: 'select'
+}
+```
 
 Define options for checkboxes, radio buttons and selects in an array.
 
@@ -194,17 +219,15 @@ options: longArray(),
 }
 ```
 
-### Defining Country Selects
-
-There is no need to add an options array for a country select. It will generate an options array.
+### Country
 
 ```js
 {
-	type: 'country' // That will suffice!
+	type: 'country' // No need to add an options array for a country select. It will generate an options array.
 }
 ```
 
-### Defining Date Select
+### Date
 
 Ensure jQuery UI Datepicker is included before Chattaaar, but after jQuery.
 
@@ -227,7 +250,7 @@ jQuery UI datepicker settings can be added in an object called 'datepicker'. For
 }
 ```
 
-### Defining Media Inputs
+### Media
 
 Media inputs validate pasted URLs to ensure the correct type of media is entered into the input. Only YouTube & Soundcloud validations are available at the moment.
 

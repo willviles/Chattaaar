@@ -252,22 +252,6 @@ $(document).ready(function() {
 </table>
 
 
-<h2>Input Types</h2>
-
-<ul>
-<li>Input</li>
-<li>Email - <em>Creates an email field &amp; validates a valid email address</em></li>
-<li>Textarea</li>
-<li>Select</li>
-<li>Checkbox</li>
-<li>Radio</li>
-<li>Country - <em>Adds a select box with a predefined array of countries as select options</em></li>
-<li>Date - <em>Must be used in conjunction with jQuery UI Datepicker</em></li>
-<li>Rating - <em>Adds a star-based ratings widget</em></li>
-<li>Media - <em>Validates URLs from popular media content sites</em></li>
-</ul>
-
-
 <h2>Defining Stages</h2>
 
 <h3>Default Stage Options</h3>
@@ -284,9 +268,37 @@ stage1: {
 stage2: { ...
 </code></p>
 
-<h2>Input-specific Options</h2>
+<h3>Overview of stage types</h3>
 
-<h3>Defining Textareas</h3>
+<ul>
+<li>Input - <em>Generates a standard form input</em></li>
+<li>Email - <em>Generates an email input field &amp; validates for a valid email address</em></li>
+<li>Textarea - <em>Generates a textarea</em></li>
+<li>Select - <em>Generates a select box with options</em></li>
+<li>Checkbox - <em>Generates checkboxes with options</em></li>
+<li>Radio - <em>Generates radio buttons with options</em></li>
+<li>Country - Generates a select box with a predefined array of countries as select options_</li>
+<li>Date - <em>Generates a date input. Must be used in conjunction with jQuery UI Datepicker</em></li>
+<li>Rating - <em>Generates a star ratings widget</em></li>
+<li>Media - <em>Generates an input field &amp; validates URLs from popular media content sites</em></li>
+</ul>
+
+
+<h3>Inputs</h3>
+
+<p><code>js
+{
+    type: 'input'
+}
+</code></p>
+
+<h3>Textareas</h3>
+
+<p><code>js
+{
+    type: 'textarea'
+}
+</code></p>
 
 <p>Word and character limits can be set for textareas. Just pass an integer to one of the two parameters.</p>
 
@@ -300,6 +312,17 @@ stage2: { ...
 </code></p>
 
 <h3>Defining Checkboxes, Radio Buttons &amp; Selects</h3>
+
+<p><code>js
+{
+  // Checkboxes
+    type: 'checkbox'
+    // OR Radio Buttons
+    type: 'radio'
+    // OR Select
+    type: 'select'
+}
+</code></p>
 
 <p>Define options for checkboxes, radio buttons and selects in an array.</p>
 
@@ -325,17 +348,15 @@ options: longArray(),
 }
 ```</p>
 
-<h3>Defining Country Selects</h3>
-
-<p>There is no need to add an options array for a country select. It will generate an options array.</p>
+<h3>Country</h3>
 
 <p><code>js
 {
-    type: 'country' // That will suffice!
+    type: 'country' // No need to add an options array for a country select. It will generate an options array.
 }
 </code></p>
 
-<h3>Defining Date Select</h3>
+<h3>Date</h3>
 
 <p>Ensure jQuery UI Datepicker is included before Chattaaar, but after jQuery.</p>
 
@@ -365,7 +386,7 @@ options: longArray(),
 }
 </code></p>
 
-<h3>Defining Media Inputs</h3>
+<h3>Media</h3>
 
 <p>Media inputs validate pasted URLs to ensure the correct type of media is entered into the input. Only YouTube &amp; Soundcloud validations are available at the moment.</p>
 
