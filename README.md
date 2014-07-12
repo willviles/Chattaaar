@@ -134,7 +134,7 @@ $(document).ready(function() {
 * Country - _Adds a select box with a predefined array of countries as select options_
 * Date - _Must be used in conjunction with jQuery UI Datepicker_
 * Rating - _Adds a star-based ratings widget_
-* Media - _Validates URLs for YouTube & Soundcloud_
+* Media - _Validates URLs from popular media content sites_
 
 
 ## Defining Stages
