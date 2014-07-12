@@ -256,15 +256,15 @@ $(document).ready(function() {
 
 <ul>
 <li>Input</li>
-<li>Email // Creates an email field &amp; validates a valid email address</li>
+<li>Email - <em>Creates an email field &amp; validates a valid email address</em></li>
 <li>Textarea</li>
 <li>Select</li>
 <li>Checkbox</li>
 <li>Radio</li>
-<li>Country // Adds a select box with a predefined array of countries as select options</li>
-<li>Date // Must be used in conjunction with jQuery UI Datepicker</li>
-<li>Rating // Adds a star-based ratings widget</li>
-<li>Media // Validates URLs for YouTube &amp; Soundcloud</li>
+<li>Country - <em>Adds a select box with a predefined array of countries as select options</em></li>
+<li>Date - <em>Must be used in conjunction with jQuery UI Datepicker</em></li>
+<li>Rating - <em>Adds a star-based ratings widget</em></li>
+<li>Media - <em>Validates URLs for YouTube &amp; Soundcloud</em></li>
 </ul>
 
 
@@ -279,6 +279,7 @@ stage1: {
     inputName: 'input_name', // string - sets the name of the form element. Must be unique to retrieve with your custom email sending function
     question: 'Are you?', // string - sets the question
     placeholder: 'e.g. I am', // string - sets the placeholder text of the form input.
+    skippable: false // boolean - removes validation and allows user to skip section
 },
 stage2: { ...
 </code></p>

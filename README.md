@@ -126,15 +126,15 @@ $(document).ready(function() {
 ## Input Types
 
 * Input
-* Email // Creates an email field & validates a valid email address
+* Email - _Creates an email field & validates a valid email address_
 * Textarea
 * Select
 * Checkbox
 * Radio
-* Country // Adds a select box with a predefined array of countries as select options
-* Date // Must be used in conjunction with jQuery UI Datepicker
-* Rating // Adds a star-based ratings widget
-* Media // Validates URLs for YouTube & Soundcloud
+* Country - _Adds a select box with a predefined array of countries as select options_
+* Date - _Must be used in conjunction with jQuery UI Datepicker_
+* Rating - _Adds a star-based ratings widget_
+* Media - _Validates URLs for YouTube & Soundcloud_
 
 
 ## Defining Stages
@@ -148,6 +148,7 @@ stage1: {
 	inputName: 'input_name', // string - sets the name of the form element. Must be unique to retrieve with your custom email sending function
 	question: 'Are you?', // string - sets the question
 	placeholder: 'e.g. I am', // string - sets the placeholder text of the form input.
+	skippable: false // boolean - removes validation and allows user to skip section
 },
 stage2: { ...
 ```
