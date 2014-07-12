@@ -48,6 +48,8 @@ var myStages = {
 
 ### 4 - Create a server side mail function
 
+Here's a very simple php mail function.
+
 ```php
 <?php
 $name = $_POST['name'];
@@ -94,9 +96,7 @@ $(document).ready(function() {
 
 * * *
 
-## Defining Stages
-
-## Available Options
+## Available Chattaaar Options
 
 | Option | Type | Default | Description |
 |-------------------|---------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -122,3 +122,142 @@ $(document).ready(function() {
 | __sendBtnText__ | _string_ | ‘Send’ | Sets the text of the send button. |
 | __skipBtnText__ | _string_ | ‘Skip’ | Sets the text of the skip button. |
 | __testMode__ | _boolean_ | FALSE | Sets test mode. Will simulate sending the message when a proper form action is not specified or set up correctly. |
+
+## Input Types
+
+* Input
+* Email // Creates an email field & validates a valid email address
+* Textarea
+* Select
+* Checkbox
+* Radio
+* Country // Adds a select box with a predefined array of countries as select options
+* Date // Must be used in conjunction with jQuery UI Datepicker
+* Rating // Adds a star-based ratings widget
+* Media // Validates URLs for YouTube & Soundcloud
+
+
+## Defining Stages
+
+```js
+stage1: {
+  title: 'This is the title', // string - sets the title in the Chattaaar top bar
+	type: 'input', // string - name of input type
+	inputName: 'input_name', // string - sets the name of the form element. Must be unique to retrieve with your custom email sending function
+	question: 'Are you?', // string - sets the question
+	placeholder: 'e.g. I am', // string - sets the placeholder text of the form input.
+	// Use a different 'person' from your default avatar & name for the stage
+	useDifferentPerson: {
+		name: string - sets the new person name,
+		avatar: URL - path to an avatar image for the person
+	}
+},
+stage2: { ...
+```
+## Input Specific Options
+
+### Defining Textareas
+
+Word and character limits can be set for textareas. Just pass an integer to one of the two parameters.
+
+```js
+{
+	wordlimit: 500
+	// OR
+	charlimit: 140
+}
+```
+
+Should NOT be defined together.
+
+### Defining Checkboxes, Radio Buttons & Selects
+
+Define options for checkboxes, radio buttons and selects in an array.
+
+```js
+{
+options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing'],
+...
+}
+```
+
+__Idea: For longer arrays, move the array out into a function.__
+
+```js
+function longArray() {
+	return ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing'];
+}
+```
+
+Then you can do:
+
+```js
+{
+options: longArray(),
+...
+}
+```
+### Defining Country Selects
+
+There is no need to add an options array for a country select. It will generate an options array.
+
+{
+	type: ‘country’ // That will suffice!
+}
+
+### Defining Date Select
+
+Ensure jQuery UI Datepicker is included before Chattaaar, but after jQuery.
+
+```js
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../plugin/vendor/jquery-ui/datepicker-custom.min.js"></script>
+<script src="../prod/chattaaar-min.js"></script>
+```
+
+jQuery UI datepicker settings can be added in an object called 'datepicker'. For example:
+
+```js
+{
+	type: ‘date’,
+	datepicker: {
+    minDate: -20, maxDate: "+1M +10D"
+    // Sets the minimum date to 20 days before today and max date to 1 month and 10 days ahead of today.
+    // For full jQuery UI datepicker options, visit: http://jqueryui.com/datepicker/
+	}
+}
+```
+
+### Defining Media Inputs
+
+Media inputs validate pasted URLs to ensure the correct type of media is entered into the input. Only YouTube & Soundcloud validations are available at the moment.
+
+```js
+{
+	type: ‘media’,
+	accepts: [‘youtube’, ‘soundcloud’] // Pass multiple media types into the array.
+}
+```
+
+__A future development of the media input type is to show a preview of the media when the URL is pasted, akin to the Facebook ‘write status’ box.__
+
+## Passing Context
+
+Here's an example of adding context to questions, such as adding the user’s name:
+
+```js
+stage1: {
+    title: 'About You',
+    type: 'input',
+    inputName: 'name',
+    question: "What's your name?",
+    placeholder: "e.g. John"
+  },
+  stage2: {
+    question: "Right, let's get going <span class='ch-name'></span>. What are your first impressions of Chattaaar?",
+    ...
+  },
+…
+```
+
+Context can only be used in questions in stages AFTER the context is set. Context can be saved and used for inputs, textareas and select boxes.
