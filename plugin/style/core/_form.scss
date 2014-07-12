@@ -94,6 +94,22 @@ textarea {
   }
 }
 
+.limit-update {
+  display: block;
+  text-align: right;
+  p {
+    display: inline-block;
+    border: 1px solid lighten($blue, 30%);
+    padding: 0.1em 0.5em;
+    @include border-radius(5px);
+    color: lighten($blue, 30%);
+
+  }
+  &.invalid p {
+    text-decoration: line-through;
+  }
+}
+
 .rating {
   display: block;
   $star-height: 10px;

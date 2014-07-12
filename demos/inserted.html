@@ -27,6 +27,14 @@
           },
           stages = {
             stage1: {
+              title: 'Your Idea',
+              type: 'textarea',
+              inputName: 'idea',
+              question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
+              placeholder: "e.g. My idea is a sophisticated blend of...",
+              wordlimit: 20
+            },
+            stage2: {
               title: 'Frequency',
               type: 'select',
               inputName: 'number-of-ideas',
@@ -34,7 +42,7 @@
               placeholder: "Please select a number",
               options: ['First idea', 'Second idea', 'Third idea']
             },
-            stage2: {
+            stage3: {
               title: 'Choose',
               type: 'radio',
               inputName: 'choose_something',
@@ -45,20 +53,12 @@
                 avatar: 'https://www.apple.com/pr/bios/images/schiller_hero20110204.png'
               }
             },
-            stage3: {
+            stage4: {
               title: 'About You',
               type: 'input',
               inputName: 'name',
               question: "What's your name?",
               placeholder: "e.g. Joe Bloggs"
-            },
-            stage4: {
-              title: 'Your Idea',
-              type: 'textarea',
-              inputName: 'idea',
-              question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
-              placeholder: "e.g. My idea is a sophisticated blend of...",
-              skippable: true
             },
             stage5: {
               title: 'Select a date',

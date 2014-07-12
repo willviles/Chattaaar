@@ -386,7 +386,22 @@
       ///////////////////////////////////////////////////////
 
       textarea: function(stageObj) {
-        var textarea = '<textarea name="' + stageObj.inputName + '" placeholder="' + stageObj.placeholder + '"></textarea>';
+        var limit = '',
+            limitUpdate = '',
+            limitUpdateScaffold = function(valueToUpdate) {
+              return '<div class="limit-update"><p><span class="limit-count">0</span>/' + valueToUpdate + '</p></div>'
+            };
+
+        // If there's a character limit
+        if (stageObj.charlimit !== undefined) {
+          limit = 'data-charlimit="' + stageObj.charlimit + '"';
+          limitUpdate = limitUpdateScaffold(stageObj.charlimit);
+        } else if (stageObj.wordlimit !== undefined) {
+          limit = 'data-wordlimit="' + stageObj.wordlimit + '"';
+          limitUpdate = limitUpdateScaffold(stageObj.wordlimit);
+        }
+
+        var textarea = '<textarea name="' + stageObj.inputName + '" placeholder="' + stageObj.placeholder + '"' + limit + '></textarea>' + limitUpdate;
         this.$elem.append(this.scaffold.stage.call(this, textarea, stageObj));
       },
 
@@ -578,6 +593,11 @@
             // Validate media
             } else if (input.hasClass('ch-media')) {
               that.validations.types.media.call(that, inputVal, input, nextBtn);
+
+            // Validate textarea character limit
+            } else if (input.is("[data-charlimit]") || input.is("[data-wordlimit]")) {
+              that.validations.types.limit.call(that, inputVal, input, nextBtn);
+
             // Just validate presence
             } else {
               that.validations.makeValid(nextBtn);
@@ -585,6 +605,10 @@
           // If nothing valid, ensure it's invalid
           } else {
             that.validations.makeInvalid(nextBtn);
+            // Fixes charlimit bug
+            if (input.is("[data-charlimit]") || input.is("[data-wordlimit]")) {
+              that.validations.types.limit.call(that, inputVal, input, nextBtn);
+            }
           }
 
           // Push value of input to store
@@ -664,6 +688,27 @@
             } else {
               this.validations.makeInvalid(nextBtn);
             }
+          }
+        },
+
+        limit: function(inputVal, input, nextBtn) {
+          var charlimit = input.attr('data-charlimit'),
+              wordlimit = input.attr('data-wordlimit'),
+              updateContainer = input.closest('.action-wrapper').find('.limit-update'),
+              updateCount = updateContainer.find('.limit-count'),
+              charlength = inputVal.length,
+              words = inputVal.split(' '),
+              wordslength = words.length - 1;
+
+          if (charlimit !== undefined) { updateCount.html(charlength); }
+          else if (wordlimit !== undefined) { updateCount.html(wordslength); }
+
+          if (charlength <= charlimit || wordslength <= wordlimit) {
+            updateContainer.removeClass('invalid');
+            this.validations.makeValid(nextBtn);
+          } else {
+            updateContainer.addClass('invalid');
+            this.validations.makeInvalid(nextBtn);
           }
         }
       }

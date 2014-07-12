@@ -1,4 +1,4 @@
-/* line 8, ../../dev/style/style.scss */
+/* line 8, ../../plugin/style/style.scss */
 .chattaaar-container {
   float: left;
   width: 100%;
@@ -14,7 +14,7 @@
   font-size: 13px;
   color: #94aab0;
   line-height: 2em; }
-  /* line 5, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 5, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container html, .chattaaar-container body, .chattaaar-container div, .chattaaar-container span, .chattaaar-container applet, .chattaaar-container object, .chattaaar-container iframe,
   .chattaaar-container h1, .chattaaar-container h2, .chattaaar-container h3, .chattaaar-container h4, .chattaaar-container h5, .chattaaar-container h6, .chattaaar-container p, .chattaaar-container blockquote, .chattaaar-container pre,
   .chattaaar-container a, .chattaaar-container abbr, .chattaaar-container acronym, .chattaaar-container address, .chattaaar-container big, .chattaaar-container cite, .chattaaar-container code,
@@ -34,36 +34,36 @@
     font: inherit;
     font-size: 100%;
     vertical-align: baseline; }
-  /* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container html {
     line-height: 1; }
-  /* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container ol, .chattaaar-container ul {
     list-style: none; }
-  /* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container table {
     border-collapse: collapse;
     border-spacing: 0; }
-  /* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container caption, .chattaaar-container th, .chattaaar-container td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle; }
-  /* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container q, .chattaaar-container blockquote {
     quotes: none; }
-    /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+    /* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
     .chattaaar-container q:before, .chattaaar-container q:after, .chattaaar-container blockquote:before, .chattaaar-container blockquote:after {
       content: "";
       content: none; }
-  /* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container a img {
     border: none; }
-  /* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  /* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   .chattaaar-container article, .chattaaar-container aside, .chattaaar-container details, .chattaaar-container figcaption, .chattaaar-container figure, .chattaaar-container footer, .chattaaar-container header, .chattaaar-container hgroup, .chattaaar-container main, .chattaaar-container menu, .chattaaar-container nav, .chattaaar-container section, .chattaaar-container summary {
     display: block; }
 @font-face {
-  /* line 8, ../../dev/style/style.scss */
+  /* line 8, ../../plugin/style/style.scss */
   .chattaaar-container {
     font-family: 'Elusive-Icons';
     src: url("../fonts/Elusive-Icons.eot?v=2");
@@ -983,52 +983,52 @@
   /* line 926, ../../bower_components/elusive-iconfont/sass/elusive-webfont.scss */
   .chattaaar-container .el-icon-asterisk:before {
     content: "\e72a"; }
-  /* line 3, ../../dev/style/core/_fonts.scss */
+  /* line 3, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h1, .chattaaar-container h2, .chattaaar-container h3, .chattaaar-container h4, .chattaaar-container h5, .chattaaar-container h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     line-height: 1.75em; }
-  /* line 9, ../../dev/style/core/_fonts.scss */
+  /* line 9, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h1, .chattaaar-container h2, .chattaaar-container h3 {
     letter-spacing: -0.02em;
     line-height: 1.5em; }
-  /* line 13, ../../dev/style/core/_fonts.scss */
+  /* line 13, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h1 {
     font-size: 4em;
     letter-spacing: -0.05em;
     font-weight: 900;
     line-height: 1em; }
-  /* line 14, ../../dev/style/core/_fonts.scss */
+  /* line 14, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h2 {
     font-size: 2.5em; }
-  /* line 15, ../../dev/style/core/_fonts.scss */
+  /* line 15, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h3 {
     font-size: 2em; }
-  /* line 16, ../../dev/style/core/_fonts.scss */
+  /* line 16, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h4 {
     font-size: 1.5em; }
-  /* line 17, ../../dev/style/core/_fonts.scss */
+  /* line 17, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h5 {
     font-size: 1em; }
-  /* line 18, ../../dev/style/core/_fonts.scss */
+  /* line 18, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container h6, .chattaaar-container small {
     font-size: 0.75em; }
-  /* line 20, ../../dev/style/core/_fonts.scss */
+  /* line 20, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container a, .chattaaar-container a:visited, .chattaaar-container a:hover {
     text-decoration: none; }
-  /* line 21, ../../dev/style/core/_fonts.scss */
+  /* line 21, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container b {
     font-weight: 700; }
-  /* line 22, ../../dev/style/core/_fonts.scss */
+  /* line 22, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container i {
     font-style: italic; }
-  /* line 23, ../../dev/style/core/_fonts.scss */
+  /* line 23, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container p {
     line-height: 1.5em; }
-  /* line 24, ../../dev/style/core/_fonts.scss */
+  /* line 24, ../../plugin/style/core/_fonts.scss */
   .chattaaar-container ::selection, .chattaaar-container ::-moz-selection, .chattaaar-container ::-webkit-selection {
     background: white; }
-  /* line 3, ../../dev/style/core/_topbar.scss */
+  /* line 3, ../../plugin/style/core/_topbar.scss */
   .chattaaar-container .chattaaar-topbar {
     position: absolute;
     top: 0;
@@ -1039,7 +1039,7 @@
     text-align: center;
     z-index: 5000;
     background-color: white; }
-    /* line 8, ../../dev/style/core/_topbar.scss */
+    /* line 8, ../../plugin/style/core/_topbar.scss */
     .chattaaar-container .chattaaar-topbar .ch-title {
       position: absolute;
       top: 0;
@@ -1047,7 +1047,7 @@
       left: 15%;
       right: 15%;
       cursor: default; }
-      /* line 10, ../../dev/style/core/_topbar.scss */
+      /* line 10, ../../plugin/style/core/_topbar.scss */
       .chattaaar-container .chattaaar-topbar .ch-title span {
         font-size: 2em;
         display: block;
@@ -1056,7 +1056,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         font-weight: 300; }
-    /* line 22, ../../dev/style/core/_topbar.scss */
+    /* line 22, ../../plugin/style/core/_topbar.scss */
     .chattaaar-container .chattaaar-topbar .ch-counter {
       position: absolute;
       top: 0;
@@ -1064,13 +1064,13 @@
       height: 100%;
       width: 10%;
       cursor: default; }
-      /* line 24, ../../dev/style/core/_topbar.scss */
+      /* line 24, ../../plugin/style/core/_topbar.scss */
       .chattaaar-container .chattaaar-topbar .ch-counter span {
         position: absolute;
         top: 0;
         left: 20px;
         line-height: 50px; }
-    /* line 32, ../../dev/style/core/_topbar.scss */
+    /* line 32, ../../plugin/style/core/_topbar.scss */
     .chattaaar-container .chattaaar-topbar .ch-close {
       position: absolute;
       top: 0;
@@ -1078,7 +1078,7 @@
       height: 100%;
       width: 10%;
       cursor: pointer; }
-      /* line 34, ../../dev/style/core/_topbar.scss */
+      /* line 34, ../../plugin/style/core/_topbar.scss */
       .chattaaar-container .chattaaar-topbar .ch-close i {
         position: absolute;
         top: 50%;
@@ -1090,14 +1090,14 @@
         -o-transition: color 0.2s ease-in-out;
         -webkit-transition: color 0.2s ease-in-out;
         transition: color 0.2s ease-in-out; }
-      /* line 43, ../../dev/style/core/_topbar.scss */
+      /* line 43, ../../plugin/style/core/_topbar.scss */
       .chattaaar-container .chattaaar-topbar .ch-close:hover i {
         color: #94aab0;
         -moz-transition: color 0.2s ease-in-out;
         -o-transition: color 0.2s ease-in-out;
         -webkit-transition: color 0.2s ease-in-out;
         transition: color 0.2s ease-in-out; }
-  /* line 33, ../../dev/style/style.scss */
+  /* line 33, ../../plugin/style/style.scss */
   .chattaaar-container section {
     position: absolute;
     top: 0%;
@@ -1115,7 +1115,7 @@
     -o-transition: -o-transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     -webkit-transition: -webkit-transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; }
-    /* line 43, ../../dev/style/style.scss */
+    /* line 43, ../../plugin/style/style.scss */
     .chattaaar-container section.active {
       filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
       opacity: 1;
@@ -1127,7 +1127,7 @@
       -o-transition: -o-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; }
-    /* line 48, ../../dev/style/style.scss */
+    /* line 48, ../../plugin/style/style.scss */
     .chattaaar-container section.after {
       -moz-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
@@ -1139,17 +1139,17 @@
       -o-transition: -o-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; }
-    /* line 53, ../../dev/style/style.scss */
+    /* line 53, ../../plugin/style/style.scss */
     .chattaaar-container section .section-padding {
       position: absolute;
       top: 50%;
       left: 5%;
       right: 5%; }
-    /* line 58, ../../dev/style/style.scss */
+    /* line 58, ../../plugin/style/style.scss */
     .chattaaar-container section .question-container, .chattaaar-container section .action-container {
       float: left;
       width: 48%; }
-    /* line 62, ../../dev/style/style.scss */
+    /* line 62, ../../plugin/style/style.scss */
     .chattaaar-container section .person-icon {
       width: 60px;
       height: 60px;
@@ -1161,7 +1161,7 @@
       border: 1px solid #ecf0f1;
       background-position: center;
       position: relative; }
-      /* line 71, ../../dev/style/style.scss */
+      /* line 71, ../../plugin/style/style.scss */
       .chattaaar-container section .person-icon .default-icon {
         position: absolute;
         top: 0;
@@ -1172,7 +1172,7 @@
         -webkit-border-radius: 50%;
         border-radius: 50%;
         overflow: hidden; }
-        /* line 76, ../../dev/style/style.scss */
+        /* line 76, ../../plugin/style/style.scss */
         .chattaaar-container section .person-icon .default-icon i {
           position: absolute;
           font-size: 60px;
@@ -1180,24 +1180,24 @@
           left: 50%;
           margin-top: -20px;
           margin-left: -30px; }
-      /* line 84, ../../dev/style/style.scss */
+      /* line 84, ../../plugin/style/style.scss */
       .chattaaar-container section .person-icon .name {
         position: absolute;
         top: 100%;
         left: 0px;
         right: 0px;
         padding-top: 5px; }
-        /* line 90, ../../dev/style/style.scss */
+        /* line 90, ../../plugin/style/style.scss */
         .chattaaar-container section .person-icon .name small {
           display: block;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
           text-align: center; }
-    /* line 99, ../../dev/style/style.scss */
+    /* line 99, ../../plugin/style/style.scss */
     .chattaaar-container section .question-container {
       padding-right: 2%; }
-      /* line 101, ../../dev/style/style.scss */
+      /* line 101, ../../plugin/style/style.scss */
       .chattaaar-container section .question-container p {
         display: block;
         margin-left: 80px;
@@ -1207,7 +1207,7 @@
         -webkit-border-radius: 10px;
         border-radius: 10px;
         position: relative; }
-        /* line 108, ../../dev/style/style.scss */
+        /* line 108, ../../plugin/style/style.scss */
         .chattaaar-container section .question-container p:before {
           content: '';
           position: absolute;
@@ -1220,19 +1220,19 @@
           line-height: 0px;
           _border-color: black #ecf0f1 black black;
           _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
-      /* line 122, ../../dev/style/style.scss */
+      /* line 122, ../../plugin/style/style.scss */
       .chattaaar-container section .question-container .person-icon {
         float: left;
         background-size: cover; }
-    /* line 124, ../../dev/style/style.scss */
+    /* line 124, ../../plugin/style/style.scss */
     .chattaaar-container section .action-container {
       padding-left: 2%;
       padding-top: 25px; }
-      /* line 127, ../../dev/style/style.scss */
+      /* line 127, ../../plugin/style/style.scss */
       .chattaaar-container section .action-container .person-icon {
         float: right;
         background-size: cover; }
-      /* line 128, ../../dev/style/style.scss */
+      /* line 128, ../../plugin/style/style.scss */
       .chattaaar-container section .action-container .action-wrapper {
         display: block;
         margin-right: 80px;
@@ -1243,7 +1243,7 @@
         border-radius: 10px;
         background-color: #047dff;
         position: relative; }
-        /* line 136, ../../dev/style/style.scss */
+        /* line 136, ../../plugin/style/style.scss */
         .chattaaar-container section .action-container .action-wrapper:before {
           content: '';
           position: absolute;
@@ -1256,12 +1256,12 @@
           line-height: 0px;
           _border-color: #047dff #000000 #000000 #000000;
           _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
-      /* line 150, ../../dev/style/style.scss */
+      /* line 150, ../../plugin/style/style.scss */
       .chattaaar-container section .action-container .ch-btns-container {
         display: block;
         margin-right: 80px;
         padding-top: 10px; }
-        /* line 154, ../../dev/style/style.scss */
+        /* line 154, ../../plugin/style/style.scss */
         .chattaaar-container section .action-container .ch-btns-container .ch-next, .chattaaar-container section .action-container .ch-btns-container .ch-prev, .chattaaar-container section .action-container .ch-btns-container .ch-skip {
           float: right;
           border: 1px solid #ecf0f1;
@@ -1271,43 +1271,43 @@
           -moz-border-radius: 5px / 5px;
           -webkit-border-radius: 5px 5px;
           border-radius: 5px / 5px; }
-        /* line 162, ../../dev/style/style.scss */
+        /* line 162, ../../plugin/style/style.scss */
         .chattaaar-container section .action-container .ch-btns-container .ch-next {
           cursor: default; }
-          /* line 164, ../../dev/style/style.scss */
+          /* line 164, ../../plugin/style/style.scss */
           .chattaaar-container section .action-container .ch-btns-container .ch-next.validated {
             color: white;
             cursor: pointer;
             background-color: #047dff;
             border: 1px solid #047dff; }
-            /* line 169, ../../dev/style/style.scss */
+            /* line 169, ../../plugin/style/style.scss */
             .chattaaar-container section .action-container .ch-btns-container .ch-next.validated:focus, .chattaaar-container section .action-container .ch-btns-container .ch-next.validated:hover {
               background-color: #419dff; }
-        /* line 174, ../../dev/style/style.scss */
+        /* line 174, ../../plugin/style/style.scss */
         .chattaaar-container section .action-container .ch-btns-container .ch-prev {
           cursor: pointer;
           margin-right: 5px; }
-          /* line 177, ../../dev/style/style.scss */
+          /* line 177, ../../plugin/style/style.scss */
           .chattaaar-container section .action-container .ch-btns-container .ch-prev:hover {
             border: 1px solid #94aab0;
             -moz-transition: border 0.2s ease-in-out;
             -o-transition: border 0.2s ease-in-out;
             -webkit-transition: border 0.2s ease-in-out;
             transition: border 0.2s ease-in-out; }
-  /* line 186, ../../dev/style/style.scss */
+  /* line 186, ../../plugin/style/style.scss */
   .chattaaar-container .ch-container {
     float: left;
     width: 100%; }
-  /* line 191, ../../dev/style/style.scss */
+  /* line 191, ../../plugin/style/style.scss */
   .chattaaar-container section.welcome {
     text-align: center; }
-    /* line 193, ../../dev/style/style.scss */
+    /* line 193, ../../plugin/style/style.scss */
     .chattaaar-container section.welcome .welcome-image {
       display: inline-block; }
-    /* line 196, ../../dev/style/style.scss */
+    /* line 196, ../../plugin/style/style.scss */
     .chattaaar-container section.welcome h2, .chattaaar-container section.welcome p {
       padding-bottom: 25px; }
-    /* line 199, ../../dev/style/style.scss */
+    /* line 199, ../../plugin/style/style.scss */
     .chattaaar-container section.welcome .ch-next {
       cursor: pointer;
       display: inline-block;
@@ -1317,7 +1317,7 @@
       -moz-border-radius: 5px / 5px;
       -webkit-border-radius: 5px 5px;
       border-radius: 5px / 5px; }
-  /* line 209, ../../dev/style/style.scss */
+  /* line 209, ../../plugin/style/style.scss */
   .chattaaar-container .ch-sending {
     position: absolute;
     top: 0;
@@ -1331,7 +1331,7 @@
     -ms-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%); }
-    /* line 218, ../../dev/style/style.scss */
+    /* line 218, ../../plugin/style/style.scss */
     .chattaaar-container .ch-sending.show {
       filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
       opacity: 1;
@@ -1339,7 +1339,7 @@
       -ms-transform: translateY(0%);
       -webkit-transform: translateY(0%);
       transform: translateY(0%); }
-    /* line 222, ../../dev/style/style.scss */
+    /* line 222, ../../plugin/style/style.scss */
     .chattaaar-container .ch-sending .alert-text {
       position: absolute;
       top: 50%;
@@ -1348,7 +1348,7 @@
       width: 100%;
       text-align: center;
       line-height: 50px; }
-  /* line 1, ../../dev/style/core/_form.scss */
+  /* line 1, ../../plugin/style/core/_form.scss */
   .chattaaar-container input, .chattaaar-container textarea, .chattaaar-container select, .chattaaar-container .faux-input {
     padding: 7px 12px;
     background-color: #047dff;
@@ -1361,46 +1361,46 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     color: white; }
-    /* line 13, ../../dev/style/core/_form.scss */
+    /* line 13, ../../plugin/style/core/_form.scss */
     .chattaaar-container input:-webkit-autofill, .chattaaar-container textarea:-webkit-autofill, .chattaaar-container select:-webkit-autofill, .chattaaar-container .faux-input:-webkit-autofill {
       -webkit-box-shadow: 0 0 0px 1000px #047dff inset;
       -webkit-text-fill-color: white; }
-  /* line 19, ../../dev/style/core/_form.scss */
+  /* line 19, ../../plugin/style/core/_form.scss */
   .chattaaar-container ::-webkit-input-placeholder {
     /* WebKit browsers */
     color: #9dccff; }
-  /* line 22, ../../dev/style/core/_form.scss */
+  /* line 22, ../../plugin/style/core/_form.scss */
   .chattaaar-container :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #9dccff;
     opacity: 1; }
-  /* line 26, ../../dev/style/core/_form.scss */
+  /* line 26, ../../plugin/style/core/_form.scss */
   .chattaaar-container ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: #9dccff;
     opacity: 1; }
-  /* line 30, ../../dev/style/core/_form.scss */
+  /* line 30, ../../plugin/style/core/_form.scss */
   .chattaaar-container :-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: #9dccff; }
-  /* line 34, ../../dev/style/core/_form.scss */
+  /* line 34, ../../plugin/style/core/_form.scss */
   .chattaaar-container input:focus,
   .chattaaar-container select:focus,
   .chattaaar-container textarea:focus,
   .chattaaar-container button:focus,
   .chattaaar-container .faux-input:focus {
     outline: none; }
-  /* line 42, ../../dev/style/core/_form.scss */
+  /* line 42, ../../plugin/style/core/_form.scss */
   .chattaaar-container textarea {
     resize: none;
     height: 150px; }
-  /* line 47, ../../dev/style/core/_form.scss */
+  /* line 47, ../../plugin/style/core/_form.scss */
   .chattaaar-container .checkbox-radio {
     display: block; }
-    /* line 49, ../../dev/style/core/_form.scss */
+    /* line 49, ../../plugin/style/core/_form.scss */
     .chattaaar-container .checkbox-radio input {
       display: none; }
-    /* line 52, ../../dev/style/core/_form.scss */
+    /* line 52, ../../plugin/style/core/_form.scss */
     .chattaaar-container .checkbox-radio span {
       padding: 0.7em 1em 0.7em 50px;
       display: block;
@@ -1410,110 +1410,126 @@
       border-bottom: 1px solid #51a5ff;
       color: #9dccff;
       font-size: 1.2em; }
-      /* line 61, ../../dev/style/core/_form.scss */
+      /* line 61, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio span i.el-icon-check-empty, .chattaaar-container .checkbox-radio span i.el-icon-check, .chattaaar-container .checkbox-radio span i.el-icon-edit {
         position: absolute;
         top: 50%;
         left: 10px;
         margin-top: -8px;
         font-size: 16px; }
-      /* line 68, ../../dev/style/core/_form.scss */
+      /* line 68, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio span i.el-icon-check, .chattaaar-container .checkbox-radio span i.el-icon-edit {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0; }
-      /* line 72, ../../dev/style/core/_form.scss */
+      /* line 72, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio span:hover i.el-icon-edit {
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
         opacity: 1; }
-      /* line 75, ../../dev/style/core/_form.scss */
+      /* line 75, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio span:hover i.el-icon-check, .chattaaar-container .checkbox-radio span:hover i.el-icon-empty {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0; }
-    /* line 80, ../../dev/style/core/_form.scss */
+    /* line 80, ../../plugin/style/core/_form.scss */
     .chattaaar-container .checkbox-radio input:checked + span {
       color: white; }
-      /* line 82, ../../dev/style/core/_form.scss */
+      /* line 82, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio input:checked + span i.el-icon-check-empty, .chattaaar-container .checkbox-radio input:checked + span i.el-icon-edit {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0; }
-      /* line 85, ../../dev/style/core/_form.scss */
+      /* line 85, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio input:checked + span i.el-icon-check {
         filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
         opacity: 1; }
-      /* line 88, ../../dev/style/core/_form.scss */
+      /* line 88, ../../plugin/style/core/_form.scss */
       .chattaaar-container .checkbox-radio input:checked + span i {
         -moz-transition: opacity 0.5s ease-in-out;
         -o-transition: opacity 0.5s ease-in-out;
         -webkit-transition: opacity 0.5s ease-in-out;
         transition: opacity 0.5s ease-in-out; }
-    /* line 92, ../../dev/style/core/_form.scss */
+    /* line 92, ../../plugin/style/core/_form.scss */
     .chattaaar-container .checkbox-radio:last-child span {
       border-bottom: none; }
-  /* line 97, ../../dev/style/core/_form.scss */
+  /* line 97, ../../plugin/style/core/_form.scss */
+  .chattaaar-container .limit-update {
+    display: block;
+    text-align: right; }
+    /* line 100, ../../plugin/style/core/_form.scss */
+    .chattaaar-container .limit-update p {
+      display: inline-block;
+      border: 1px solid #9dccff;
+      padding: 0.1em 0.5em;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      color: #9dccff; }
+    /* line 108, ../../plugin/style/core/_form.scss */
+    .chattaaar-container .limit-update.invalid p {
+      text-decoration: line-through; }
+  /* line 113, ../../plugin/style/core/_form.scss */
   .chattaaar-container .rating {
     display: block;
     height: 30px;
     vertical-align: middle; }
-    /* line 102, ../../dev/style/core/_form.scss */
+    /* line 118, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating .star-count {
       display: inline-block;
       line-height: 1.6em;
       font-size: 1.1em;
       padding: 3px 3px 0px 10px;
       color: #84bfff; }
-    /* line 109, ../../dev/style/core/_form.scss */
+    /* line 125, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating li {
       display: inline-block;
       padding: 5px 3px;
       cursor: pointer; }
-    /* line 114, ../../dev/style/core/_form.scss */
+    /* line 130, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating .star {
       font-size: 1.6em;
       color: #84bfff; }
-    /* line 118, ../../dev/style/core/_form.scss */
+    /* line 134, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating li.hover .star {
       color: #d0e7ff; }
-    /* line 121, ../../dev/style/core/_form.scss */
+    /* line 137, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating li.selected .star {
       color: white; }
-  /* line 236, ../../dev/style/style.scss */
+  /* line 236, ../../plugin/style/style.scss */
   .chattaaar-container.condensed {
     font-size: 11px; }
-    /* line 2, ../../dev/style/core/_mobile.scss */
+    /* line 2, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .section-padding {
       padding: 0px 5%; }
-    /* line 5, ../../dev/style/core/_mobile.scss */
+    /* line 5, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .question-container, .chattaaar-container.condensed section .action-container {
       width: 100%;
       padding-right: 0%;
       padding-left: 0%; }
-    /* line 11, ../../dev/style/core/_mobile.scss */
+    /* line 11, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .action-container {
       padding-top: 40px; }
-    /* line 15, ../../dev/style/core/_mobile.scss */
+    /* line 15, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .ch-btns-container {
       padding-top: 25px; }
-    /* line 22, ../../dev/style/core/_mobile.scss */
+    /* line 22, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .chattaaar-topbar {
       height: 35px; }
-      /* line 25, ../../dev/style/core/_mobile.scss */
+      /* line 25, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-title span {
         line-height: 35px; }
-      /* line 29, ../../dev/style/core/_mobile.scss */
+      /* line 29, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-counter span {
         left: 10px;
         line-height: 35px; }
-      /* line 34, ../../dev/style/core/_mobile.scss */
+      /* line 34, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-close i {
         right: 10px;
         margin-top: -9px;
         font-size: 18px; }
 
-/* line 2, ../../dev/style/core/_datepicker.scss */
+/* line 2, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-hidden {
   display: none; }
 
-/* line 5, ../../dev/style/core/_datepicker.scss */
+/* line 5, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-hidden-accessible {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1524,7 +1540,7 @@
   position: absolute;
   width: 1px; }
 
-/* line 15, ../../dev/style/core/_datepicker.scss */
+/* line 15, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-reset {
   margin: 0;
   padding: 0;
@@ -1535,22 +1551,22 @@
   font-size: 100%;
   list-style: none; }
 
-/* line 25, ../../dev/style/core/_datepicker.scss */
+/* line 25, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-clearfix:before,
 .ui-helper-clearfix:after {
   content: "";
   display: table;
   border-collapse: collapse; }
 
-/* line 31, ../../dev/style/core/_datepicker.scss */
+/* line 31, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-clearfix:after {
   clear: both; }
 
-/* line 34, ../../dev/style/core/_datepicker.scss */
+/* line 34, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-clearfix {
   min-height: 0; }
 
-/* line 37, ../../dev/style/core/_datepicker.scss */
+/* line 37, ../../plugin/style/core/_datepicker.scss */
 .ui-helper-zfix {
   width: 100%;
   height: 100%;
@@ -1560,22 +1576,22 @@
   opacity: 0;
   filter: Alpha(Opacity=0); }
 
-/* line 47, ../../dev/style/core/_datepicker.scss */
+/* line 47, ../../plugin/style/core/_datepicker.scss */
 .ui-front {
   z-index: 100; }
 
-/* line 54, ../../dev/style/core/_datepicker.scss */
+/* line 54, ../../plugin/style/core/_datepicker.scss */
 .ui-state-disabled {
   cursor: default !important; }
 
-/* line 60, ../../dev/style/core/_datepicker.scss */
+/* line 60, ../../plugin/style/core/_datepicker.scss */
 .ui-icon {
   display: block;
   text-indent: -99999px;
   overflow: hidden;
   background-repeat: no-repeat; }
 
-/* line 70, ../../dev/style/core/_datepicker.scss */
+/* line 70, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-overlay {
   position: fixed;
   top: 0;
@@ -1583,18 +1599,18 @@
   width: 100%;
   height: 100%; }
 
-/* line 77, ../../dev/style/core/_datepicker.scss */
+/* line 77, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker {
   width: 16em;
   padding: .2em .2em 0;
   display: none; }
 
-/* line 82, ../../dev/style/core/_datepicker.scss */
+/* line 82, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .2em 0; }
 
-/* line 86, ../../dev/style/core/_datepicker.scss */
+/* line 86, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
   border: 1px solid #ecf0f1;
@@ -1604,17 +1620,17 @@
   height: 1.8em;
   cursor: pointer; }
 
-/* line 95, ../../dev/style/core/_datepicker.scss */
+/* line 95, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover {
   border: 1px solid #ecf0f1;
   background-color: #ecf0f1;
   top: 1px; }
 
-/* line 101, ../../dev/style/core/_datepicker.scss */
+/* line 101, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev {
   left: 2px; }
-  /* line 103, ../../dev/style/core/_datepicker.scss */
+  /* line 103, ../../plugin/style/core/_datepicker.scss */
   .ui-datepicker .ui-datepicker-prev:before {
     content: '<';
     position: absolute;
@@ -1624,10 +1640,10 @@
     bottom: 0;
     text-align: center; }
 
-/* line 110, ../../dev/style/core/_datepicker.scss */
+/* line 110, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-next {
   right: 2px; }
-  /* line 112, ../../dev/style/core/_datepicker.scss */
+  /* line 112, ../../plugin/style/core/_datepicker.scss */
   .ui-datepicker .ui-datepicker-next:before {
     content: '>';
     position: absolute;
@@ -1637,15 +1653,15 @@
     bottom: 0;
     text-align: center; }
 
-/* line 119, ../../dev/style/core/_datepicker.scss */
+/* line 119, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev-hover {
   left: 1px; }
 
-/* line 122, ../../dev/style/core/_datepicker.scss */
+/* line 122, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-next-hover {
   right: 1px; }
 
-/* line 125, ../../dev/style/core/_datepicker.scss */
+/* line 125, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
   display: block;
@@ -1655,14 +1671,14 @@
   top: 50%;
   margin-top: -8px; }
 
-/* line 134, ../../dev/style/core/_datepicker.scss */
+/* line 134, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-title {
   margin: 0 2.3em;
   line-height: 1.8em;
   text-align: center;
   color: #94aab0;
   font-weight: 400; }
-  /* line 140, ../../dev/style/core/_datepicker.scss */
+  /* line 140, ../../plugin/style/core/_datepicker.scss */
   .ui-datepicker .ui-datepicker-title select {
     padding: 3px 15px;
     margin: 0;
@@ -1680,19 +1696,19 @@
     appearance: none;
     cursor: pointer; }
 
-/* line 156, ../../dev/style/core/_datepicker.scss */
+/* line 156, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
   width: 49%; }
 
-/* line 160, ../../dev/style/core/_datepicker.scss */
+/* line 160, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker table {
   width: 100%;
   font-size: .8em;
   border-collapse: collapse;
   margin: 0 0 .4em; }
 
-/* line 166, ../../dev/style/core/_datepicker.scss */
+/* line 166, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker th {
   padding: .3em .3em;
   text-align: center;
@@ -1700,12 +1716,12 @@
   border: 0;
   color: #94aab0; }
 
-/* line 173, ../../dev/style/core/_datepicker.scss */
+/* line 173, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker td {
   border: 0;
   padding: 1px; }
 
-/* line 177, ../../dev/style/core/_datepicker.scss */
+/* line 177, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker td span,
 .ui-datepicker td a {
   display: block;
@@ -1713,7 +1729,7 @@
   text-align: right;
   text-decoration: none; }
 
-/* line 184, ../../dev/style/core/_datepicker.scss */
+/* line 184, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   background-image: none;
   margin: .7em 0 0 0;
@@ -1722,7 +1738,7 @@
   border-right: 0;
   border-bottom: 0; }
 
-/* line 192, ../../dev/style/core/_datepicker.scss */
+/* line 192, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button {
   float: right;
   margin: .5em .2em .4em;
@@ -1731,104 +1747,104 @@
   width: auto;
   overflow: visible; }
 
-/* line 200, ../../dev/style/core/_datepicker.scss */
+/* line 200, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
   float: left; }
 
-/* line 205, ../../dev/style/core/_datepicker.scss */
+/* line 205, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker.ui-datepicker-multi {
   width: auto; }
 
-/* line 208, ../../dev/style/core/_datepicker.scss */
+/* line 208, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group {
   float: left; }
 
-/* line 211, ../../dev/style/core/_datepicker.scss */
+/* line 211, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group table {
   width: 95%;
   margin: 0 auto .4em; }
 
-/* line 215, ../../dev/style/core/_datepicker.scss */
+/* line 215, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi-2 .ui-datepicker-group {
   width: 50%; }
 
-/* line 218, ../../dev/style/core/_datepicker.scss */
+/* line 218, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi-3 .ui-datepicker-group {
   width: 33.3%; }
 
-/* line 221, ../../dev/style/core/_datepicker.scss */
+/* line 221, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi-4 .ui-datepicker-group {
   width: 25%; }
 
-/* line 224, ../../dev/style/core/_datepicker.scss */
+/* line 224, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
 .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
   border-left-width: 0; }
 
-/* line 228, ../../dev/style/core/_datepicker.scss */
+/* line 228, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-buttonpane {
   clear: left; }
 
-/* line 231, ../../dev/style/core/_datepicker.scss */
+/* line 231, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-row-break {
   clear: both;
   width: 100%;
   font-size: 0; }
 
-/* line 238, ../../dev/style/core/_datepicker.scss */
+/* line 238, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl {
   direction: rtl; }
 
-/* line 241, ../../dev/style/core/_datepicker.scss */
+/* line 241, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-prev {
   right: 2px;
   left: auto; }
 
-/* line 245, ../../dev/style/core/_datepicker.scss */
+/* line 245, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-next {
   left: 2px;
   right: auto; }
 
-/* line 249, ../../dev/style/core/_datepicker.scss */
+/* line 249, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-prev:hover {
   right: 1px;
   left: auto; }
 
-/* line 253, ../../dev/style/core/_datepicker.scss */
+/* line 253, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-next:hover {
   left: 1px;
   right: auto; }
 
-/* line 257, ../../dev/style/core/_datepicker.scss */
+/* line 257, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane {
   clear: right; }
 
-/* line 260, ../../dev/style/core/_datepicker.scss */
+/* line 260, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button {
   float: left; }
 
-/* line 263, ../../dev/style/core/_datepicker.scss */
+/* line 263, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
 .ui-datepicker-rtl .ui-datepicker-group {
   float: right; }
 
-/* line 267, ../../dev/style/core/_datepicker.scss */
+/* line 267, ../../plugin/style/core/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
   border-right-width: 0;
   border-left-width: 1px; }
 
-/* line 274, ../../dev/style/core/_datepicker.scss */
+/* line 274, ../../plugin/style/core/_datepicker.scss */
 .ui-widget {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.75em; }
 
-/* line 279, ../../dev/style/core/_datepicker.scss */
+/* line 279, ../../plugin/style/core/_datepicker.scss */
 .ui-widget .ui-widget {
   font-size: 1em; }
 
-/* line 282, ../../dev/style/core/_datepicker.scss */
+/* line 282, ../../plugin/style/core/_datepicker.scss */
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea,
@@ -1837,27 +1853,27 @@
   font-weight: 300;
   line-height: 1.75em; }
 
-/* line 290, ../../dev/style/core/_datepicker.scss */
+/* line 290, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-content {
   background-color: white;
   color: #94aab0;
   border: 1px solid #ecf0f1; }
 
-/* line 295, ../../dev/style/core/_datepicker.scss */
+/* line 295, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-content a {
   color: #ffffff; }
 
-/* line 298, ../../dev/style/core/_datepicker.scss */
+/* line 298, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-header {
   background: white;
   color: #ffffff;
   font-weight: bold; }
 
-/* line 303, ../../dev/style/core/_datepicker.scss */
+/* line 303, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-header a {
   color: #94aab0; }
 
-/* line 308, ../../dev/style/core/_datepicker.scss */
+/* line 308, ../../plugin/style/core/_datepicker.scss */
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
@@ -1865,14 +1881,14 @@
   color: #94aab0;
   text-align: center; }
 
-/* line 315, ../../dev/style/core/_datepicker.scss */
+/* line 315, ../../plugin/style/core/_datepicker.scss */
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
   color: #eeeeee;
   text-decoration: none; }
 
-/* line 321, ../../dev/style/core/_datepicker.scss */
+/* line 321, ../../plugin/style/core/_datepicker.scss */
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
@@ -1882,7 +1898,7 @@
   background-color: #047dff;
   color: white; }
 
-/* line 330, ../../dev/style/core/_datepicker.scss */
+/* line 330, ../../plugin/style/core/_datepicker.scss */
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
@@ -1893,21 +1909,21 @@
 .ui-state-focus a:visited {
   color: #94aab0; }
 
-/* line 340, ../../dev/style/core/_datepicker.scss */
+/* line 340, ../../plugin/style/core/_datepicker.scss */
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
   background-color: #047dff;
   color: white; }
 
-/* line 346, ../../dev/style/core/_datepicker.scss */
+/* line 346, ../../plugin/style/core/_datepicker.scss */
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
   color: #ffffff;
   text-decoration: none; }
 
-/* line 354, ../../dev/style/core/_datepicker.scss */
+/* line 354, ../../plugin/style/core/_datepicker.scss */
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
@@ -1915,13 +1931,13 @@
   border: 1px solid #047dff;
   color: #047dff; }
 
-/* line 361, ../../dev/style/core/_datepicker.scss */
+/* line 361, ../../plugin/style/core/_datepicker.scss */
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
   color: #2e7db2; }
 
-/* line 366, ../../dev/style/core/_datepicker.scss */
+/* line 366, ../../plugin/style/core/_datepicker.scss */
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
@@ -1929,25 +1945,25 @@
   background: #ffc73d url("images/ui-bg_glass_40_ffc73d_1x400.png") 50% 50% repeat-x;
   color: #111111; }
 
-/* line 373, ../../dev/style/core/_datepicker.scss */
+/* line 373, ../../plugin/style/core/_datepicker.scss */
 .ui-state-error a,
 .ui-widget-content .ui-state-error a,
 .ui-widget-header .ui-state-error a {
   color: #111111; }
 
-/* line 378, ../../dev/style/core/_datepicker.scss */
+/* line 378, ../../plugin/style/core/_datepicker.scss */
 .ui-state-error-text,
 .ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text {
   color: #111111; }
 
-/* line 383, ../../dev/style/core/_datepicker.scss */
+/* line 383, ../../plugin/style/core/_datepicker.scss */
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,
 .ui-widget-header .ui-priority-primary {
   font-weight: bold; }
 
-/* line 388, ../../dev/style/core/_datepicker.scss */
+/* line 388, ../../plugin/style/core/_datepicker.scss */
 .ui-priority-secondary,
 .ui-widget-content .ui-priority-secondary,
 .ui-widget-header .ui-priority-secondary {
@@ -1955,7 +1971,7 @@
   filter: Alpha(Opacity=70);
   font-weight: normal; }
 
-/* line 395, ../../dev/style/core/_datepicker.scss */
+/* line 395, ../../plugin/style/core/_datepicker.scss */
 .ui-state-disabled,
 .ui-widget-content .ui-state-disabled,
 .ui-widget-header .ui-state-disabled {
@@ -1963,781 +1979,781 @@
   filter: Alpha(Opacity=35);
   background-image: none; }
 
-/* line 402, ../../dev/style/core/_datepicker.scss */
+/* line 402, ../../plugin/style/core/_datepicker.scss */
 .ui-state-disabled .ui-icon {
   filter: Alpha(Opacity=35); }
 
-/* line 408, ../../dev/style/core/_datepicker.scss */
+/* line 408, ../../plugin/style/core/_datepicker.scss */
 .ui-icon {
   width: 16px;
   height: 16px; }
 
-/* line 412, ../../dev/style/core/_datepicker.scss */
+/* line 412, ../../plugin/style/core/_datepicker.scss */
 .ui-icon,
 .ui-widget-content .ui-icon {
   background-image: url("images/ui-icons_cccccc_256x240.png"); }
 
-/* line 416, ../../dev/style/core/_datepicker.scss */
+/* line 416, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-header .ui-icon {
   background-image: url("images/ui-icons_ffffff_256x240.png"); }
 
-/* line 419, ../../dev/style/core/_datepicker.scss */
+/* line 419, ../../plugin/style/core/_datepicker.scss */
 .ui-state-default .ui-icon {
   background-image: url("images/ui-icons_cccccc_256x240.png"); }
 
-/* line 422, ../../dev/style/core/_datepicker.scss */
+/* line 422, ../../plugin/style/core/_datepicker.scss */
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
   background-image: url("images/ui-icons_ffffff_256x240.png"); }
 
-/* line 426, ../../dev/style/core/_datepicker.scss */
+/* line 426, ../../plugin/style/core/_datepicker.scss */
 .ui-state-active .ui-icon {
   background-image: url("images/ui-icons_222222_256x240.png"); }
 
-/* line 429, ../../dev/style/core/_datepicker.scss */
+/* line 429, ../../plugin/style/core/_datepicker.scss */
 .ui-state-highlight .ui-icon {
   background-image: url("images/ui-icons_4b8e0b_256x240.png"); }
 
-/* line 432, ../../dev/style/core/_datepicker.scss */
+/* line 432, ../../plugin/style/core/_datepicker.scss */
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
   background-image: url("images/ui-icons_a83300_256x240.png"); }
 
-/* line 436, ../../dev/style/core/_datepicker.scss */
+/* line 436, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-blank {
   background-position: 16px 16px; }
 
-/* line 437, ../../dev/style/core/_datepicker.scss */
+/* line 437, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-n {
   background-position: 0 0; }
 
-/* line 438, ../../dev/style/core/_datepicker.scss */
+/* line 438, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-ne {
   background-position: -16px 0; }
 
-/* line 439, ../../dev/style/core/_datepicker.scss */
+/* line 439, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-e {
   background-position: -32px 0; }
 
-/* line 440, ../../dev/style/core/_datepicker.scss */
+/* line 440, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-se {
   background-position: -48px 0; }
 
-/* line 441, ../../dev/style/core/_datepicker.scss */
+/* line 441, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-s {
   background-position: -64px 0; }
 
-/* line 442, ../../dev/style/core/_datepicker.scss */
+/* line 442, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-sw {
   background-position: -80px 0; }
 
-/* line 443, ../../dev/style/core/_datepicker.scss */
+/* line 443, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-w {
   background-position: -96px 0; }
 
-/* line 444, ../../dev/style/core/_datepicker.scss */
+/* line 444, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-1-nw {
   background-position: -112px 0; }
 
-/* line 445, ../../dev/style/core/_datepicker.scss */
+/* line 445, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-2-n-s {
   background-position: -128px 0; }
 
-/* line 446, ../../dev/style/core/_datepicker.scss */
+/* line 446, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-carat-2-e-w {
   background-position: -144px 0; }
 
-/* line 447, ../../dev/style/core/_datepicker.scss */
+/* line 447, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-n {
   background-position: 0 -16px; }
 
-/* line 448, ../../dev/style/core/_datepicker.scss */
+/* line 448, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-ne {
   background-position: -16px -16px; }
 
-/* line 449, ../../dev/style/core/_datepicker.scss */
+/* line 449, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-e {
   background-position: -32px -16px; }
 
-/* line 450, ../../dev/style/core/_datepicker.scss */
+/* line 450, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-se {
   background-position: -48px -16px; }
 
-/* line 451, ../../dev/style/core/_datepicker.scss */
+/* line 451, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-s {
   background-position: -64px -16px; }
 
-/* line 452, ../../dev/style/core/_datepicker.scss */
+/* line 452, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-sw {
   background-position: -80px -16px; }
 
-/* line 453, ../../dev/style/core/_datepicker.scss */
+/* line 453, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-w {
   background-position: -96px -16px; }
 
-/* line 454, ../../dev/style/core/_datepicker.scss */
+/* line 454, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-1-nw {
   background-position: -112px -16px; }
 
-/* line 455, ../../dev/style/core/_datepicker.scss */
+/* line 455, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-2-n-s {
   background-position: -128px -16px; }
 
-/* line 456, ../../dev/style/core/_datepicker.scss */
+/* line 456, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-triangle-2-e-w {
   background-position: -144px -16px; }
 
-/* line 457, ../../dev/style/core/_datepicker.scss */
+/* line 457, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-n {
   background-position: 0 -32px; }
 
-/* line 458, ../../dev/style/core/_datepicker.scss */
+/* line 458, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-ne {
   background-position: -16px -32px; }
 
-/* line 459, ../../dev/style/core/_datepicker.scss */
+/* line 459, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-e {
   background-position: -32px -32px; }
 
-/* line 460, ../../dev/style/core/_datepicker.scss */
+/* line 460, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-se {
   background-position: -48px -32px; }
 
-/* line 461, ../../dev/style/core/_datepicker.scss */
+/* line 461, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-s {
   background-position: -64px -32px; }
 
-/* line 462, ../../dev/style/core/_datepicker.scss */
+/* line 462, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-sw {
   background-position: -80px -32px; }
 
-/* line 463, ../../dev/style/core/_datepicker.scss */
+/* line 463, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-w {
   background-position: -96px -32px; }
 
-/* line 464, ../../dev/style/core/_datepicker.scss */
+/* line 464, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-1-nw {
   background-position: -112px -32px; }
 
-/* line 465, ../../dev/style/core/_datepicker.scss */
+/* line 465, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-2-n-s {
   background-position: -128px -32px; }
 
-/* line 466, ../../dev/style/core/_datepicker.scss */
+/* line 466, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-2-ne-sw {
   background-position: -144px -32px; }
 
-/* line 467, ../../dev/style/core/_datepicker.scss */
+/* line 467, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-2-e-w {
   background-position: -160px -32px; }
 
-/* line 468, ../../dev/style/core/_datepicker.scss */
+/* line 468, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-2-se-nw {
   background-position: -176px -32px; }
 
-/* line 469, ../../dev/style/core/_datepicker.scss */
+/* line 469, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowstop-1-n {
   background-position: -192px -32px; }
 
-/* line 470, ../../dev/style/core/_datepicker.scss */
+/* line 470, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowstop-1-e {
   background-position: -208px -32px; }
 
-/* line 471, ../../dev/style/core/_datepicker.scss */
+/* line 471, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowstop-1-s {
   background-position: -224px -32px; }
 
-/* line 472, ../../dev/style/core/_datepicker.scss */
+/* line 472, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowstop-1-w {
   background-position: -240px -32px; }
 
-/* line 473, ../../dev/style/core/_datepicker.scss */
+/* line 473, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-n {
   background-position: 0 -48px; }
 
-/* line 474, ../../dev/style/core/_datepicker.scss */
+/* line 474, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-ne {
   background-position: -16px -48px; }
 
-/* line 475, ../../dev/style/core/_datepicker.scss */
+/* line 475, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-e {
   background-position: -32px -48px; }
 
-/* line 476, ../../dev/style/core/_datepicker.scss */
+/* line 476, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-se {
   background-position: -48px -48px; }
 
-/* line 477, ../../dev/style/core/_datepicker.scss */
+/* line 477, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-s {
   background-position: -64px -48px; }
 
-/* line 478, ../../dev/style/core/_datepicker.scss */
+/* line 478, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-sw {
   background-position: -80px -48px; }
 
-/* line 479, ../../dev/style/core/_datepicker.scss */
+/* line 479, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-w {
   background-position: -96px -48px; }
 
-/* line 480, ../../dev/style/core/_datepicker.scss */
+/* line 480, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-1-nw {
   background-position: -112px -48px; }
 
-/* line 481, ../../dev/style/core/_datepicker.scss */
+/* line 481, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-2-n-s {
   background-position: -128px -48px; }
 
-/* line 482, ../../dev/style/core/_datepicker.scss */
+/* line 482, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-2-ne-sw {
   background-position: -144px -48px; }
 
-/* line 483, ../../dev/style/core/_datepicker.scss */
+/* line 483, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-2-e-w {
   background-position: -160px -48px; }
 
-/* line 484, ../../dev/style/core/_datepicker.scss */
+/* line 484, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthick-2-se-nw {
   background-position: -176px -48px; }
 
-/* line 485, ../../dev/style/core/_datepicker.scss */
+/* line 485, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthickstop-1-n {
   background-position: -192px -48px; }
 
-/* line 486, ../../dev/style/core/_datepicker.scss */
+/* line 486, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthickstop-1-e {
   background-position: -208px -48px; }
 
-/* line 487, ../../dev/style/core/_datepicker.scss */
+/* line 487, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthickstop-1-s {
   background-position: -224px -48px; }
 
-/* line 488, ../../dev/style/core/_datepicker.scss */
+/* line 488, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowthickstop-1-w {
   background-position: -240px -48px; }
 
-/* line 489, ../../dev/style/core/_datepicker.scss */
+/* line 489, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturnthick-1-w {
   background-position: 0 -64px; }
 
-/* line 490, ../../dev/style/core/_datepicker.scss */
+/* line 490, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturnthick-1-n {
   background-position: -16px -64px; }
 
-/* line 491, ../../dev/style/core/_datepicker.scss */
+/* line 491, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturnthick-1-e {
   background-position: -32px -64px; }
 
-/* line 492, ../../dev/style/core/_datepicker.scss */
+/* line 492, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturnthick-1-s {
   background-position: -48px -64px; }
 
-/* line 493, ../../dev/style/core/_datepicker.scss */
+/* line 493, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturn-1-w {
   background-position: -64px -64px; }
 
-/* line 494, ../../dev/style/core/_datepicker.scss */
+/* line 494, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturn-1-n {
   background-position: -80px -64px; }
 
-/* line 495, ../../dev/style/core/_datepicker.scss */
+/* line 495, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturn-1-e {
   background-position: -96px -64px; }
 
-/* line 496, ../../dev/style/core/_datepicker.scss */
+/* line 496, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowreturn-1-s {
   background-position: -112px -64px; }
 
-/* line 497, ../../dev/style/core/_datepicker.scss */
+/* line 497, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowrefresh-1-w {
   background-position: -128px -64px; }
 
-/* line 498, ../../dev/style/core/_datepicker.scss */
+/* line 498, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowrefresh-1-n {
   background-position: -144px -64px; }
 
-/* line 499, ../../dev/style/core/_datepicker.scss */
+/* line 499, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowrefresh-1-e {
   background-position: -160px -64px; }
 
-/* line 500, ../../dev/style/core/_datepicker.scss */
+/* line 500, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrowrefresh-1-s {
   background-position: -176px -64px; }
 
-/* line 501, ../../dev/style/core/_datepicker.scss */
+/* line 501, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-4 {
   background-position: 0 -80px; }
 
-/* line 502, ../../dev/style/core/_datepicker.scss */
+/* line 502, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-arrow-4-diag {
   background-position: -16px -80px; }
 
-/* line 503, ../../dev/style/core/_datepicker.scss */
+/* line 503, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-extlink {
   background-position: -32px -80px; }
 
-/* line 504, ../../dev/style/core/_datepicker.scss */
+/* line 504, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-newwin {
   background-position: -48px -80px; }
 
-/* line 505, ../../dev/style/core/_datepicker.scss */
+/* line 505, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-refresh {
   background-position: -64px -80px; }
 
-/* line 506, ../../dev/style/core/_datepicker.scss */
+/* line 506, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-shuffle {
   background-position: -80px -80px; }
 
-/* line 507, ../../dev/style/core/_datepicker.scss */
+/* line 507, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-transfer-e-w {
   background-position: -96px -80px; }
 
-/* line 508, ../../dev/style/core/_datepicker.scss */
+/* line 508, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-transferthick-e-w {
   background-position: -112px -80px; }
 
-/* line 509, ../../dev/style/core/_datepicker.scss */
+/* line 509, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-folder-collapsed {
   background-position: 0 -96px; }
 
-/* line 510, ../../dev/style/core/_datepicker.scss */
+/* line 510, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-folder-open {
   background-position: -16px -96px; }
 
-/* line 511, ../../dev/style/core/_datepicker.scss */
+/* line 511, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-document {
   background-position: -32px -96px; }
 
-/* line 512, ../../dev/style/core/_datepicker.scss */
+/* line 512, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-document-b {
   background-position: -48px -96px; }
 
-/* line 513, ../../dev/style/core/_datepicker.scss */
+/* line 513, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-note {
   background-position: -64px -96px; }
 
-/* line 514, ../../dev/style/core/_datepicker.scss */
+/* line 514, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-mail-closed {
   background-position: -80px -96px; }
 
-/* line 515, ../../dev/style/core/_datepicker.scss */
+/* line 515, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-mail-open {
   background-position: -96px -96px; }
 
-/* line 516, ../../dev/style/core/_datepicker.scss */
+/* line 516, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-suitcase {
   background-position: -112px -96px; }
 
-/* line 517, ../../dev/style/core/_datepicker.scss */
+/* line 517, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-comment {
   background-position: -128px -96px; }
 
-/* line 518, ../../dev/style/core/_datepicker.scss */
+/* line 518, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-person {
   background-position: -144px -96px; }
 
-/* line 519, ../../dev/style/core/_datepicker.scss */
+/* line 519, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-print {
   background-position: -160px -96px; }
 
-/* line 520, ../../dev/style/core/_datepicker.scss */
+/* line 520, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-trash {
   background-position: -176px -96px; }
 
-/* line 521, ../../dev/style/core/_datepicker.scss */
+/* line 521, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-locked {
   background-position: -192px -96px; }
 
-/* line 522, ../../dev/style/core/_datepicker.scss */
+/* line 522, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-unlocked {
   background-position: -208px -96px; }
 
-/* line 523, ../../dev/style/core/_datepicker.scss */
+/* line 523, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-bookmark {
   background-position: -224px -96px; }
 
-/* line 524, ../../dev/style/core/_datepicker.scss */
+/* line 524, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-tag {
   background-position: -240px -96px; }
 
-/* line 525, ../../dev/style/core/_datepicker.scss */
+/* line 525, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-home {
   background-position: 0 -112px; }
 
-/* line 526, ../../dev/style/core/_datepicker.scss */
+/* line 526, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-flag {
   background-position: -16px -112px; }
 
-/* line 527, ../../dev/style/core/_datepicker.scss */
+/* line 527, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-calendar {
   background-position: -32px -112px; }
 
-/* line 528, ../../dev/style/core/_datepicker.scss */
+/* line 528, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-cart {
   background-position: -48px -112px; }
 
-/* line 529, ../../dev/style/core/_datepicker.scss */
+/* line 529, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-pencil {
   background-position: -64px -112px; }
 
-/* line 530, ../../dev/style/core/_datepicker.scss */
+/* line 530, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-clock {
   background-position: -80px -112px; }
 
-/* line 531, ../../dev/style/core/_datepicker.scss */
+/* line 531, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-disk {
   background-position: -96px -112px; }
 
-/* line 532, ../../dev/style/core/_datepicker.scss */
+/* line 532, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-calculator {
   background-position: -112px -112px; }
 
-/* line 533, ../../dev/style/core/_datepicker.scss */
+/* line 533, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-zoomin {
   background-position: -128px -112px; }
 
-/* line 534, ../../dev/style/core/_datepicker.scss */
+/* line 534, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-zoomout {
   background-position: -144px -112px; }
 
-/* line 535, ../../dev/style/core/_datepicker.scss */
+/* line 535, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-search {
   background-position: -160px -112px; }
 
-/* line 536, ../../dev/style/core/_datepicker.scss */
+/* line 536, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-wrench {
   background-position: -176px -112px; }
 
-/* line 537, ../../dev/style/core/_datepicker.scss */
+/* line 537, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-gear {
   background-position: -192px -112px; }
 
-/* line 538, ../../dev/style/core/_datepicker.scss */
+/* line 538, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-heart {
   background-position: -208px -112px; }
 
-/* line 539, ../../dev/style/core/_datepicker.scss */
+/* line 539, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-star {
   background-position: -224px -112px; }
 
-/* line 540, ../../dev/style/core/_datepicker.scss */
+/* line 540, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-link {
   background-position: -240px -112px; }
 
-/* line 541, ../../dev/style/core/_datepicker.scss */
+/* line 541, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-cancel {
   background-position: 0 -128px; }
 
-/* line 542, ../../dev/style/core/_datepicker.scss */
+/* line 542, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-plus {
   background-position: -16px -128px; }
 
-/* line 543, ../../dev/style/core/_datepicker.scss */
+/* line 543, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-plusthick {
   background-position: -32px -128px; }
 
-/* line 544, ../../dev/style/core/_datepicker.scss */
+/* line 544, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-minus {
   background-position: -48px -128px; }
 
-/* line 545, ../../dev/style/core/_datepicker.scss */
+/* line 545, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-minusthick {
   background-position: -64px -128px; }
 
-/* line 546, ../../dev/style/core/_datepicker.scss */
+/* line 546, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-close {
   background-position: -80px -128px; }
 
-/* line 547, ../../dev/style/core/_datepicker.scss */
+/* line 547, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-closethick {
   background-position: -96px -128px; }
 
-/* line 548, ../../dev/style/core/_datepicker.scss */
+/* line 548, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-key {
   background-position: -112px -128px; }
 
-/* line 549, ../../dev/style/core/_datepicker.scss */
+/* line 549, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-lightbulb {
   background-position: -128px -128px; }
 
-/* line 550, ../../dev/style/core/_datepicker.scss */
+/* line 550, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-scissors {
   background-position: -144px -128px; }
 
-/* line 551, ../../dev/style/core/_datepicker.scss */
+/* line 551, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-clipboard {
   background-position: -160px -128px; }
 
-/* line 552, ../../dev/style/core/_datepicker.scss */
+/* line 552, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-copy {
   background-position: -176px -128px; }
 
-/* line 553, ../../dev/style/core/_datepicker.scss */
+/* line 553, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-contact {
   background-position: -192px -128px; }
 
-/* line 554, ../../dev/style/core/_datepicker.scss */
+/* line 554, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-image {
   background-position: -208px -128px; }
 
-/* line 555, ../../dev/style/core/_datepicker.scss */
+/* line 555, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-video {
   background-position: -224px -128px; }
 
-/* line 556, ../../dev/style/core/_datepicker.scss */
+/* line 556, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-script {
   background-position: -240px -128px; }
 
-/* line 557, ../../dev/style/core/_datepicker.scss */
+/* line 557, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-alert {
   background-position: 0 -144px; }
 
-/* line 558, ../../dev/style/core/_datepicker.scss */
+/* line 558, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-info {
   background-position: -16px -144px; }
 
-/* line 559, ../../dev/style/core/_datepicker.scss */
+/* line 559, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-notice {
   background-position: -32px -144px; }
 
-/* line 560, ../../dev/style/core/_datepicker.scss */
+/* line 560, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-help {
   background-position: -48px -144px; }
 
-/* line 561, ../../dev/style/core/_datepicker.scss */
+/* line 561, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-check {
   background-position: -64px -144px; }
 
-/* line 562, ../../dev/style/core/_datepicker.scss */
+/* line 562, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-bullet {
   background-position: -80px -144px; }
 
-/* line 563, ../../dev/style/core/_datepicker.scss */
+/* line 563, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-radio-on {
   background-position: -96px -144px; }
 
-/* line 564, ../../dev/style/core/_datepicker.scss */
+/* line 564, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-radio-off {
   background-position: -112px -144px; }
 
-/* line 565, ../../dev/style/core/_datepicker.scss */
+/* line 565, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-pin-w {
   background-position: -128px -144px; }
 
-/* line 566, ../../dev/style/core/_datepicker.scss */
+/* line 566, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-pin-s {
   background-position: -144px -144px; }
 
-/* line 567, ../../dev/style/core/_datepicker.scss */
+/* line 567, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-play {
   background-position: 0 -160px; }
 
-/* line 568, ../../dev/style/core/_datepicker.scss */
+/* line 568, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-pause {
   background-position: -16px -160px; }
 
-/* line 569, ../../dev/style/core/_datepicker.scss */
+/* line 569, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-seek-next {
   background-position: -32px -160px; }
 
-/* line 570, ../../dev/style/core/_datepicker.scss */
+/* line 570, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-seek-prev {
   background-position: -48px -160px; }
 
-/* line 571, ../../dev/style/core/_datepicker.scss */
+/* line 571, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-seek-end {
   background-position: -64px -160px; }
 
-/* line 572, ../../dev/style/core/_datepicker.scss */
+/* line 572, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-seek-start {
   background-position: -80px -160px; }
 
-/* line 573, ../../dev/style/core/_datepicker.scss */
+/* line 573, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-seek-first {
   background-position: -80px -160px; }
 
-/* line 574, ../../dev/style/core/_datepicker.scss */
+/* line 574, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-stop {
   background-position: -96px -160px; }
 
-/* line 575, ../../dev/style/core/_datepicker.scss */
+/* line 575, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-eject {
   background-position: -112px -160px; }
 
-/* line 576, ../../dev/style/core/_datepicker.scss */
+/* line 576, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-volume-off {
   background-position: -128px -160px; }
 
-/* line 577, ../../dev/style/core/_datepicker.scss */
+/* line 577, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-volume-on {
   background-position: -144px -160px; }
 
-/* line 578, ../../dev/style/core/_datepicker.scss */
+/* line 578, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-power {
   background-position: 0 -176px; }
 
-/* line 579, ../../dev/style/core/_datepicker.scss */
+/* line 579, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-signal-diag {
   background-position: -16px -176px; }
 
-/* line 580, ../../dev/style/core/_datepicker.scss */
+/* line 580, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-signal {
   background-position: -32px -176px; }
 
-/* line 581, ../../dev/style/core/_datepicker.scss */
+/* line 581, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-battery-0 {
   background-position: -48px -176px; }
 
-/* line 582, ../../dev/style/core/_datepicker.scss */
+/* line 582, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-battery-1 {
   background-position: -64px -176px; }
 
-/* line 583, ../../dev/style/core/_datepicker.scss */
+/* line 583, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-battery-2 {
   background-position: -80px -176px; }
 
-/* line 584, ../../dev/style/core/_datepicker.scss */
+/* line 584, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-battery-3 {
   background-position: -96px -176px; }
 
-/* line 585, ../../dev/style/core/_datepicker.scss */
+/* line 585, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-plus {
   background-position: 0 -192px; }
 
-/* line 586, ../../dev/style/core/_datepicker.scss */
+/* line 586, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-minus {
   background-position: -16px -192px; }
 
-/* line 587, ../../dev/style/core/_datepicker.scss */
+/* line 587, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-close {
   background-position: -32px -192px; }
 
-/* line 588, ../../dev/style/core/_datepicker.scss */
+/* line 588, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-triangle-e {
   background-position: -48px -192px; }
 
-/* line 589, ../../dev/style/core/_datepicker.scss */
+/* line 589, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-triangle-s {
   background-position: -64px -192px; }
 
-/* line 590, ../../dev/style/core/_datepicker.scss */
+/* line 590, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-triangle-w {
   background-position: -80px -192px; }
 
-/* line 591, ../../dev/style/core/_datepicker.scss */
+/* line 591, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-triangle-n {
   background-position: -96px -192px; }
 
-/* line 592, ../../dev/style/core/_datepicker.scss */
+/* line 592, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-arrow-e {
   background-position: -112px -192px; }
 
-/* line 593, ../../dev/style/core/_datepicker.scss */
+/* line 593, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-arrow-s {
   background-position: -128px -192px; }
 
-/* line 594, ../../dev/style/core/_datepicker.scss */
+/* line 594, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-arrow-w {
   background-position: -144px -192px; }
 
-/* line 595, ../../dev/style/core/_datepicker.scss */
+/* line 595, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-arrow-n {
   background-position: -160px -192px; }
 
-/* line 596, ../../dev/style/core/_datepicker.scss */
+/* line 596, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-zoomin {
   background-position: -176px -192px; }
 
-/* line 597, ../../dev/style/core/_datepicker.scss */
+/* line 597, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-zoomout {
   background-position: -192px -192px; }
 
-/* line 598, ../../dev/style/core/_datepicker.scss */
+/* line 598, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circle-check {
   background-position: -208px -192px; }
 
-/* line 599, ../../dev/style/core/_datepicker.scss */
+/* line 599, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circlesmall-plus {
   background-position: 0 -208px; }
 
-/* line 600, ../../dev/style/core/_datepicker.scss */
+/* line 600, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circlesmall-minus {
   background-position: -16px -208px; }
 
-/* line 601, ../../dev/style/core/_datepicker.scss */
+/* line 601, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-circlesmall-close {
   background-position: -32px -208px; }
 
-/* line 602, ../../dev/style/core/_datepicker.scss */
+/* line 602, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-squaresmall-plus {
   background-position: -48px -208px; }
 
-/* line 603, ../../dev/style/core/_datepicker.scss */
+/* line 603, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-squaresmall-minus {
   background-position: -64px -208px; }
 
-/* line 604, ../../dev/style/core/_datepicker.scss */
+/* line 604, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-squaresmall-close {
   background-position: -80px -208px; }
 
-/* line 605, ../../dev/style/core/_datepicker.scss */
+/* line 605, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-grip-dotted-vertical {
   background-position: 0 -224px; }
 
-/* line 606, ../../dev/style/core/_datepicker.scss */
+/* line 606, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-grip-dotted-horizontal {
   background-position: -16px -224px; }
 
-/* line 607, ../../dev/style/core/_datepicker.scss */
+/* line 607, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-grip-solid-vertical {
   background-position: -32px -224px; }
 
-/* line 608, ../../dev/style/core/_datepicker.scss */
+/* line 608, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-grip-solid-horizontal {
   background-position: -48px -224px; }
 
-/* line 609, ../../dev/style/core/_datepicker.scss */
+/* line 609, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-gripsmall-diagonal-se {
   background-position: -64px -224px; }
 
-/* line 610, ../../dev/style/core/_datepicker.scss */
+/* line 610, ../../plugin/style/core/_datepicker.scss */
 .ui-icon-grip-diagonal-se {
   background-position: -80px -224px; }
 
-/* line 615, ../../dev/style/core/_datepicker.scss */
+/* line 615, ../../plugin/style/core/_datepicker.scss */
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-left,
 .ui-corner-tl {
   border-top-left-radius: 6px; }
 
-/* line 621, ../../dev/style/core/_datepicker.scss */
+/* line 621, ../../plugin/style/core/_datepicker.scss */
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-right,
 .ui-corner-tr {
   border-top-right-radius: 6px; }
 
-/* line 627, ../../dev/style/core/_datepicker.scss */
+/* line 627, ../../plugin/style/core/_datepicker.scss */
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-left,
 .ui-corner-bl {
   border-bottom-left-radius: 6px; }
 
-/* line 633, ../../dev/style/core/_datepicker.scss */
+/* line 633, ../../plugin/style/core/_datepicker.scss */
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-right,
 .ui-corner-br {
   border-bottom-right-radius: 6px; }
 
-/* line 640, ../../dev/style/core/_datepicker.scss */
+/* line 640, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-overlay {
   background: #5c5c5c url("images/ui-bg_flat_50_5c5c5c_40x100.png") 50% 50% repeat-x;
   opacity: .8;
   filter: Alpha(Opacity=80); }
 
-/* line 645, ../../dev/style/core/_datepicker.scss */
+/* line 645, ../../plugin/style/core/_datepicker.scss */
 .ui-widget-shadow {
   margin: -7px 0 0 -7px;
   padding: 7px;
@@ -2747,31 +2763,31 @@
   border-radius: 8px; }
 
 @-moz-keyframes modal-in {
-  /* line 4, ../../dev/style/core/_modal.scss */
+  /* line 4, ../../plugin/style/core/_modal.scss */
   0% {
     -moz-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
     opacity: 0; }
 
-  /* line 5, ../../dev/style/core/_modal.scss */
+  /* line 5, ../../plugin/style/core/_modal.scss */
   100% {
     -moz-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 1; } }
 @-webkit-keyframes modal-in {
-  /* line 4, ../../dev/style/core/_modal.scss */
+  /* line 4, ../../plugin/style/core/_modal.scss */
   0% {
     -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
     opacity: 0; }
 
-  /* line 5, ../../dev/style/core/_modal.scss */
+  /* line 5, ../../plugin/style/core/_modal.scss */
   100% {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 1; } }
 @keyframes modal-in {
-  /* line 4, ../../dev/style/core/_modal.scss */
+  /* line 4, ../../plugin/style/core/_modal.scss */
   0% {
     -moz-transform: scale(1.2, 1.2);
     -ms-transform: scale(1.2, 1.2);
@@ -2779,7 +2795,7 @@
     transform: scale(1.2, 1.2);
     opacity: 0; }
 
-  /* line 5, ../../dev/style/core/_modal.scss */
+  /* line 5, ../../plugin/style/core/_modal.scss */
   100% {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -2787,7 +2803,7 @@
     transform: scale(1, 1);
     opacity: 1; } }
 @-moz-keyframes modal-out {
-  /* line 9, ../../dev/style/core/_modal.scss */
+  /* line 9, ../../plugin/style/core/_modal.scss */
   0% {
     -moz-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -2795,18 +2811,18 @@
     -moz-transform: translateX(0%);
     transform: translateX(0%); }
 
-  /* line 10, ../../dev/style/core/_modal.scss */
+  /* line 10, ../../plugin/style/core/_modal.scss */
   99% {
     opacity: 0;
     -moz-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2); }
 
-  /* line 11, ../../dev/style/core/_modal.scss */
+  /* line 11, ../../plugin/style/core/_modal.scss */
   100% {
     -moz-transform: translateX(100%);
     transform: translateX(100%); } }
 @-webkit-keyframes modal-out {
-  /* line 9, ../../dev/style/core/_modal.scss */
+  /* line 9, ../../plugin/style/core/_modal.scss */
   0% {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -2814,18 +2830,18 @@
     -webkit-transform: translateX(0%);
     transform: translateX(0%); }
 
-  /* line 10, ../../dev/style/core/_modal.scss */
+  /* line 10, ../../plugin/style/core/_modal.scss */
   99% {
     opacity: 0;
     -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2); }
 
-  /* line 11, ../../dev/style/core/_modal.scss */
+  /* line 11, ../../plugin/style/core/_modal.scss */
   100% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%); } }
 @keyframes modal-out {
-  /* line 9, ../../dev/style/core/_modal.scss */
+  /* line 9, ../../plugin/style/core/_modal.scss */
   0% {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -2837,7 +2853,7 @@
     -webkit-transform: translateX(0%);
     transform: translateX(0%); }
 
-  /* line 10, ../../dev/style/core/_modal.scss */
+  /* line 10, ../../plugin/style/core/_modal.scss */
   99% {
     opacity: 0;
     -moz-transform: scale(1.2, 1.2);
@@ -2845,13 +2861,13 @@
     -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2); }
 
-  /* line 11, ../../dev/style/core/_modal.scss */
+  /* line 11, ../../plugin/style/core/_modal.scss */
   100% {
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%); } }
-/* line 14, ../../dev/style/core/_modal.scss */
+/* line 14, ../../plugin/style/core/_modal.scss */
 .chattaaar-modal {
   position: fixed;
   top: 0;
@@ -2864,7 +2880,7 @@
   -ms-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%); }
-  /* line 23, ../../dev/style/core/_modal.scss */
+  /* line 23, ../../plugin/style/core/_modal.scss */
   .chattaaar-modal.open {
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
@@ -2873,12 +2889,12 @@
     -moz-animation: modal-in 0.3s;
     -webkit-animation: modal-in 0.3s;
     animation: modal-in 0.3s; }
-  /* line 27, ../../dev/style/core/_modal.scss */
+  /* line 27, ../../plugin/style/core/_modal.scss */
   .chattaaar-modal.close {
     -moz-animation: modal-out 0.3s;
     -webkit-animation: modal-out 0.3s;
     animation: modal-out 0.3s; }
-  /* line 30, ../../dev/style/core/_modal.scss */
+  /* line 30, ../../plugin/style/core/_modal.scss */
   .chattaaar-modal .chattaaar-container {
     position: absolute;
     top: 10%;
@@ -2890,7 +2906,7 @@
     -moz-box-shadow: #ecf0f1 0px 0px 0px 0px inset;
     -webkit-box-shadow: #ecf0f1 0px 0px 0px 0px inset;
     box-shadow: #ecf0f1 0px 0px 0px 0px inset; }
-    /* line 34, ../../dev/style/core/_modal.scss */
+    /* line 34, ../../plugin/style/core/_modal.scss */
     .chattaaar-modal .chattaaar-container.condensed {
       top: 5%;
       left: 5%;
@@ -2898,7 +2914,7 @@
       bottom: 5%;
       width: 90%;
       height: 90%; }
-    /* line 37, ../../dev/style/core/_modal.scss */
+    /* line 37, ../../plugin/style/core/_modal.scss */
     .chattaaar-modal .chattaaar-container.fullscreen {
       top: 0;
       left: 0;
