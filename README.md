@@ -296,8 +296,8 @@ A short method to use a different 'person' from your default avatar & name for t
 ```js
 {
 	useDifferentPerson: {
-		name: string - sets the new person name,
-		avatar: URL - path to an avatar image for the person
+		name: '', // string - sets the new person's name,
+		avatar: ''// url - path to an avatar image for the person
 	}
 }
 ```
