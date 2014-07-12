@@ -286,9 +286,12 @@ Context can only be used in questions in stages AFTER the context is set. Contex
 
 ## Other Stage Options
 
+### Change your avatar mid-form
+
+A short method to use a different 'person' from your default avatar & name for the defined stage.
+
 ```js
 {
-  // Use a different 'person' from your default avatar & name for the stage
 	useDifferentPerson: {
 		name: string - sets the new person name,
 		avatar: URL - path to an avatar image for the person
