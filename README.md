@@ -322,6 +322,8 @@ $('.form-one').newChattaaar(...);
 $('.form-two').newChattaaar(...);
 ```
 
+* * *
+
 ## Feedback
 
 Please use the [issues](http://github.com/willviles/chattaaar/issues "Chattaaar Issues") for any bugs, feature requests, etc.
