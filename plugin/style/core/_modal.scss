@@ -32,7 +32,7 @@
     top: 10%; left: 10%; right: 10%; bottom: 10%; width: 80%; height: 80%;
     @include box-shadow($light 0px 0px 0px 0px inset);
     &.condensed {
-      top: 5%; left: 5%; right: 5%; bottom: 5%; width: 90%; height: 90%;
+      top: 2%; left: 2%; right: 2%; bottom: 2%; width: 96%; height: 96%;
     }
     &.fullscreen {
       top: 0; left: 0; right: 0; bottom: 0;

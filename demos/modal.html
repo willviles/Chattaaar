@@ -7,6 +7,8 @@
     <script src="../prod/chattaaar-min.js"></script>
     <link rel="stylesheet" type="text/css" href="../prod/style/style.css">
 
+    <meta name="viewport" content="user-scalable=no,width=device-width" />
+
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700|Open+Sans:300,300italic,400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
@@ -37,28 +39,20 @@
               options: ['First idea', 'Second idea', 'Third idea']
             },
             stage2: {
-              title: 'Upload a video',
-              type: 'media',
-              inputName: 'video',
-              question: "Nice <span class='ch-number-of-ideas'></span>. Please paste in a YouTube or Soundcloud URL",
-              placeholder: "Place your link here",
-              accepts: ['youtube', 'soundcloud']
-            },
-            stage3: {
               title: 'Choose',
               type: 'radio',
               inputName: 'choose_something',
               question: "Please choose something to start.",
               options: ['First thing', 'Second thing', 'Third thing']
             },
-            stage4: {
+            stage3: {
               title: 'About You',
               type: 'input',
               inputName: 'name',
               question: "What's your name?",
               placeholder: "e.g. Joe Bloggs"
             },
-            stage5: {
+            stage4: {
               title: 'Your Idea',
               type: 'textarea',
               inputName: 'idea',
@@ -66,7 +60,7 @@
               placeholder: "e.g. My idea is a sophisticated blend of...",
               skippable: true
             },
-            stage6: {
+            stage5: {
               title: 'Select a date',
               type: 'date',
               inputName: 'date',
@@ -76,6 +70,25 @@
                 minDate: -20, maxDate: "+1M +10D"
               }
             },
+            stage6: {
+              title: 'Your Idea',
+              type: 'textarea',
+              inputName: 'idea',
+              question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
+              placeholder: "e.g. My idea is a sophisticated blend of...",
+              charlimit: 20,
+              skippable: true
+            },
+            /*
+stage6: {
+              title: 'Upload a video',
+              type: 'media',
+              inputName: 'video',
+              question: "Nice <span class='ch-number-of-ideas'></span>. Please paste in a YouTube or Soundcloud URL",
+              placeholder: "Place your link here",
+              accepts: ['youtube', 'soundcloud']
+            },
+*/
             stage7: {
               title: 'Select multiple things',
               type: 'checkbox',

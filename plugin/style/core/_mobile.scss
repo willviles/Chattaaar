@@ -1,6 +1,12 @@
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.1em; }
+
 section {
+
   .section-padding {
-    padding: 0px 5%;
+    padding: 0px 2%;
   }
   .question-container, .action-container {
     width: 100%;
@@ -8,14 +14,134 @@ section {
     padding-left: 0%;
   }
 
+  .person-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .question-container p {
+    margin-left: 40px;
+    padding: 0.7em 1em;
+    &:before {
+      left: -5px;
+      border-width: 0 15px 20px 0;
+    }
+  }
+
   .action-container {
-    padding-top: 40px;
+    padding-top: 30px;
+    .action-wrapper {
+      margin-right: 40px;
+      padding: 0.5em 0.5em;
+      &:before {
+        right: -5px;
+        border-width: 20px 15px 0 0;
+      }
+    }
+    .ch-btns-container {
+      display: none;
+    }
   }
 
   .ch-btns-container {
     padding-top: 25px;
   }
 }
+
+section.welcome .welcome-image {
+  display: none;
+}
+
+// Mobile buttons {
+
+.ch-mobile-btns-container {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  @include opacity(1);
+  @include transition(opacity 0.2s ease-in-out);
+  .ch-next, .ch-prev, .ch-skip {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 35px;
+    background-color: white;
+    color: $grey;
+    border: 0px;
+  }
+  .ch-next {
+    right: 0;
+    cursor: default;
+    &.validated {
+      color: white;
+      cursor: pointer;
+      background-color: $blue;
+      &:focus, &:hover {
+        background-color: lighten($blue, 12%);
+      }
+    }
+  }
+  .ch-prev {
+    left: 0;
+    cursor: pointer;
+    background-color: darken(white, 5%);
+  }
+  .ch-skip {
+    cursor: pointer;
+  }
+}
+
+section.after .ch-mobile-btns-container {
+  @include opacity(0);
+  @include transition(opacity 0.2s ease-in-out);
+}
+
+// Form Sections
+
+textarea {
+  height: 75px;
+}
+
+.checkbox-radio {
+  span {
+    padding: 0.4em 1em 0.4em 30px;
+    font-size: 1.1em;
+    margin-bottom: 1px;
+    i.el-icon-check-empty, i.el-icon-check, i.el-icon-edit {
+      left: 5px;
+      margin-top: -5px;
+      font-size: 10px;
+    }
+    i.el-icon-check, i.el-icon-edit {
+      @include opacity(0);
+    }
+  }
+}
+
+/* DISPLAY 2 PER LINE
+.checkbox-radio {
+  display: inline-block;
+  width: 49%;
+  span {
+    padding: 0.7em 1em 0.7em 20px;
+    font-size: 1.1em;
+    margin-bottom: 1px;
+    i.el-icon-check-empty, i.el-icon-check, i.el-icon-edit {
+      left: 5px;
+      margin-top: -5px;
+      font-size: 10px;
+    }
+    i.el-icon-check, i.el-icon-edit {
+      @include opacity(0);
+    }
+  }
+}
+*/
+
+// Topbar
 
 $mobile-topbar-height: 35px;
 

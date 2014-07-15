@@ -329,6 +329,10 @@
                 </div> \
               </div> \
             </div> \
+            <div class="ch-mobile-btns-container"> \
+              ' + buttonHTML + ' \
+              <button type="button" class="ch-prev"><small><i class="el-icon-caret-up"></i></small> Prev</button> \
+            </div> \
           </section>';
         return scaffoldHTML;
       },
@@ -894,8 +898,8 @@
       ///////////////////////////////////////////////////////
 
       init: function() {
-        this.utilities.verticalAlign.call(this);
         this.utilities.responsive.call(this);
+        this.utilities.verticalAlign.call(this);
         this.utilities.changeTitle.call(this);
         this.utilities.initModal.call(this);
       },
