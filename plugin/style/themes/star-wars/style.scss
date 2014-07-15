@@ -163,6 +163,24 @@ $theme: 'star-wars';
     background-color: rgba($section-bg-color, 0.9);
   }
 
+  // Mobile Buttons
+
+  .ch-mobile-btns-container {
+    .ch-next, .ch-prev, .ch-skip {
+      background-color: $button-bg-color;
+      color: $button-text-color;
+    }
+    .ch-next {
+      &.validated {
+        color: $validated-button-text-color;
+        background-color: $validated-button-bg-color;
+        &:focus, &:hover {
+          background-color: $validated-button-hover-bg-color;
+        }
+      }
+    }
+  }
+
   // Form Areas
 
   input, textarea, select {

@@ -1582,38 +1582,43 @@
     .chattaaar-container.condensed section .person-icon {
       width: 30px;
       height: 30px; }
-    /* line 22, ../../plugin/style/core/_mobile.scss */
+      /* line 20, ../../plugin/style/core/_mobile.scss */
+      .chattaaar-container.condensed section .person-icon i {
+        font-size: 30px;
+        margin-top: -10px;
+        margin-left: -15px; }
+    /* line 26, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .question-container p {
       margin-left: 40px;
       padding: 0.7em 1em; }
-      /* line 25, ../../plugin/style/core/_mobile.scss */
+      /* line 29, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed section .question-container p:before {
         left: -5px;
         border-width: 0 15px 20px 0; }
-    /* line 31, ../../plugin/style/core/_mobile.scss */
+    /* line 35, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .action-container {
       padding-top: 30px; }
-      /* line 33, ../../plugin/style/core/_mobile.scss */
+      /* line 37, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed section .action-container .action-wrapper {
         margin-right: 40px;
         padding: 0.5em 0.5em; }
-        /* line 36, ../../plugin/style/core/_mobile.scss */
+        /* line 40, ../../plugin/style/core/_mobile.scss */
         .chattaaar-container.condensed section .action-container .action-wrapper:before {
           right: -5px;
           border-width: 20px 15px 0 0; }
-      /* line 41, ../../plugin/style/core/_mobile.scss */
+      /* line 45, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed section .action-container .ch-btns-container {
         display: none; }
-    /* line 46, ../../plugin/style/core/_mobile.scss */
+    /* line 50, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section .ch-btns-container {
       padding-top: 25px; }
-    /* line 51, ../../plugin/style/core/_mobile.scss */
+    /* line 55, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section.welcome .welcome-image {
       display: none; }
-    /* line 57, ../../plugin/style/core/_mobile.scss */
+    /* line 61, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .ch-mobile-btns-container {
       display: block; }
-    /* line 61, ../../plugin/style/core/_mobile.scss */
+    /* line 65, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section.after .ch-mobile-btns-container {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
       opacity: 0;
@@ -1621,34 +1626,34 @@
       -o-transition: opacity 0.2s ease-in-out;
       -webkit-transition: opacity 0.2s ease-in-out;
       transition: opacity 0.2s ease-in-out; }
-    /* line 68, ../../plugin/style/core/_mobile.scss */
+    /* line 72, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed textarea {
       height: 75px; }
-    /* line 73, ../../plugin/style/core/_mobile.scss */
+    /* line 77, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .checkbox-radio span {
       padding: 0.4em 1em 0.4em 30px;
       font-size: 1.1em;
       margin-bottom: 1px; }
-      /* line 77, ../../plugin/style/core/_mobile.scss */
+      /* line 81, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .checkbox-radio span i.el-icon-check-empty, .chattaaar-container.condensed .checkbox-radio span i.el-icon-check, .chattaaar-container.condensed .checkbox-radio span i.el-icon-edit {
         left: 5px;
         margin-top: -5px;
         font-size: 10px; }
-      /* line 82, ../../plugin/style/core/_mobile.scss */
+      /* line 86, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .checkbox-radio span i.el-icon-check, .chattaaar-container.condensed .checkbox-radio span i.el-icon-edit {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0; }
-    /* line 112, ../../plugin/style/core/_mobile.scss */
+    /* line 116, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .chattaaar-topbar {
       height: 35px; }
-      /* line 115, ../../plugin/style/core/_mobile.scss */
+      /* line 119, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-title span {
         line-height: 35px; }
-      /* line 119, ../../plugin/style/core/_mobile.scss */
+      /* line 123, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-counter span {
         left: 10px;
         line-height: 35px; }
-      /* line 124, ../../plugin/style/core/_mobile.scss */
+      /* line 128, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-close i {
         right: 10px;
         margin-top: -9px;

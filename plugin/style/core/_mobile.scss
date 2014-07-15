@@ -17,6 +17,10 @@ section {
   .person-icon {
     width: 30px;
     height: 30px;
+    i {
+      font-size: 30px;
+      margin-top: -10px; margin-left: -15px;
+    }
   }
 
   .question-container p {
