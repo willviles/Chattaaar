@@ -1495,8 +1495,48 @@
       color: white; }
   /* line 236, ../../plugin/style/style.scss */
   .chattaaar-container .ch-mobile-btns-container {
-    display: none; }
-  /* line 241, ../../plugin/style/style.scss */
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out; }
+    /* line 245, ../../plugin/style/style.scss */
+    .chattaaar-container .ch-mobile-btns-container .ch-next, .chattaaar-container .ch-mobile-btns-container .ch-prev, .chattaaar-container .ch-mobile-btns-container .ch-skip {
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 35px;
+      background-color: white;
+      color: #94aab0;
+      border: 0px; }
+    /* line 254, ../../plugin/style/style.scss */
+    .chattaaar-container .ch-mobile-btns-container .ch-next {
+      right: 0;
+      cursor: default; }
+      /* line 257, ../../plugin/style/style.scss */
+      .chattaaar-container .ch-mobile-btns-container .ch-next.validated {
+        color: white;
+        cursor: pointer;
+        background-color: #047dff; }
+        /* line 261, ../../plugin/style/style.scss */
+        .chattaaar-container .ch-mobile-btns-container .ch-next.validated:focus, .chattaaar-container .ch-mobile-btns-container .ch-next.validated:hover {
+          background-color: #419dff; }
+    /* line 266, ../../plugin/style/style.scss */
+    .chattaaar-container .ch-mobile-btns-container .ch-prev {
+      left: 0;
+      cursor: pointer;
+      background-color: #f2f2f2; }
+    /* line 271, ../../plugin/style/style.scss */
+    .chattaaar-container .ch-mobile-btns-container .ch-skip {
+      cursor: pointer; }
+  /* line 277, ../../plugin/style/style.scss */
   .chattaaar-container.condensed {
     font-size: 11px;
     /* DISPLAY 2 PER LINE
@@ -1572,48 +1612,8 @@
       display: none; }
     /* line 57, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .ch-mobile-btns-container {
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 35px;
-      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-      opacity: 1;
-      -moz-transition: opacity 0.2s ease-in-out;
-      -o-transition: opacity 0.2s ease-in-out;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out; }
-      /* line 66, ../../plugin/style/core/_mobile.scss */
-      .chattaaar-container.condensed .ch-mobile-btns-container .ch-next, .chattaaar-container.condensed .ch-mobile-btns-container .ch-prev, .chattaaar-container.condensed .ch-mobile-btns-container .ch-skip {
-        position: absolute;
-        bottom: 0;
-        width: 50%;
-        height: 35px;
-        background-color: white;
-        color: #94aab0;
-        border: 0px; }
-      /* line 75, ../../plugin/style/core/_mobile.scss */
-      .chattaaar-container.condensed .ch-mobile-btns-container .ch-next {
-        right: 0;
-        cursor: default; }
-        /* line 78, ../../plugin/style/core/_mobile.scss */
-        .chattaaar-container.condensed .ch-mobile-btns-container .ch-next.validated {
-          color: white;
-          cursor: pointer;
-          background-color: #047dff; }
-          /* line 82, ../../plugin/style/core/_mobile.scss */
-          .chattaaar-container.condensed .ch-mobile-btns-container .ch-next.validated:focus, .chattaaar-container.condensed .ch-mobile-btns-container .ch-next.validated:hover {
-            background-color: #419dff; }
-      /* line 87, ../../plugin/style/core/_mobile.scss */
-      .chattaaar-container.condensed .ch-mobile-btns-container .ch-prev {
-        left: 0;
-        cursor: pointer;
-        background-color: #f2f2f2; }
-      /* line 92, ../../plugin/style/core/_mobile.scss */
-      .chattaaar-container.condensed .ch-mobile-btns-container .ch-skip {
-        cursor: pointer; }
-    /* line 97, ../../plugin/style/core/_mobile.scss */
+      display: block; }
+    /* line 61, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed section.after .ch-mobile-btns-container {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
       opacity: 0;
@@ -1621,34 +1621,34 @@
       -o-transition: opacity 0.2s ease-in-out;
       -webkit-transition: opacity 0.2s ease-in-out;
       transition: opacity 0.2s ease-in-out; }
-    /* line 104, ../../plugin/style/core/_mobile.scss */
+    /* line 68, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed textarea {
       height: 75px; }
-    /* line 109, ../../plugin/style/core/_mobile.scss */
+    /* line 73, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .checkbox-radio span {
       padding: 0.4em 1em 0.4em 30px;
       font-size: 1.1em;
       margin-bottom: 1px; }
-      /* line 113, ../../plugin/style/core/_mobile.scss */
+      /* line 77, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .checkbox-radio span i.el-icon-check-empty, .chattaaar-container.condensed .checkbox-radio span i.el-icon-check, .chattaaar-container.condensed .checkbox-radio span i.el-icon-edit {
         left: 5px;
         margin-top: -5px;
         font-size: 10px; }
-      /* line 118, ../../plugin/style/core/_mobile.scss */
+      /* line 82, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .checkbox-radio span i.el-icon-check, .chattaaar-container.condensed .checkbox-radio span i.el-icon-edit {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0; }
-    /* line 148, ../../plugin/style/core/_mobile.scss */
+    /* line 112, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .chattaaar-topbar {
       height: 35px; }
-      /* line 151, ../../plugin/style/core/_mobile.scss */
+      /* line 115, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-title span {
         line-height: 35px; }
-      /* line 155, ../../plugin/style/core/_mobile.scss */
+      /* line 119, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-counter span {
         left: 10px;
         line-height: 35px; }
-      /* line 160, ../../plugin/style/core/_mobile.scss */
+      /* line 124, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-close i {
         right: 10px;
         margin-top: -9px;
