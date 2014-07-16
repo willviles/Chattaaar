@@ -218,6 +218,20 @@ options: longArray(),
 }
 ```
 
+### Scale
+
+The __scale__ input type adds 5 checkboxes with custom 'low' and 'high' labels.
+
+```js
+{
+  type: 'scale',
+  placeholders: {
+    low: 'Very Dissatisfied',
+    hight: 'Very Satisfied'
+  }
+}
+```
+
 ### Country
 
 Instead of adding a long options array of countries to create a country select, simply use the __country__ input type. There is no need to pass an options array.
