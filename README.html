@@ -441,18 +441,17 @@ options: longArray(),
 
 <h2>Passing Context</h2>
 
-<p>Here&rsquo;s an example of adding context to questions, such as adding the user’s name:</p>
+<p>Here&rsquo;s an example of adding context to questions:</p>
 
 <p><code>js
 stage1: {
-    title: 'About You',
+    title: 'About Foo',
     type: 'input',
-    inputName: 'name',
-    question: "What's your name?",
-    placeholder: "e.g. John"
+    inputName: 'foo',
+    question: "Foo?"
   },
   stage2: {
-    question: "Right, let's get going &lt;span class='ch-name'&gt;&lt;/span&gt;. What are your first impressions of Chattaaar?",
+    question: "Your response to foo: &lt;span class='ch-foo'&gt;&lt;/span&gt;. What about bar?",
     ...
   },
 …

@@ -301,18 +301,17 @@ _Future development: Media input will show a preview of the media when the URL i
 
 ## Passing Context
 
-Here's an example of adding context to questions, such as adding the user’s name:
+Here's an example of adding context to questions:
 
 ```js
 stage1: {
-    title: 'About You',
+    title: 'About Foo',
     type: 'input',
-    inputName: 'name',
-    question: "What's your name?",
-    placeholder: "e.g. John"
+    inputName: 'foo',
+    question: "Foo?"
   },
   stage2: {
-    question: "Right, let's get going <span class='ch-name'></span>. What are your first impressions of Chattaaar?",
+    question: "Your response to foo: <span class='ch-foo'></span>. What about bar?",
     ...
   },
 …
