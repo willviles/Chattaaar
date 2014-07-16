@@ -29,15 +29,24 @@
           },
           stages = {
             stage1: {
+              title: 'Name',
+              type: 'fullName',
+              question: "Let's start chatting. What's your name?",
+              placeholders: {
+                firstName: 'e.g. Steve',
+                lastName: 'Skywalker'
+              }
+            },
+            stage2: {
               title: 'Your Idea',
               type: 'textarea',
               inputName: 'idea',
-              question: "Right, let's get going <span class='ch-name'></span>. What's your idea?",
+              question: "Right, let's get going <span class='ch-first-name'></span>. What's your idea?",
               placeholder: "e.g. My idea is a sophisticated blend of...",
               charlimit: 20,
               skippable: true
             },
-            stage2: {
+            stage3: {
               title: 'Frequency',
               type: 'select',
               inputName: 'number-of-ideas',
@@ -45,7 +54,7 @@
               placeholder: "Please select a number",
               options: ['First idea', 'Second idea', 'Third idea']
             },
-            stage3: {
+            stage4: {
               title: 'Choose',
               type: 'country',
               inputName: 'country',
@@ -56,14 +65,14 @@
                 avatar: 'https://www.apple.com/pr/bios/images/schiller_hero20110204.png'
               }
             },
-            stage4: {
+            stage5: {
               title: 'About You',
               type: 'input',
               inputName: 'name',
               question: "What's your name?",
               placeholder: "e.g. Joe Bloggs"
             },
-            stage5: {
+            stage6: {
               title: 'Select a date',
               type: 'date',
               inputName: 'date',
@@ -73,20 +82,20 @@
                 minDate: -20, maxDate: "+1M +10D"
               }
             },
-            stage6: {
+            stage7: {
               title: 'Select multiple things',
               type: 'checkbox',
               inputName: 'selection_of_things',
               question: "Please select all the things.",
               options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing']
             },
-            stage7: {
+            stage8: {
               title: 'Rating',
               type: 'rating',
               inputName: 'rating',
               question: "Right, what do you think of this?"
             },
-            stage8: {
+            stage9: {
               title: 'Upload a video',
               type: 'media',
               inputName: 'video',
@@ -94,7 +103,7 @@
               placeholder: "Place your link here",
               accepts: ['youtube', 'soundcloud']
             },
-            stage9: {
+            stage10: {
               title: 'Your Email',
               type: 'email',
               inputName: 'email',

@@ -96,6 +96,8 @@
             this.append.input.call(this, stageObj, stageObj.type);
           } else if (stageObj.type === 'email') {
             this.append.input.call(this, stageObj, stageObj.type);
+          } else if (stageObj.type === 'fullName') {
+            this.append.fullName.call(this, stageObj);
           } else if (stageObj.type === 'textarea') {
             this.append.textarea.call(this, stageObj);
           } else if (stageObj.type === 'select') {
@@ -148,17 +150,32 @@
         if (input.length > 0 || textarea.length > 0 || select.length > 0) {
 
           // Set the input as focussed
-          input.focus();
+          input[0].focus();
 
           input.unbind('keydown').bind('keydown', function(e) {
             if (keydownEnabled === false) {
               e.preventDefault();
             }
 
+            var inputIndex = $(this).index() + 1;
+
+            // If there's more than one input
+
+
             if (e.keyCode === 9) {
               e.preventDefault();
-              if (nextBtn.hasClass('validated')) {
-                nextBtn.focus();
+              // If it's not the last input before submit
+              if (inputIndex < input.length) {
+                // Move onto the next input
+                input[inputIndex].focus();
+              } else {
+                // Or, if it's validated, move onto the nextBtn
+                if (nextBtn.hasClass('validated')) {
+                  nextBtn.focus();
+                // Or go back to the first input
+                } else {
+                  input[0].focus();
+                }
               }
             } else if (e.keyCode === 13 && keydownEnabled === true) {
               e.preventDefault();
@@ -174,7 +191,7 @@
           nextBtn.bind('keydown', function(e) {
             if (e.which === 9) {
               e.preventDefault();
-              input.focus();
+              input[0].focus();
             }
           });
 
@@ -385,6 +402,38 @@
         var input = '<input type="' + type + '" name="' + stageObj.inputName + '" placeholder="' + stageObj.placeholder + '" class="' + classes + '" autocomplete="off"' + dataAttrs + '>';
 
         this.$elem.append(this.scaffold.stage.call(this, input, stageObj));
+      },
+
+
+      // Name
+      ///////////////////////////////////////////////////////
+      fullName: function(stageObj) {
+        var generateNameInput = function(name, placeholder) {
+          return '<input type="text" name="' + name + '" placeholder="' + placeholder + '" autocomplete="off">';
+        };
+
+        // Assign default placeholders
+        var firstNamePlaceholder = '', lastNamePlaceholder = '';
+
+        // Get custom placeholders
+        if (stageObj.placeholders !== undefined) {
+          if (stageObj.placeholders.firstName !== undefined) { firstNamePlaceholder = stageObj.placeholders.firstName }
+          if (stageObj.placeholders.lastName !== undefined) { lastNamePlaceholder = stageObj.placeholders.lastName }
+        }
+
+        // Assign default & custom input names
+        var firstNameInputName = 'first-name', lastNameInputName = 'last-name';
+        if (stageObj.inputNames !== undefined) {
+          if (stageObj.inputNames.firstName !== undefined) { firstNameInputName = stageObj.inputNames.firstName }
+          if (stageObj.inputNames.lastName !== undefined) { lastNameInputName = stageObj.inputNames.lastName }
+        }
+
+        var firstName = generateNameInput(firstNameInputName, firstNamePlaceholder),
+            lastName = generateNameInput(lastNameInputName, lastNamePlaceholder),
+            fullName = firstName + lastName,
+            name = '<div class="names">' + fullName + '</div>';
+
+        this.$elem.append(this.scaffold.stage.call(this, name, stageObj));
       },
 
       // Textarea

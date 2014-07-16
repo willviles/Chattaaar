@@ -1450,11 +1450,18 @@
     /* line 92, ../../plugin/style/core/_form.scss */
     .chattaaar-container .checkbox-radio:last-child span {
       border-bottom: none; }
-  /* line 97, ../../plugin/style/core/_form.scss */
+  /* line 98, ../../plugin/style/core/_form.scss */
+  .chattaaar-container .names input {
+    display: inline-block;
+    width: 50%; }
+    /* line 101, ../../plugin/style/core/_form.scss */
+    .chattaaar-container .names input:nth-of-type(2) {
+      border-left: 1px solid #9dccff; }
+  /* line 107, ../../plugin/style/core/_form.scss */
   .chattaaar-container .limit-update {
     display: block;
     text-align: right; }
-    /* line 100, ../../plugin/style/core/_form.scss */
+    /* line 110, ../../plugin/style/core/_form.scss */
     .chattaaar-container .limit-update p {
       display: inline-block;
       border: 1px solid #9dccff;
@@ -1463,34 +1470,34 @@
       -webkit-border-radius: 5px;
       border-radius: 5px;
       color: #9dccff; }
-    /* line 108, ../../plugin/style/core/_form.scss */
+    /* line 118, ../../plugin/style/core/_form.scss */
     .chattaaar-container .limit-update.invalid p {
       text-decoration: line-through; }
-  /* line 113, ../../plugin/style/core/_form.scss */
+  /* line 123, ../../plugin/style/core/_form.scss */
   .chattaaar-container .rating {
     display: block;
     height: 30px;
     vertical-align: middle; }
-    /* line 118, ../../plugin/style/core/_form.scss */
+    /* line 128, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating .star-count {
       display: inline-block;
       line-height: 1.6em;
       font-size: 1.1em;
       padding: 3px 3px 0px 10px;
       color: #84bfff; }
-    /* line 125, ../../plugin/style/core/_form.scss */
+    /* line 135, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating li {
       display: inline-block;
       padding: 5px 3px;
       cursor: pointer; }
-    /* line 130, ../../plugin/style/core/_form.scss */
+    /* line 140, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating .star {
       font-size: 1.6em;
       color: #84bfff; }
-    /* line 134, ../../plugin/style/core/_form.scss */
+    /* line 144, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating li.hover .star {
       color: #d0e7ff; }
-    /* line 137, ../../plugin/style/core/_form.scss */
+    /* line 147, ../../plugin/style/core/_form.scss */
     .chattaaar-container .rating li.selected .star {
       color: white; }
   /* line 236, ../../plugin/style/style.scss */
