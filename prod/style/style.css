@@ -1497,7 +1497,7 @@
       width: 20%;
       min-height: 1px;
       margin-left: -4px;
-      margin-bottom: -12px; }
+      margin-bottom: -1.5em; }
       /* line 121, ../../plugin/style/core/_form.scss */
       .chattaaar-container .scale-boxes .checkbox-radio span {
         border-bottom: none;
@@ -1706,25 +1706,28 @@
       .chattaaar-container.condensed .checkbox-radio span i.el-icon-check, .chattaaar-container.condensed .checkbox-radio span i.el-icon-edit {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0; }
-    /* line 94, ../../plugin/style/core/_mobile.scss */
-    .chattaaar-container.condensed .scale-boxes .checkbox-radio span {
-      border-bottom: none;
-      padding: 2em 1em 2em 1em; }
-      /* line 96, ../../plugin/style/core/_mobile.scss */
-      .chattaaar-container.condensed .scale-boxes .checkbox-radio span i {
-        left: 50%;
-        margin-left: -6px; }
-    /* line 127, ../../plugin/style/core/_mobile.scss */
+    /* line 93, ../../plugin/style/core/_mobile.scss */
+    .chattaaar-container.condensed .scale-boxes .checkbox-radio {
+      margin-bottom: -1em; }
+      /* line 95, ../../plugin/style/core/_mobile.scss */
+      .chattaaar-container.condensed .scale-boxes .checkbox-radio span {
+        border-bottom: none;
+        padding: 1.5em 1em 1.5em 1em; }
+        /* line 97, ../../plugin/style/core/_mobile.scss */
+        .chattaaar-container.condensed .scale-boxes .checkbox-radio span i {
+          left: 50%;
+          margin-left: -6px; }
+    /* line 128, ../../plugin/style/core/_mobile.scss */
     .chattaaar-container.condensed .chattaaar-topbar {
       height: 35px; }
-      /* line 130, ../../plugin/style/core/_mobile.scss */
+      /* line 131, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-title span {
         line-height: 35px; }
-      /* line 134, ../../plugin/style/core/_mobile.scss */
+      /* line 135, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-counter span {
         left: 10px;
         line-height: 35px; }
-      /* line 139, ../../plugin/style/core/_mobile.scss */
+      /* line 140, ../../plugin/style/core/_mobile.scss */
       .chattaaar-container.condensed .chattaaar-topbar .ch-close i {
         right: 10px;
         margin-top: -9px;
