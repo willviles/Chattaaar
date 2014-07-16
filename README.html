@@ -358,6 +358,26 @@ options: longArray(),
 }
 </code></p>
 
+<h3>Full Name</h3>
+
+<p>Instead of creating two input fields for &lsquo;first-name&rsquo; and &lsquo;last-name&rsquo;, the <strong>fullName</strong> input type can be used to capture the respondent&rsquo;s full name naturally by placing two input boxes next to one another.</p>
+
+<p><code>js
+{
+    type: 'fullName',
+    // Instead of accepting a 'placeholder' value, fullName accepts placeholders like this:
+    placeholders: {
+    firstName: 'First Name',
+    lastName: 'Last Name'
+  },
+  // And instead of accepting an 'inputName' value, accepts input names like this:
+  inputNames: {
+    firstName: 'foo', // Default: 'first-name'
+    lastName: 'bar' // Default: 'last-name'
+  }
+}
+</code></p>
+
 <h3>Date</h3>
 
 <p>Ensure jQuery UI Datepicker is included before Chattaaar, but after jQuery.</p>

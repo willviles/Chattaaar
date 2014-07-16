@@ -226,6 +226,25 @@ options: longArray(),
 }
 ```
 
+### Full Name
+Instead of creating two input fields for 'first-name' and 'last-name', the __fullName__ input type can be used to capture the respondent's full name naturally by placing two input boxes next to one another.
+
+```js
+{
+	type: 'fullName',
+	// Instead of accepting a 'placeholder' value, fullName accepts placeholders like this:
+	placeholders: {
+    firstName: 'First Name',
+    lastName: 'Last Name'
+  },
+  // And instead of accepting an 'inputName' value, accepts input names like this:
+  inputNames: {
+    firstName: 'foo', // Default: 'first-name'
+    lastName: 'bar' // Default: 'last-name'
+  }
+}
+```
+
 ### Date
 
 Ensure jQuery UI Datepicker is included before Chattaaar, but after jQuery.
