@@ -415,7 +415,7 @@
         };
 
         // Assign default placeholders
-        var firstNamePlaceholder = '', lastNamePlaceholder = '';
+        var firstNamePlaceholder = 'First', lastNamePlaceholder = 'Last';
 
         // Get custom placeholders
         if (stageObj.placeholders !== undefined) {
