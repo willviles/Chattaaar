@@ -106,6 +106,8 @@
             this.append.select.call(this, stageObj, 'country');
           } else if (stageObj.type === 'checkbox' || stageObj.type === 'radio') {
             this.append.checkboxradio.call(this, stageObj);
+          } else if (stageObj.type === 'scale') {
+            this.append.scale.call(this, stageObj);
           } else if (stageObj.type === 'date') {
             this.append.input.call(this, stageObj, stageObj.type);
           } else if (stageObj.type === 'rating') {
@@ -480,6 +482,31 @@
         });
         checkboxes = '<div class="checkbox-group">' + checkboxes + '</div>';
         this.$elem.append(this.scaffold.stage.call(this, checkboxes, stageObj));
+      },
+
+      // Scale
+      ///////////////////////////////////////////////////////
+
+      scale: function(stageObj) {
+        var scale = '', scaleHeader = '';
+        for (i=1; i <= 5; i++) {
+          var scaleCheckboxHTML = ' \
+            <label class="checkbox-radio"> \
+              <input type="radio" name="' + stageObj.inputName + '" value="' + i + '"/> \
+              <span> \
+                <i class="el-icon-check-empty"></i> \
+                <i class="el-icon-edit"></i> \
+                <i class="el-icon-check"></i> \
+              </span> \
+            </label>';
+          scale = scale + scaleCheckboxHTML;
+        }
+        // Define scale heaer
+        scaleHeader = '<div class="scale-header"><span class="low">' + stageObj.placeholders.low + '</span><span class="high">' + stageObj.placeholders.high  + '</span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></div>'
+        // Wrap scale checkboxes
+        scale = scaleHeader + '<div class="checkbox-group scale-boxes">' + scale + '</div>';
+
+        this.$elem.append(this.scaffold.stage.call(this, scale, stageObj));
       },
 
       // Select

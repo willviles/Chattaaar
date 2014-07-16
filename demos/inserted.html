@@ -29,6 +29,23 @@
           },
           stages = {
             stage1: {
+              title: 'Indicate satisfaction',
+              type: 'scale',
+              inputName: 'satisfaction',
+              question: "Please rate your satisfaction.",
+              placeholders: {
+                low: 'Very dissatisfied',
+                high: 'Very satisfied'
+              }
+            },
+            stage2: {
+              title: 'Select multiple things',
+              type: 'checkbox',
+              inputName: 'selection_of_things',
+              question: "Please select all the things.",
+              options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing']
+            },
+            stage3: {
               title: 'Name',
               type: 'fullName',
               question: "Let's start chatting. What's your name?",
@@ -37,7 +54,7 @@
                 lastName: 'Skywalker'
               }
             },
-            stage2: {
+            stage4: {
               title: 'Your Idea',
               type: 'textarea',
               inputName: 'idea',
@@ -46,7 +63,7 @@
               charlimit: 20,
               skippable: true
             },
-            stage3: {
+            stage5: {
               title: 'Frequency',
               type: 'select',
               inputName: 'number-of-ideas',
@@ -54,7 +71,7 @@
               placeholder: "Please select a number",
               options: ['First idea', 'Second idea', 'Third idea']
             },
-            stage4: {
+            stage6: {
               title: 'Choose',
               type: 'country',
               inputName: 'country',
@@ -65,14 +82,14 @@
                 avatar: 'https://www.apple.com/pr/bios/images/schiller_hero20110204.png'
               }
             },
-            stage5: {
+            stage7: {
               title: 'About You',
               type: 'input',
               inputName: 'name',
               question: "What's your name?",
               placeholder: "e.g. Joe Bloggs"
             },
-            stage6: {
+            stage8: {
               title: 'Select a date',
               type: 'date',
               inputName: 'date',
@@ -82,20 +99,13 @@
                 minDate: -20, maxDate: "+1M +10D"
               }
             },
-            stage7: {
-              title: 'Select multiple things',
-              type: 'checkbox',
-              inputName: 'selection_of_things',
-              question: "Please select all the things.",
-              options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing']
-            },
-            stage8: {
+            stage9: {
               title: 'Rating',
               type: 'rating',
               inputName: 'rating',
               question: "Right, what do you think of this?"
             },
-            stage9: {
+            stage10: {
               title: 'Upload a video',
               type: 'media',
               inputName: 'video',
@@ -103,7 +113,7 @@
               placeholder: "Place your link here",
               accepts: ['youtube', 'soundcloud']
             },
-            stage10: {
+            stage11: {
               title: 'Your Email',
               type: 'email',
               inputName: 'email',

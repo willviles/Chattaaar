@@ -78,13 +78,24 @@ textarea {
     padding: 0.4em 1em 0.4em 30px;
     font-size: 1.1em;
     margin-bottom: 1px;
-    i.el-icon-check-empty, i.el-icon-check, i.el-icon-edit {
+    i {
       left: 5px;
       margin-top: -5px;
-      font-size: 10px;
+      font-size: 12px;
     }
     i.el-icon-check, i.el-icon-edit {
       @include opacity(0);
+    }
+  }
+}
+
+.scale-boxes {
+  .checkbox-radio {
+    span {
+      border-bottom: none; padding: 2em 1em 2em 1em;
+      i {
+        left: 50%; margin-left: -6px;
+      }
     }
   }
 }
