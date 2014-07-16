@@ -134,8 +134,8 @@ stage1: {
   title: 'This is the title', // string - sets the title in the Chattaaar top bar
 	type: 'input', // string - name of input type
 	inputName: 'input_name', // string - sets the name of the form element. Must be unique to retrieve with your custom email sending function
-	question: 'Are you?', // string - sets the question
-	placeholder: 'e.g. I am', // string - sets the placeholder text of the form input.
+	question: 'Foo?', // string - sets the question
+	placeholder: 'e.g. Bar', // string - sets the placeholder text of the form input.
 	skippable: false // boolean - removes validation and allows user to skip section
 },
 stage2: { ...
@@ -198,7 +198,7 @@ Define options for checkboxes, radio buttons and selects in an array.
 
 ```js
 {
-options: ['First thing', 'Second thing', 'Third thing', 'Fourth thing', 'Fifth thing', 'Sixth thing'],
+options: ['First thing', 'Second thing', 'Third thing'],
 ...
 }
 ```
@@ -220,9 +220,11 @@ options: longArray(),
 
 ### Country
 
+Instead of adding a long options array of countries to create a country select, simply use the __country__ input type. There is no need to pass an options array.
+
 ```js
 {
-	type: 'country' // No need to add an options array for a country select. It will generate an options array.
+	type: 'country' //
 }
 ```
 
