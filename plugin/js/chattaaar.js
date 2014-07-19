@@ -48,7 +48,7 @@
       this.links.init.call(this);
       this.utilities.init.call(this);
 
-      if (!this.options.modal === false) {
+      if (this.options.modal !== false) {
         this.utilities.initModal.call(this);
       }
       return this;
@@ -419,15 +419,15 @@
 
         // Get custom placeholders
         if (stageObj.placeholders !== undefined) {
-          if (stageObj.placeholders.firstName !== undefined) { firstNamePlaceholder = stageObj.placeholders.firstName }
-          if (stageObj.placeholders.lastName !== undefined) { lastNamePlaceholder = stageObj.placeholders.lastName }
+          if (stageObj.placeholders.firstName !== undefined) { firstNamePlaceholder = stageObj.placeholders.firstName; }
+          if (stageObj.placeholders.lastName !== undefined) { lastNamePlaceholder = stageObj.placeholders.lastName; }
         }
 
         // Assign default & custom input names
         var firstNameInputName = 'first-name', lastNameInputName = 'last-name';
         if (stageObj.inputNames !== undefined) {
-          if (stageObj.inputNames.firstName !== undefined) { firstNameInputName = stageObj.inputNames.firstName }
-          if (stageObj.inputNames.lastName !== undefined) { lastNameInputName = stageObj.inputNames.lastName }
+          if (stageObj.inputNames.firstName !== undefined) { firstNameInputName = stageObj.inputNames.firstName; }
+          if (stageObj.inputNames.lastName !== undefined) { lastNameInputName = stageObj.inputNames.lastName; }
         }
 
         var firstName = generateNameInput(firstNameInputName, firstNamePlaceholder),
@@ -445,7 +445,7 @@
         var limit = '',
             limitUpdate = '',
             limitUpdateScaffold = function(valueToUpdate) {
-              return '<div class="limit-update invalid"><p><span class="limit-count">0</span>/' + valueToUpdate + '</p></div>'
+              return '<div class="limit-update invalid"><p><span class="limit-count">0</span>/' + valueToUpdate + '</p></div>';
             };
 
         // If there's a character limit
@@ -489,7 +489,7 @@
 
       scale: function(stageObj) {
         var scale = '', scaleHeader = '';
-        for (i=1; i <= 5; i++) {
+        for (var i=1; i <= 5; i++) {
           var scaleCheckboxHTML = ' \
             <label class="checkbox-radio"> \
               <input type="radio" name="' + stageObj.inputName + '" value="' + i + '"/> \
@@ -502,7 +502,7 @@
           scale = scale + scaleCheckboxHTML;
         }
         // Define scale heaer
-        scaleHeader = '<div class="scale-header"><span class="low">' + stageObj.placeholders.low + '</span><span class="high">' + stageObj.placeholders.high  + '</span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></div>'
+        scaleHeader = '<div class="scale-header"><span class="low">' + stageObj.placeholders.low + '</span><span class="high">' + stageObj.placeholders.high  + '</span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></span><div class="notch"></div></div>';
         // Wrap scale checkboxes
         scale = scaleHeader + '<div class="checkbox-group scale-boxes">' + scale + '</div>';
 
@@ -517,7 +517,7 @@
         if (type === 'country') {
           optionsItems = this.utilities.arrays.country();
         } else {
-          optionsItems = stageObj.options
+          optionsItems = stageObj.options;
         }
         $.each(optionsItems, function(i, optionItem) {
           var optionHTML = '<option>' + optionItem + '</option>';
@@ -932,7 +932,7 @@
             $(that.options.modalContainer).removeClass('open').addClass('close');
             setTimeout(function() {
               $(that.options.modalContainer).removeClass('close');
-              resetForm();
+              that.utilities.resetForm.call(that);
             }, 400);
           } else {
             that.utilities.resetForm.call(that);
@@ -1115,7 +1115,7 @@
       }
 
     }
-  } // End of all functions
+  }; // End of all functions
 
   Chattaaar.options = Plugin.prototype.options;
 
