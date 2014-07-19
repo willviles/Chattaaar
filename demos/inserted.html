@@ -25,17 +25,18 @@
             yourName: 'Tim Cook',
             yourAvatar: 'http://rack.3.mshcdn.com/media/ZgkyMDE0LzAzLzIwL2IxL3RpbWNvb2suYjNiNGEuanBnCnAJdGh1bWIJMTIwMHg2MjcjCmUJanBn/5642c929/509/tim-cook.jpg',
             theirAvatar: 'http://upload.wikimedia.org/wikipedia/commons/6/64/Jonathan.Ive.jpg',
-            testMode: true
+            testMode: true,
+            theme: 'shuttup'
           },
           stages = {
             stage1: {
-              title: 'Indicate satisfaction',
-              type: 'scale',
-              inputName: 'satisfaction',
-              question: "Please rate your satisfaction.",
-              placeholders: {
-                low: 'Very dissatisfied',
-                high: 'Very satisfied'
+              title: 'Select a date',
+              type: 'date',
+              inputName: 'date',
+              question: "Select a date.",
+              placeholder: "Date",
+              datepicker: {
+                minDate: -20, maxDate: "+1M +10D"
               }
             },
             stage2: {
@@ -90,13 +91,13 @@
               placeholder: "e.g. Joe Bloggs"
             },
             stage8: {
-              title: 'Select a date',
-              type: 'date',
-              inputName: 'date',
-              question: "Select a date.",
-              placeholder: "Date",
-              datepicker: {
-                minDate: -20, maxDate: "+1M +10D"
+              title: 'Indicate satisfaction',
+              type: 'scale',
+              inputName: 'satisfaction',
+              question: "Please rate your satisfaction.",
+              placeholders: {
+                low: 'Very dissatisfied',
+                high: 'Very satisfied'
               }
             },
             stage9: {

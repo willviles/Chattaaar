@@ -73,7 +73,7 @@
 
         // Add theme
         if (typeof options.theme !== 'undefined') {
-          this.$elem.addClass(this.options.theme);
+          this.$elem.addClass(options.theme);
         }
       },
 
@@ -878,8 +878,27 @@
       ///////////////////////////////////////////////////////
       date: {
         init: function(dates) {
-          var datepickerOptions = this.stages['stage' + (this.stage - 1)].datepicker,
-              that = this;
+          var that = this;
+
+          // Add theme class to datepicker
+          var datepickerOptions = {
+            beforeShow: function(input, inst) {
+              if (typeof that.options.theme !== undefined) {
+                var datepickerDiv = $('#ui-datepicker-div'),
+                    currentTheme = datepickerDiv.attr('data-theme');
+
+                if (currentTheme !== that.options.theme) {
+                  datepickerDiv.attr('data-theme', '');
+                  datepickerDiv.attr('data-theme', that.options.theme);
+                }
+              }
+            }
+          };
+
+          // Extend user Datepicker options
+          datepickerOptions = $.extend(that.stages['stage' + (that.stage - 1)].datepicker, datepickerOptions);
+
+          // Init the datepicker
           dates.datepicker(datepickerOptions);
           dates.on('change paste', function() {
             var inputVal = $(this).val();
