@@ -1071,10 +1071,10 @@
           that.utilities.closeModal.call(that);
         });
 
-        $(this.options.modalContainer).on('click', function() {
-          that.utilities.closeModal.call(that);
-        }).children().on('click', function(e) {
-          return false;
+        $(this.options.modalContainer).on('click', function(e) {
+          if ($(e.target).hasClass('chattaaar-modal')) {
+            that.utilities.closeModal.call(that);
+          }
         });
       },
 

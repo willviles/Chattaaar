@@ -54,97 +54,77 @@
       .chattaaar-container.star-wars section .action-container .action-wrapper:before {
         border-color: white transparent transparent transparent;
         _border-color: white black black black; }
-    /* line 127, ../../../../plugin/style/themes/star-wars/style.scss */
-    .chattaaar-container.star-wars section .action-container .ch-btns-container {
-      margin-right: 80px; }
-      /* line 129, ../../../../plugin/style/themes/star-wars/style.scss */
-      .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-next, .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-prev, .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-skip {
-        border: button-border;
-        background-color: #27292b;
-        color: #ecf0f1; }
-      /* line 134, ../../../../plugin/style/themes/star-wars/style.scss */
-      .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-next.validated {
-        color: #27292b;
-        background-color: #cfd9db;
-        border: 1px solid #cfd9db; }
-        /* line 138, ../../../../plugin/style/themes/star-wars/style.scss */
-        .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-next.validated:focus, .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-next.validated:hover {
-          background-color: white;
-          border: 1px solid white; }
-      /* line 144, ../../../../plugin/style/themes/star-wars/style.scss */
-      .chattaaar-container.star-wars section .action-container .ch-btns-container .ch-prev:hover {
-        border: 1px solid white; }
-  /* line 155, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 133, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars section.welcome .ch-next {
     background-color: #cfd9db;
     color: #27292b; }
-  /* line 162, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 140, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .ch-sending {
     background-color: rgba(39, 41, 43, 0.9); }
-  /* line 169, ../../../../plugin/style/themes/star-wars/style.scss */
-  .chattaaar-container.star-wars .ch-mobile-btns-container .ch-next, .chattaaar-container.star-wars .ch-mobile-btns-container .ch-prev, .chattaaar-container.star-wars .ch-mobile-btns-container .ch-skip {
+  /* line 147, ../../../../plugin/style/themes/star-wars/style.scss */
+  .chattaaar-container.star-wars .ch-btns-container .ch-next, .chattaaar-container.star-wars .ch-btns-container .ch-prev, .chattaaar-container.star-wars .ch-btns-container .ch-skip {
     background-color: #27292b;
     color: #ecf0f1; }
-  /* line 174, ../../../../plugin/style/themes/star-wars/style.scss */
-  .chattaaar-container.star-wars .ch-mobile-btns-container .ch-next.validated {
+  /* line 152, ../../../../plugin/style/themes/star-wars/style.scss */
+  .chattaaar-container.star-wars .ch-btns-container .ch-next.validated {
     color: #27292b;
     background-color: #cfd9db; }
-    /* line 177, ../../../../plugin/style/themes/star-wars/style.scss */
-    .chattaaar-container.star-wars .ch-mobile-btns-container .ch-next.validated:focus, .chattaaar-container.star-wars .ch-mobile-btns-container .ch-next.validated:hover {
+    /* line 155, ../../../../plugin/style/themes/star-wars/style.scss */
+    .chattaaar-container.star-wars .ch-btns-container .ch-next.validated:focus, .chattaaar-container.star-wars .ch-btns-container .ch-next.validated:hover {
       background-color: white; }
-  /* line 186, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 164, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars input, .chattaaar-container.star-wars textarea, .chattaaar-container.star-wars select {
     background-color: white;
     color: #27292b; }
-    /* line 189, ../../../../plugin/style/themes/star-wars/style.scss */
+    /* line 167, ../../../../plugin/style/themes/star-wars/style.scss */
     .chattaaar-container.star-wars input:-webkit-autofill, .chattaaar-container.star-wars textarea:-webkit-autofill, .chattaaar-container.star-wars select:-webkit-autofill {
       -webkit-box-shadow: 0 0 0px 1000px white inset;
       -webkit-text-fill-color: #27292b; }
-  /* line 197, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 175, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars ::-webkit-input-placeholder {
     /* WebKit browsers */
     color: #64696e; }
-  /* line 200, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 178, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #64696e; }
-  /* line 203, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 181, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: #64696e; }
-  /* line 206, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 184, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars :-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: #64696e; }
-  /* line 213, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 191, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .checkbox-radio span {
     background-color: white;
     color: #64696e;
     border-bottom: 1px solid #e6e6e6; }
-  /* line 218, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 196, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .checkbox-radio input:checked + span {
     color: #27292b; }
-  /* line 221, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 199, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .checkbox-radio:last-child span {
     border-bottom: none; }
-  /* line 229, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 207, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .rating .star {
     font-size: 1.6em;
     color: #a4a9ad; }
-  /* line 233, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 211, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .rating li.hover .star {
     color: #64696e; }
-  /* line 236, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 214, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .rating li.selected .star {
     color: #27292b; }
-  /* line 239, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 217, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-container.star-wars .rating .star-count {
     color: #64696e; }
 
-/* line 248, ../../../../plugin/style/themes/star-wars/style.scss */
+/* line 226, ../../../../plugin/style/themes/star-wars/style.scss */
 .chattaaar-modal.star-wars {
   background-color: rgba(15, 16, 16, 0.8); }
-  /* line 252, ../../../../plugin/style/themes/star-wars/style.scss */
+  /* line 230, ../../../../plugin/style/themes/star-wars/style.scss */
   .chattaaar-modal.star-wars .chattaaar-container {
     -moz-box-shadow: rgba(15, 16, 16, 0) 0px 0px 0px 0px inset;
     -webkit-box-shadow: rgba(15, 16, 16, 0) 0px 0px 0px 0px inset;

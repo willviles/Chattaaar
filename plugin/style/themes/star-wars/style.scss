@@ -124,28 +124,6 @@ $theme: 'star-wars';
           _border-color: $action-container-bg-color #000000 #000000 #000000;
         }
       }
-      .ch-btns-container {
-        margin-right: $person-icon-size + 20px;
-        .ch-next, .ch-prev, .ch-skip {
-          border: button-border;
-          background-color: $button-bg-color;
-          color: $button-text-color;
-        }
-        .ch-next.validated {
-          color: $validated-button-text-color;
-          background-color: $validated-button-bg-color;
-          border: $validated-button-border;
-          &:focus, &:hover {
-            background-color: $validated-button-hover-bg-color;
-            border: $validated-button-hover-border;
-          }
-        }
-        .ch-prev {
-          &:hover {
-            border: $button-hover-border;
-          }
-        }
-      }
     }
   }
 
@@ -165,7 +143,7 @@ $theme: 'star-wars';
 
   // Mobile Buttons
 
-  .ch-mobile-btns-container {
+  .ch-btns-container {
     .ch-next, .ch-prev, .ch-skip {
       background-color: $button-bg-color;
       color: $button-text-color;
