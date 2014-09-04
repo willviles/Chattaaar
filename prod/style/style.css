@@ -3056,13 +3056,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(148, 170, 176, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+  cursor: pointer;
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%); }
-  /* line 23, ../../plugin/style/core/_modal.scss */
+  /* line 24, ../../plugin/style/core/_modal.scss */
   .chattaaar-modal.open {
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
@@ -3071,12 +3072,12 @@
     -moz-animation: modal-in 0.3s;
     -webkit-animation: modal-in 0.3s;
     animation: modal-in 0.3s; }
-  /* line 27, ../../plugin/style/core/_modal.scss */
+  /* line 28, ../../plugin/style/core/_modal.scss */
   .chattaaar-modal.close {
     -moz-animation: modal-out 0.3s;
     -webkit-animation: modal-out 0.3s;
     animation: modal-out 0.3s; }
-  /* line 30, ../../plugin/style/core/_modal.scss */
+  /* line 31, ../../plugin/style/core/_modal.scss */
   .chattaaar-modal .chattaaar-container {
     position: absolute;
     top: 10%;
@@ -3088,7 +3089,7 @@
     -moz-box-shadow: #ecf0f1 0px 0px 0px 0px inset;
     -webkit-box-shadow: #ecf0f1 0px 0px 0px 0px inset;
     box-shadow: #ecf0f1 0px 0px 0px 0px inset; }
-    /* line 34, ../../plugin/style/core/_modal.scss */
+    /* line 35, ../../plugin/style/core/_modal.scss */
     .chattaaar-modal .chattaaar-container.condensed {
       top: 2%;
       left: 2%;
@@ -3096,7 +3097,7 @@
       bottom: 2%;
       width: 96%;
       height: 96%; }
-    /* line 37, ../../plugin/style/core/_modal.scss */
+    /* line 38, ../../plugin/style/core/_modal.scss */
     .chattaaar-modal .chattaaar-container.fullscreen {
       top: 0;
       left: 0;

@@ -26,8 +26,8 @@
         theirName: 'You',
         // Welcome page defaults
         welcomeTitle: '<i class="el-icon-envelope"></i>',
-        welcomeText: 'Welcome',
-        welcomeStrapline: 'Please add a strapline',
+        welcomeText: 'Contact Us',
+        welcomeStrapline: 'Click to begin',
         // Button text defaults
         startBtnText: 'Start',
         nextBtnText: 'Next',
@@ -1062,14 +1062,32 @@
         $(document).on('click', that.options.modalOpenBtn, function() {
           $(that.options.modalContainer).addClass('open');
         });
+
+        var modalClose = function() {
+
+        }
         // Close Modal
-        that.$elem.find('.ch-close').on('click', function() {
-          $(that.options.modalContainer).removeClass('open').addClass('close');
-          setTimeout(function() {
-            $(that.options.modalContainer).removeClass('close');
-            that.utilities.resetForm.call(that);
-          }, 400);
+        this.$elem.find('.ch-close').on('click', function() {
+          that.utilities.closeModal.call(that);
         });
+
+        $(this.options.modalContainer).on('click', function() {
+          that.utilities.closeModal.call(that);
+        }).children().on('click', function(e) {
+          return false;
+        });
+      },
+
+      // Close Modal
+      ///////////////////////////////////////////////////////
+
+      closeModal: function() {
+        var that = this;
+        $(this.options.modalContainer).removeClass('open').addClass('close');
+        setTimeout(function() {
+          $(that.options.modalContainer).removeClass('close');
+          that.utilities.resetForm.call(that);
+        }, 400);
       },
 
       // Reset Form
