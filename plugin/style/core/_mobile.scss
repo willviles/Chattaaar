@@ -42,9 +42,6 @@ section {
         border-width: 20px 15px 0 0;
       }
     }
-    .ch-btns-container {
-      display: none;
-    }
   }
 
   .ch-btns-container {
@@ -56,10 +53,12 @@ section.welcome .welcome-image {
   display: none;
 }
 
-// Display mobile buttons
-
-.ch-mobile-btns-container {
-  display: block;
+$btn-mobile-height: 35px;
+.ch-btns-container {
+  height: $btn-mobile-height;
+  .ch-next, .ch-prev, .ch-skip {
+    height: $btn-mobile-height;
+  }
 }
 
 section.after .ch-mobile-btns-container {

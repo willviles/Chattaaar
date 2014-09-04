@@ -7,6 +7,7 @@
       this.options = options;
       this.stages = stages;
       this.store = {};
+      this.preventClick = false;
     };
 
   // the plugin prototype
@@ -342,13 +343,9 @@
                   <span class="name"><small>' + this.options.theirName + '</small></span> \
                 </div> \
                 <div class="action-wrapper">' + content +  '</div> \
-                <div class="ch-btns-container"> \
-                  ' + buttonHTML + ' \
-                  <button type="button" class="ch-prev"><small><i class="el-icon-caret-up"></i></small> Prev</button> \
-                </div> \
               </div> \
             </div> \
-            <div class="ch-mobile-btns-container"> \
+            <div class="ch-btns-container"> \
               ' + buttonHTML + ' \
               <button type="button" class="ch-prev"><small><i class="el-icon-caret-up"></i></small> Prev</button> \
             </div> \
@@ -367,12 +364,11 @@
         }
 
         this.$elem.append(' \
-          <section class="welcome active"> \
+          <section class="welcome active welcome-link validated"> \
             <div class="section-padding"> \
               ' + image + ' \
               <h2>' + this.options.welcomeText + '</h2> \
               <p>' + this.options.welcomeStrapline + '</p> \
-              <div class="ch-next validated"><h4>' + this.options.startBtnText + '</h4></div> \
             </div> \
           </section>'
         );
@@ -612,6 +608,17 @@
         this.$elem.find('.ch-prev').on('click', function(e) {
           e.preventDefault();
           that.links.previousStage.call(that, $(this));
+        });
+        // Welcome page link
+        this.$elem.find('.welcome-link').on('click', function(e) {
+          e.preventDefault();
+          if (that.preventClick === false) {
+            that.links.nextStage.call(that, $(this));
+            that.preventClick = true;
+            setTimeout(function() {
+              that.preventClick = false;
+            }, 750);
+          }
         });
       }
 
@@ -994,32 +1001,8 @@
 
       init: function() {
         this.utilities.responsive.call(this);
-        this.utilities.verticalAlign.call(this);
         this.utilities.changeTitle.call(this);
         this.utilities.initModal.call(this);
-      },
-
-      // Vertical Align
-      ///////////////////////////////////////////////////////
-
-      verticalAlign: function() {
-        // VERTICALLY ALIGN SECTIONS
-        function dynamicVerticalAlign(elements) {
-          function setVerticalPos(element) {
-            var elHeight = element.height();
-            element.css({'margin-top': '-' + (elHeight/2) + 'px'});
-          }
-          $(elements).each(function() {
-            setVerticalPos($(this));
-          });
-          $(window).resize(function(){
-             $(elements).each(function() {
-               setVerticalPos($(this));
-             });
-          });
-        }
-        var sectionPaddings = this.$elem.find('.section-padding');
-        dynamicVerticalAlign(sectionPaddings);
       },
 
       // Responsive
