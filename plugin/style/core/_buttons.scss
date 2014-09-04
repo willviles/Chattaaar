@@ -1,0 +1,44 @@
+.chattaaar-container {
+
+  $btn-desktop-height: 75px;
+  .ch-btns-container {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    @include opacity(0);
+    @include transition(opacity 0.2s ease-in-out);
+    .ch-next, .ch-prev, .ch-skip {
+      position: absolute;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      background-color: white;
+      color: $grey;
+      border: 0px;
+    }
+    .ch-next {
+      right: 0;
+      cursor: default;
+      &.validated {
+        color: white;
+        cursor: pointer;
+        background-color: $blue;
+        &:focus, &:hover {
+          background-color: lighten($blue, 12%);
+        }
+      }
+    }
+    .ch-prev {
+      left: 0;
+      cursor: pointer;
+      background-color: darken(white, 5%);
+    }
+    .ch-skip {
+      cursor: pointer;
+    }
+  }
+
+}

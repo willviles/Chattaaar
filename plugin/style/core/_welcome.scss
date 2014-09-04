@@ -1,0 +1,12 @@
+.chattaaar-container {
+  section.welcome {
+    text-align: center;
+    cursor: pointer;
+    .welcome-image {
+      display: inline-block;
+    }
+    h2, p {
+      padding-bottom: 25px;
+    }
+  }
+}

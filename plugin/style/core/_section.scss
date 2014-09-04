@@ -1,0 +1,99 @@
+.chattaaar-container {
+
+  section {
+    .question-container, .action-container {
+      float: left;
+      width: 48%;
+    }
+    .person-icon {
+      width: 60px;
+      height: 60px;
+      @include border-radius(50%);
+      background-color: rgba(black, 0.1);
+      position: relative;
+      border: 1px solid $light;
+      background-position: center;
+      position: relative;
+      .default-icon {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        @include border-radius(50%);
+        overflow: hidden;
+        i {
+          position: absolute;
+          font-size: 60px;
+          top: 50%;
+          left: 50%;
+          margin-top: -20px; margin-left: -30px;
+        }
+      }
+      .name {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        right: 0px;
+        padding-top: 5px;
+        small {
+          display: block;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          text-align: center;
+        }
+      }
+    }
+    .question-container {
+      padding-right: 2%;
+      p {
+        display: block;
+        margin-left: 80px;
+        background-color: $light;
+        padding: 1.2em 2em;
+        @include border-radius(10px);
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -15px;
+          height: 0;
+          border-style: solid;
+          border-width: 0 25px 15px 0;
+          border-color: transparent $light transparent transparent;
+          line-height: 0px;
+          _border-color: #000000 $light #000000 #000000;
+          _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        }
+      }
+      .person-icon { float: left; background-size: cover; }
+    }
+    .action-container {
+      padding-left: 2%;
+      padding-top: 25px;
+      .person-icon { float: right; background-size: cover; }
+      .action-wrapper {
+        display: block;
+        margin-right: 80px;
+        padding: 1.2em 1em;
+        margin-top: 0px;
+        @include border-radius(10px);
+        background-color: #047dff;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -15px;
+          height: 0;
+          border-style: solid;
+          border-width: 15px 25px 0 0;
+          border-color: #047dff transparent transparent transparent;
+          line-height: 0px;
+          _border-color: #047dff #000000 #000000 #000000;
+          _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        }
+      }
+    }
+  }
+
+}

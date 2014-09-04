@@ -1,24 +1,35 @@
-// DEFAULTS
+.chattaaar-container {
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  line-height: 1.75em;
+  // Fonts
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: $grey;
+  line-height: 2em;
+
+  // DEFAULTS
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.75em;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.02em; line-height: 1.5em;
+  }
+
+  h1 {font-size: 4em; letter-spacing: -0.05em; font-weight: 900; line-height: 1em;}
+  h2 {font-size: 2.5em;}
+  h3 {font-size: 2em;}
+  h4 {font-size: 1.5em; }
+  h5 {font-size: 1em;}
+  h6, small {font-size: 0.75em;}
+
+  a, a:visited, a:hover { text-decoration: none; }
+  b { font-weight: 700; }
+  i { font-style: italic; }
+  p {line-height: 1.5em;}
+  ::selection, ::-moz-selection, ::-webkit-selection {background: white;}
+
 }
-
-h1, h2, h3 {
-  letter-spacing: -0.02em; line-height: 1.5em;
-}
-
-h1 {font-size: 4em; letter-spacing: -0.05em; font-weight: 900; line-height: 1em;}
-h2 {font-size: 2.5em;}
-h3 {font-size: 2em;}
-h4 {font-size: 1.5em; }
-h5 {font-size: 1em;}
-h6, small {font-size: 0.75em;}
-
-a, a:visited, a:hover { text-decoration: none; }
-b { font-weight: 700; }
-i { font-style: italic; }
-p {line-height: 1.5em;}
-::selection, ::-moz-selection, ::-webkit-selection {background: white;}
