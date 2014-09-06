@@ -111,8 +111,8 @@ $(document).ready(function() {
 | __yourAvatar__ | _string_ | - | Add a URL to an image to set the background-image property of your avatar. |
 | __theirName__ | _string_ | ‘You’ | Changes the name beneath their avatar. |
 | __theirAvatar__ | _string_ | - | Add an image URL to set the background-image property of their avatar. |
-| __welcomeTitle__ | _string_ | ‘Welcome’ | Changes the welcome title. |
-| __welcomeStrapline__ | _string_ | ‘Please add a strapline’ | Changes the text beneath the welcomeTitle. |
+| __welcomeText__ | _string_ | ‘Welcome’ | Changes the welcome text. |
+| __welcomeStrapline__ | _string_ | ‘Click to begin’ | Changes the text beneath the welcomeTitle. |
 | __welcomeTitle__ | _string_ | ‘<i class="el-icon-envelope"></i>’ | Sets title in the top bar for the welcome page. By default, it displays an envelope icon. |
 | __welcomeLogo__ | _string_ | - | Add an image URL to set the background-image property of the welcome logo. |
 | __welcomeLogoWidth__ | _string_ | - | Add a width appended with ‘px’ to define the welcome logo width. |
